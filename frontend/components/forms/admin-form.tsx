@@ -222,11 +222,16 @@ export function AdminForm() {
     { display_name: "Reina Mercedes Municipal Hall, Isabela, Philippines", lat: "17.0583", lon: "121.6019" },
     { display_name: "Echague, Isabela, Philippines", lat: "16.7050", lon: "121.6800" },
     { display_name: "Alicia, Isabela, Philippines", lat: "16.7833", lon: "121.7000" },
-    { display_name: "Roxas, Isabela, Philippines", lat: "17.1167", lon: "121.6167" }
+    { display_name: "Roxas, Isabela, Philippines", lat: "17.1167", lon: "121.6167" },
+    { display_name: "Tuguegarao, Cagayan, Philippines", lat: "17.6131", lon: "121.7269" },
+    { display_name: "Cagayan Valley, Philippines", lat: "17.5000", lon: "121.5000" },
+    { display_name: "Nueva Vizcaya, Philippines", lat: "16.5000", lon: "121.1667" },
+    { display_name: "Quirino, Philippines", lat: "16.2500", lon: "121.5000" },
+    { display_name: "Batanes, Philippines", lat: "20.4500", lon: "121.9667" }
   ];
 
-  // Search for suggestions (with fallback to predefined locations)
-  const searchLocationSuggestions = async (searchTerm: string) => {
+  // Search for suggestions using predefined locations only
+  const searchLocationSuggestions = (searchTerm: string) => {
     if (searchTerm.length < 2) {
       setFormData(prev => ({
         ...prev,
@@ -236,48 +241,20 @@ export function AdminForm() {
       return;
     }
 
-    // First, filter predefined locations
+    // Filter predefined locations
     const filteredPredefined = predefinedLocations.filter(location =>
       location.display_name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    // If we have predefined matches, show them immediately
-    if (filteredPredefined.length > 0) {
-      setFormData(prev => ({
-        ...prev,
-        locationSuggestions: filteredPredefined.slice(0, 5),
-        showSuggestions: true
-      }));
-    }
-
-    // Try to fetch from API as well (but don't block on it)
-    try {
-      // Use a working CORS proxy
-      const proxyUrl = 'https://api.allorigins.win/raw?url=';
-      const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchTerm)}&limit=3&countrycodes=ph&addressdetails=1`;
-      
-      const response = await fetch(proxyUrl + encodeURIComponent(nominatimUrl));
-      
-      if (response.ok) {
-        const data = await response.json();
-        
-        if (data && data.length > 0) {
-          // Combine with predefined results
-          const combinedResults = [...filteredPredefined, ...data].slice(0, 5);
-          setFormData(prev => ({
-            ...prev,
-            locationSuggestions: combinedResults,
-            showSuggestions: true
-          }));
-        }
-      }
-    } catch (error) {
-      console.log("API search failed, using predefined locations only");
-      // If API fails, we already have predefined results shown above
-    }
+    // Show filtered results
+    setFormData(prev => ({
+      ...prev,
+      locationSuggestions: filteredPredefined.slice(0, 5),
+      showSuggestions: filteredPredefined.length > 0
+    }));
   };
 
-  const handleLocationSearch = async (selectedLocation?: {lat: string, lon: string, display_name: string}) => {
+  const handleLocationSearch = (selectedLocation?: {lat: string, lon: string, display_name: string}) => {
     const searchTerm = formData.locationSearch.trim();
     
     if (!searchTerm && !selectedLocation) return;
@@ -289,50 +266,36 @@ export function AdminForm() {
       showSuggestions: false
     }));
 
-    try {
-      let result;
+    let result;
+    
+    if (selectedLocation) {
+      // Use the selected location directly
+      result = selectedLocation;
+    } else {
+      // Find matching predefined location
+      const matchingLocation = predefinedLocations.find(location =>
+        location.display_name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
       
-      if (selectedLocation) {
-        // Use the selected location directly
-        result = selectedLocation;
+      if (matchingLocation) {
+        result = matchingLocation;
       } else {
-        // Use a CORS proxy to avoid CORS issues
-        const proxyUrl = 'https://api.allorigins.win/raw?url=';
-        const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(searchTerm)}&limit=1&countrycodes=ph`;
-        
-        const response = await fetch(proxyUrl + encodeURIComponent(nominatimUrl));
-        
-        if (response.ok) {
-          const data = await response.json();
-          
-          if (data && data.length > 0) {
-            result = data[0];
-          } else {
-            throw new Error("Location not found");
-          }
-        } else {
-          throw new Error("Failed to fetch location data");
-        }
+        // Default to Reina Mercedes if no match found
+        result = predefinedLocations[1]; // Reina Mercedes, Isabela, Philippines
       }
-      
-      const lat = parseFloat(result.lat);
-      const lon = parseFloat(result.lon);
-      
-      // Update map center and zoom
-      setFormData(prev => ({
-        ...prev,
-        mapCenter: [lat, lon],
-        mapZoom: 16,
-        isSearchingLocation: false,
-        locationSearch: result.display_name
-      }));
-    } catch (error) {
-      console.error("Error searching location:", error);
-      setFormData(prev => ({
-        ...prev,
-        isSearchingLocation: false
-      }));
     }
+    
+    const lat = parseFloat(result.lat);
+    const lon = parseFloat(result.lon);
+    
+    // Update map center and zoom
+    setFormData(prev => ({
+      ...prev,
+      mapCenter: [lat, lon],
+      mapZoom: 16,
+      isSearchingLocation: false,
+      locationSearch: result.display_name
+    }));
   };
 
   // Debounced effect for location suggestions
