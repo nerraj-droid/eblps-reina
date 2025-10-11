@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBPLS API Connection Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background-color: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        pre { background-color: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>eBPLS Frontend-Backend Connection Test</h1>
+    <div id="results"></div>
+
+    <script>
+        const API_BASE_URL = 'http://127.0.0.1:8000/api';
+        const resultsDiv = document.getElementById('results');
+
+        function addResult(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.innerHTML = message;
+            resultsDiv.appendChild(div);
+        }
+
+        async function testConnection() {
+            addResult('Starting API connection tests...', 'info');
+            addResult(`Current origin: ${window.location.origin}`, 'info');
+            addResult(`Testing API at: ${API_BASE_URL}`, 'info');
+
+            try {
+                // Test 1: Basic API endpoint
+                addResult('Test 1: Testing basic API endpoint...', 'info');
+                const testResponse = await fetch(`${API_BASE_URL}/test`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    mode: 'cors'
+                });
+                const testData = await testResponse.json();
+                addResult(`✅ Basic API test passed: ${testData.message}`, 'success');
+
+                // Test 2: Business Permits API
+                addResult('Test 2: Testing business permits API...', 'info');
+                const permitsResponse = await fetch(`${API_BASE_URL}/business-permits`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    mode: 'cors'
+                });
+                const permitsData = await permitsResponse.json();
+                
+                if (permitsData.data && Array.isArray(permitsData.data)) {
+                    addResult(`✅ Business permits API working: ${permitsData.data.length} permits found`, 'success');
+                    addResult(`📊 Total permits: ${permitsData.meta.total}`, 'info');
+                    addResult(`📄 Current page: ${permitsData.meta.current_page} of ${permitsData.meta.last_page}`, 'info');
+                    
+                    // Test 3: Data transformation
+                    addResult('Test 3: Testing data structure...', 'info');
+                    if (permitsData.data.length > 0) {
+                        const samplePermit = permitsData.data[0];
+                        addResult('✅ Sample permit structure:', 'success');
+                        addResult(`<pre>${JSON.stringify({
+                            id: samplePermit.id,
+                            permit_number: samplePermit.permit_number,
+                            business_name: samplePermit.business?.business_name,
+                            owner_name: `${samplePermit.business?.business_owner?.first_name} ${samplePermit.business?.business_owner?.last_name}`,
+                            status: samplePermit.status,
+                            total_amount: samplePermit.total_amount
+                        }, null, 2)}</pre>`, 'info');
+                    }
+                } else {
+                    addResult('❌ Business permits API returned unexpected data structure', 'error');
+                }
+
+                // Test 4: Frontend transformation simulation
+                addResult('Test 4: Simulating frontend data transformation...', 'info');
+                if (permitsData.data && permitsData.data.length > 0) {
+                    const samplePermit = permitsData.data[0];
+                    const transformedPermit = {
+                        id: samplePermit.id.toString(),
+                        business_id_no: samplePermit.permit_number,
+                        business_name: samplePermit.business.business_name,
+                        owner_name: `${samplePermit.business.business_owner.first_name} ${samplePermit.business.business_owner.middle_name || ''} ${samplePermit.business.business_owner.last_name}`.trim(),
+                        mobile_no: samplePermit.business.business_owner.phone,
+                        email_address: samplePermit.business.business_owner.email,
+                        latest_status: samplePermit.status.charAt(0).toUpperCase() + samplePermit.status.slice(1),
+                        latest_status_date: samplePermit.application_date,
+                        status_owner: samplePermit.approved_by || `${samplePermit.business.business_owner.first_name} ${samplePermit.business.business_owner.last_name}`,
+                        business_type: samplePermit.business.business_type.name,
+                        application_date: samplePermit.application_date,
+                        expiry_date: samplePermit.valid_until,
+                        permit_number: samplePermit.permit_number,
+                        address: `${samplePermit.business.business_address}, ${samplePermit.business.business_barangay}, ${samplePermit.business.business_city}, ${samplePermit.business.business_province}`,
+                        total_fee: parseFloat(samplePermit.total_amount),
+                        payment_status: samplePermit.status === 'approved' ? 'Paid' : 'Unpaid'
+                    };
+                    
+                    addResult('✅ Data transformation successful:', 'success');
+                    addResult(`<pre>${JSON.stringify(transformedPermit, null, 2)}</pre>`, 'info');
+                }
+
+                addResult('🎉 All tests completed successfully! Frontend should be able to display the data properly.', 'success');
+
+            } catch (error) {
+                addResult(`❌ Error during testing: ${error.message}`, 'error');
+                addResult(`Error details: ${error.stack}`, 'error');
+                addResult('Make sure the backend server is running on http://127.0.0.1:8000', 'error');
+                addResult('Check if CORS is properly configured for your frontend port', 'error');
+            }
+        }
+
+        // Run tests when page loads
+        testConnection();
+    </script>
+</body>
+</html>

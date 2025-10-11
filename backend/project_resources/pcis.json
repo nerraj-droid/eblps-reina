@@ -1,0 +1,5442 @@
+[
+  {
+    "Subclass Description": "Growing of leguminous crops such as: mongo, string beans (sitao), pigeon peas, gisantes, garbanzos, bountiful beans (habichuelas), peas (sitsaro)",
+    "Subclass Code": "01111"
+  },
+  {
+    "Subclass Description": "Growing of groundnuts",
+    "Subclass Code": "01112"
+  },
+  {
+    "Subclass Description": "Growing of oil seeds (except groundnuts) such as soya beans, sunflower and growing of other oil seeds, n.e.c.",
+    "Subclass Code": "01113"
+  },
+  {
+    "Subclass Description": "Growing of sorghum, wheat",
+    "Subclass Code": "01114"
+  },
+  {
+    "Subclass Description": "Growing of other cereals (except rice and corn), leguminous crops and oil seeds, n.e.c.",
+    "Subclass Code": "01119"
+  },
+  {
+    "Subclass Description": "Growing of paddy rice, lowland, irrigated",
+    "Subclass Code": "01121"
+  },
+  {
+    "Subclass Description": "Growing of paddy rice, lowland, rainfed",
+    "Subclass Code": "01122"
+  },
+  {
+    "Subclass Description": "Growing of paddy rice, upland/kaingin",
+    "Subclass Code": "01123"
+  },
+  {
+    "Subclass Description": "Growing of corn, except young corn (vegetable)",
+    "Subclass Code": "01130"
+  },
+  {
+    "Subclass Description": "Growing of sugarcane including muscovado sugar-making in the farm",
+    "Subclass Code": "01140"
+  },
+  {
+    "Subclass Description": "Growing of virginia tobacco including flue-curing done in the farm",
+    "Subclass Code": "01151"
+  },
+  {
+    "Subclass Description": "Growing of native tobacco including flue-curing done in the farm",
+    "Subclass Code": "01152"
+  },
+  {
+    "Subclass Description": "Growing of abaca",
+    "Subclass Code": "01161"
+  },
+  {
+    "Subclass Description": "Growing of cotton",
+    "Subclass Code": "01162"
+  },
+  {
+    "Subclass Description": "Growing of kapok",
+    "Subclass Code": "01163"
+  },
+  {
+    "Subclass Description": "Growing of maguey",
+    "Subclass Code": "01164"
+  },
+  {
+    "Subclass Description": "Growing of ramie",
+    "Subclass Code": "01165"
+  },
+  {
+    "Subclass Description": "Growing of piña",
+    "Subclass Code": "01166"
+  },
+  {
+    "Subclass Description": "Growing of jute",
+    "Subclass Code": "01167"
+  },
+  {
+    "Subclass Description": "Growing of kenaf",
+    "Subclass Code": "01168"
+  },
+  {
+    "Subclass Description": "Growing of other fiber crops, n.e.c.",
+    "Subclass Code": "01169"
+  },
+  {
+    "Subclass Description": "Growing of leafy and stem vegetables such as : cabbage, broccoli, cauliflower, lettuce, asparagus, pechay, kangkong and other leafy or stem vegetables",
+    "Subclass Code": "01171"
+  },
+  {
+    "Subclass Description": "Growing of fruit bearing vegetables such as: tomato, eggplant, cucumber, ampalaya, squash, gourd and other fruit bearing vegetables, n.e.c.",
+    "Subclass Code": "01172"
+  },
+  {
+    "Subclass Description": "Growing of other leafy and fruit bearing vegetables, n.e.c.",
+    "Subclass Code": "01179"
+  },
+  {
+    "Subclass Description": "Growing of onion",
+    "Subclass Code": "01181"
+  },
+  {
+    "Subclass Description": "Growing of garlic",
+    "Subclass Code": "01182"
+  },
+  {
+    "Subclass Description": "Growing of carrot",
+    "Subclass Code": "01183"
+  },
+  {
+    "Subclass Description": "Growing of potato",
+    "Subclass Code": "01184"
+  },
+  {
+    "Subclass Description": "Growing of cassava",
+    "Subclass Code": "01185"
+  },
+  {
+    "Subclass Description": "Growing of sweet potato (camote)",
+    "Subclass Code": "01186"
+  },
+  {
+    "Subclass Description": "Growing of melons and watermelons",
+    "Subclass Code": "01187"
+  },
+  {
+    "Subclass Description": "Growing of yams (ube)",
+    "Subclass Code": "01188"
+  },
+  {
+    "Subclass Description": "Growing of other roots, bulbs, tuberous crops and vegetables including mushroom",
+    "Subclass Code": "01189"
+  },
+  {
+    "Subclass Description": "Growing of orchids",
+    "Subclass Code": "01191"
+  },
+  {
+    "Subclass Description": "Growing of flowers or flower buds, (except orchids), cut flowers",
+    "Subclass Code": "01192"
+  },
+  {
+    "Subclass Description": "Production or growing of horticultural specialties including nursery products and ornamental plants",
+    "Subclass Code": "01193"
+  },
+  {
+    "Subclass Description": "Growing of plant materials used chiefly in medicinal/ pharmaceutical or for insecticidal, fungicidal or similar purposes",
+    "Subclass Code": "01194"
+  },
+  {
+    "Subclass Description": "Growing of crops chiefly for construction, furniture and other purposes (e.g., bamboo, buri, nipa, etc.)",
+    "Subclass Code": "01195"
+  },
+  {
+    "Subclass Description": "Growing of forage crops and other grasses",
+    "Subclass Code": "01196"
+  },
+  {
+    "Subclass Description": "Growing of other non-perennial crops, n.e.c.",
+    "Subclass Code": "01199"
+  },
+  {
+    "Subclass Description": "Growing of banana, cavendish",
+    "Subclass Code": "01211"
+  },
+  {
+    "Subclass Description": "Growing of other banana",
+    "Subclass Code": "01212"
+  },
+  {
+    "Subclass Description": "Growing of pineapple",
+    "Subclass Code": "01220"
+  },
+  {
+    "Subclass Description": "Growing of calamansi",
+    "Subclass Code": "01231"
+  },
+  {
+    "Subclass Description": "Growing of dalandan",
+    "Subclass Code": "01232"
+  },
+  {
+    "Subclass Description": "Growing of mandarin (dalanghita)",
+    "Subclass Code": "01233"
+  },
+  {
+    "Subclass Description": "Growing of pomelo (suha)",
+    "Subclass Code": "01234"
+  },
+  {
+    "Subclass Description": "Growing of citrus fruits, n.e.c.",
+    "Subclass Code": "01235"
+  },
+  {
+    "Subclass Description": "Growing of mango",
+    "Subclass Code": "01240"
+  },
+  {
+    "Subclass Description": "Growing of papaya",
+    "Subclass Code": "01250"
+  },
+  {
+    "Subclass Description": "Growing of coconut, including copra-making, tuba gathering and coco-shell charcoal and coconut sap syrup making in the farm",
+    "Subclass Code": "01260"
+  },
+  {
+    "Subclass Description": "Growing of coffee plant",
+    "Subclass Code": "01271"
+  },
+  {
+    "Subclass Description": "Growing of cacao",
+    "Subclass Code": "01272"
+  },
+  {
+    "Subclass Description": "Growing of tea plant",
+    "Subclass Code": "01273"
+  },
+  {
+    "Subclass Description": "Growing of other beverage crops",
+    "Subclass Code": "01279"
+  },
+  {
+    "Subclass Description": "Growing of perennial spices and aromatic crops such as: ginger, pepper, chili, achuete, laurel, etc.",
+    "Subclass Code": "01281"
+  },
+  {
+    "Subclass Description": "Growing of plants used primarily in medical/ pharmaceutical purposes such as : lagundi, banaba, ginseng, oregano, etc.",
+    "Subclass Code": "01282"
+  },
+  {
+    "Subclass Description": "Growing of plants for insecticidal, fungicidal or similar purposes",
+    "Subclass Code": "01283"
+  },
+  {
+    "Subclass Description": "Growing of crops used primarily in perfumery or similar purposes",
+    "Subclass Code": "01284"
+  },
+  {
+    "Subclass Description": "Growing of other spices, aromatic, drug and pharmaceutical crops, n.e.c.",
+    "Subclass Code": "01289"
+  },
+  {
+    "Subclass Description": "Growing of other tropical fruits, e.g. jackfruit, guavas, avocados, lanzones, durian, rambutan, chico, atis, mangosteen, makopa, dragon fruit etc.",
+    "Subclass Code": "01291"
+  },
+  {
+    "Subclass Description": "Growing of perennial trees with edible nuts, e.g. pili nuts, cashew nuts, etc",
+    "Subclass Code": "01292"
+  },
+  {
+    "Subclass Description": "Growing of rubber tree",
+    "Subclass Code": "01293"
+  },
+  {
+    "Subclass Description": "Growing of jatropha tree",
+    "Subclass Code": "01294"
+  },
+  {
+    "Subclass Description": "Growing of ornamental or decorative trees such as Christmas or pine trees, fire trees, etc.",
+    "Subclass Code": "01295"
+  },
+  {
+    "Subclass Description": "Growing of oleaginous fruits, except coconut",
+    "Subclass Code": "01296"
+  },
+  {
+    "Subclass Description": "Growing of bush fruits, including strawberries",
+    "Subclass Code": "01297"
+  },
+  {
+    "Subclass Description": "Growing of other fruits and perennial crops, n.e.c.",
+    "Subclass Code": "01299"
+  },
+  {
+    "Subclass Description": "Plant propagation",
+    "Subclass Code": "01300"
+  },
+  {
+    "Subclass Description": "Beef cattle farming (including feed lot fattening)",
+    "Subclass Code": "01411"
+  },
+  {
+    "Subclass Description": "Carabao farming",
+    "Subclass Code": "01412"
+  },
+  {
+    "Subclass Description": "Raising of horses and other equines",
+    "Subclass Code": "01420"
+  },
+  {
+    "Subclass Description": "Dairy farming",
+    "Subclass Code": "01430"
+  },
+  {
+    "Subclass Description": "Sheep farming including sheep shearing by the owner",
+    "Subclass Code": "01441"
+  },
+  {
+    "Subclass Description": "Goat farming",
+    "Subclass Code": "01442"
+  },
+  {
+    "Subclass Description": "Deer faming",
+    "Subclass Code": "01443"
+  },
+  {
+    "Subclass Description": "Hog raising",
+    "Subclass Code": "01450"
+  },
+  {
+    "Subclass Description": "Raising (farming) of chicken, broiler",
+    "Subclass Code": "01461"
+  },
+  {
+    "Subclass Description": "Raising (farming) of chicken, layer",
+    "Subclass Code": "01462"
+  },
+  {
+    "Subclass Description": "Raising (farming) of chicken, native",
+    "Subclass Code": "01463"
+  },
+  {
+    "Subclass Description": "Raising of duck broiler",
+    "Subclass Code": "01471"
+  },
+  {
+    "Subclass Description": "Raising of quail",
+    "Subclass Code": "01472"
+  },
+  {
+    "Subclass Description": "Raising of turkey",
+    "Subclass Code": "01473"
+  },
+  {
+    "Subclass Description": "Raising of pigeon",
+    "Subclass Code": "01474"
+  },
+  {
+    "Subclass Description": "Raising of game fowl",
+    "Subclass Code": "01475"
+  },
+  {
+    "Subclass Description": "Raising of duck layer",
+    "Subclass Code": "01476"
+  },
+  {
+    "Subclass Description": "Raising of poultry (except chicken), n.e.c.",
+    "Subclass Code": "01479"
+  },
+  {
+    "Subclass Description": "Chicken egg production",
+    "Subclass Code": "01481"
+  },
+  {
+    "Subclass Description": "Duck egg production",
+    "Subclass Code": "01482"
+  },
+  {
+    "Subclass Description": "Quail egg production",
+    "Subclass Code": "01483"
+  },
+  {
+    "Subclass Description": "Production of eggs, n.e.c.",
+    "Subclass Code": "01489"
+  },
+  {
+    "Subclass Description": "Sericulture (silkworm culture for the production of cocoon)",
+    "Subclass Code": "01491"
+  },
+  {
+    "Subclass Description": "Apiary (bee culture for the production of honey)",
+    "Subclass Code": "01492"
+  },
+  {
+    "Subclass Description": "Vermiculture",
+    "Subclass Code": "01493"
+  },
+  {
+    "Subclass Description": "Crocodile/alligator farming",
+    "Subclass Code": "01494"
+  },
+  {
+    "Subclass Description": "Rabbit farming",
+    "Subclass Code": "01495"
+  },
+  {
+    "Subclass Description": "Raising of semi-domesticated or wild animals including birds, reptiles, insects (e.g. butterfly) and turtles",
+    "Subclass Code": "01496"
+  },
+  {
+    "Subclass Description": "Raising and breeding of cats and dogs",
+    "Subclass Code": "01497"
+  },
+  {
+    "Subclass Description": "Game propagation and breeding activities",
+    "Subclass Code": "01498"
+  },
+  {
+    "Subclass Description": "Raising of other animals, n.e.c.",
+    "Subclass Code": "01499"
+  },
+  {
+    "Subclass Description": "Operation of irrigation systems through cooperatives",
+    "Subclass Code": "01511"
+  },
+  {
+    "Subclass Description": "Operation of irrigation systems through non-cooperatives",
+    "Subclass Code": "01512"
+  },
+  {
+    "Subclass Description": "Planting, transplanting and other related activities",
+    "Subclass Code": "01520"
+  },
+  {
+    "Subclass Description": "Plowing, seeding, weeding, thinning, pruning and similar services",
+    "Subclass Code": "01531"
+  },
+  {
+    "Subclass Description": "Fertilizer applications",
+    "Subclass Code": "01532"
+  },
+  {
+    "Subclass Description": "Chemical and mechanical weed control, disease and pest control services",
+    "Subclass Code": "01533"
+  },
+  {
+    "Subclass Description": "Services to establish crops, promote their growth and protect them from pests and diseases, n.e.c.",
+    "Subclass Code": "01534"
+  },
+  {
+    "Subclass Description": "Harvesting, threshing, grading, bailing and related services",
+    "Subclass Code": "01540"
+  },
+  {
+    "Subclass Description": "Rental of farm machinery with drivers and crew",
+    "Subclass Code": "01550"
+  },
+  {
+    "Subclass Description": "Artificial insemination services",
+    "Subclass Code": "01561"
+  },
+  {
+    "Subclass Description": "Contract animal growing services on a fee basis",
+    "Subclass Code": "01562"
+  },
+  {
+    "Subclass Description": "Egg-hatching, sex determination and other poultry services",
+    "Subclass Code": "01563"
+  },
+  {
+    "Subclass Description": "Services to promote propagation, growth and output of animals",
+    "Subclass Code": "01564"
+  },
+  {
+    "Subclass Description": "Farm management services",
+    "Subclass Code": "01565"
+  },
+  {
+    "Subclass Description": "Other support activities for animal production, n.e.c.",
+    "Subclass Code": "01569"
+  },
+  {
+    "Subclass Description": "Preparation of crops for primary markets, i.e. cleaning, trimming, grading, disinfecting",
+    "Subclass Code": "01571"
+  },
+  {
+    "Subclass Description": "Cotton ginning",
+    "Subclass Code": "01572"
+  },
+  {
+    "Subclass Description": "Preparation of tobacco leaves",
+    "Subclass Code": "01573"
+  },
+  {
+    "Subclass Description": "Preparation of coffee, cacao and cocoa beans",
+    "Subclass Code": "01574"
+  },
+  {
+    "Subclass Description": "Preparation of abaca fiber including stripping and drying",
+    "Subclass Code": "01575"
+  },
+  {
+    "Subclass Description": "Seed processing for propagation, paddy rice",
+    "Subclass Code": "01581"
+  },
+  {
+    "Subclass Description": "Seed processing for propagation, other crops",
+    "Subclass Code": "01589"
+  },
+  {
+    "Subclass Description": "Hunting and trapping wild animals in the forest",
+    "Subclass Code": "01701"
+  },
+  {
+    "Subclass Description": "Production of reptile skins or bird skins and other animal skins from hunting activities",
+    "Subclass Code": "01702"
+  },
+  {
+    "Subclass Description": "Hunting, trapping and other related activities, n.e.c.",
+    "Subclass Code": "01709"
+  },
+  {
+    "Subclass Description": "Growing of timber forest species (e.g. Gmelina, Eucalyptus, etc.), planting, replanting, transplanting, thinning and conserving of forest and timber tracts",
+    "Subclass Code": "02110"
+  },
+  {
+    "Subclass Description": "Operation of forest tree nurseries",
+    "Subclass Code": "02120"
+  },
+  {
+    "Subclass Description": "Production of roundwood for forest-based manufacturing industries",
+    "Subclass Code": "02201"
+  },
+  {
+    "Subclass Description": "Production of roundwood used in an unprocessed form such as pit-props, fence posts and utility poles",
+    "Subclass Code": "02202"
+  },
+  {
+    "Subclass Description": "Firewood cutting & charcoal making in the forest",
+    "Subclass Code": "02203"
+  },
+  {
+    "Subclass Description": "Gathering of non-wood forest products",
+    "Subclass Code": "02300"
+  },
+  {
+    "Subclass Description": "Support services to forestry",
+    "Subclass Code": "02400"
+  },
+  {
+    "Subclass Description": "Ocean fishing, commercial (using vessels over 3 tons)",
+    "Subclass Code": "03111"
+  },
+  {
+    "Subclass Description": "Coastal fishing, municipal (using vessels of less than 3 tons)",
+    "Subclass Code": "03112"
+  },
+  {
+    "Subclass Description": "Fish corral fishing",
+    "Subclass Code": "03113"
+  },
+  {
+    "Subclass Description": "Catching fish, crabs and crustaceans in inland waters",
+    "Subclass Code": "03121"
+  },
+  {
+    "Subclass Description": "Gathering shells and clams, edible, in inland waters",
+    "Subclass Code": "03122"
+  },
+  {
+    "Subclass Description": "Other freshwater fishing activities, n.e.c.",
+    "Subclass Code": "03129"
+  },
+  {
+    "Subclass Description": "Support service activities incidental to fishing",
+    "Subclass Code": "03130"
+  },
+  {
+    "Subclass Description": "Operation of freshwater fishpond, except fish breeding farms and nurseries",
+    "Subclass Code": "03211"
+  },
+  {
+    "Subclass Description": "Operation of freshwater fish pens and fish cage",
+    "Subclass Code": "03212"
+  },
+  {
+    "Subclass Description": "Operation of freshwater fish breeding farms and nurseries",
+    "Subclass Code": "03213"
+  },
+  {
+    "Subclass Description": "Culture of freshwater ornamental fish",
+    "Subclass Code": "03214"
+  },
+  {
+    "Subclass Description": "Other freshwater fish farming activities",
+    "Subclass Code": "03219"
+  },
+  {
+    "Subclass Description": "Operation of marine fish tanks, pens, cage except fish breeding farms and nurseries in sea water",
+    "Subclass Code": "03221"
+  },
+  {
+    "Subclass Description": "Operation of marine fish breeding farms and nurseries",
+    "Subclass Code": "03222"
+  },
+  {
+    "Subclass Description": "Catching and culturing ornamental (aquarium) fish",
+    "Subclass Code": "03223"
+  },
+  {
+    "Subclass Description": "Gathering of fry",
+    "Subclass Code": "03224"
+  },
+  {
+    "Subclass Description": "Other marine fish farming activities",
+    "Subclass Code": "03229"
+  },
+  {
+    "Subclass Description": "Prawn culture in brackish water",
+    "Subclass Code": "03230"
+  },
+  {
+    "Subclass Description": "Culture of freshwater crustaceans (except prawns), bivalves, and other mollusks",
+    "Subclass Code": "03241"
+  },
+  {
+    "Subclass Description": "Culture of oysters, other bivalves and other mollusks in sea water",
+    "Subclass Code": "03242"
+  },
+  {
+    "Subclass Description": "Pearl culture",
+    "Subclass Code": "03251"
+  },
+  {
+    "Subclass Description": "Pearl shell gathering",
+    "Subclass Code": "03252"
+  },
+  {
+    "Subclass Description": "Seaweeds farming",
+    "Subclass Code": "03261"
+  },
+  {
+    "Subclass Description": "Gathering of laver and other seaweeds",
+    "Subclass Code": "03262"
+  },
+  {
+    "Subclass Description": "Frog farming",
+    "Subclass Code": "03291"
+  },
+  {
+    "Subclass Description": "Operation of marine worm farms",
+    "Subclass Code": "03292"
+  },
+  {
+    "Subclass Description": "Other aquaculture activities, n.e.c",
+    "Subclass Code": "03299"
+  },
+  {
+    "Subclass Description": "Mining of hard coal",
+    "Subclass Code": "05100"
+  },
+  {
+    "Subclass Description": "Mining of lignite",
+    "Subclass Code": "05200"
+  },
+  {
+    "Subclass Description": "Extraction of crude petroleum",
+    "Subclass Code": "06100"
+  },
+  {
+    "Subclass Description": "Extraction of natural gas",
+    "Subclass Code": "06200"
+  },
+  {
+    "Subclass Description": "Mining of iron ores",
+    "Subclass Code": "07100"
+  },
+  {
+    "Subclass Description": "Mining of uranium and thorium ores",
+    "Subclass Code": "07210"
+  },
+  {
+    "Subclass Description": "Gold ore mining",
+    "Subclass Code": "07221"
+  },
+  {
+    "Subclass Description": "Silver ore mining",
+    "Subclass Code": "07222"
+  },
+  {
+    "Subclass Description": "Mining of other precious metal ores",
+    "Subclass Code": "07229"
+  },
+  {
+    "Subclass Description": "Copper ore mining",
+    "Subclass Code": "07291"
+  },
+  {
+    "Subclass Description": "Chromite ore mining",
+    "Subclass Code": "07292"
+  },
+  {
+    "Subclass Description": "Manganese ore mining",
+    "Subclass Code": "07293"
+  },
+  {
+    "Subclass Description": "Nickel ore mining",
+    "Subclass Code": "07294"
+  },
+  {
+    "Subclass Description": "Mining of other non-ferrous metal ores, n.e.c.",
+    "Subclass Code": "07299"
+  },
+  {
+    "Subclass Description": "Marble quarrying",
+    "Subclass Code": "08101"
+  },
+  {
+    "Subclass Description": "Limestone quarrying",
+    "Subclass Code": "08102"
+  },
+  {
+    "Subclass Description": "Stone quarrying, except limestone and marble",
+    "Subclass Code": "08103"
+  },
+  {
+    "Subclass Description": "Clay quarrying",
+    "Subclass Code": "08104"
+  },
+  {
+    "Subclass Description": "Sand and gravel quarrying",
+    "Subclass Code": "08105"
+  },
+  {
+    "Subclass Description": "Silica sand and silica stone quarrying",
+    "Subclass Code": "08106"
+  },
+  {
+    "Subclass Description": "Stone quarrying, clay and sand pits, n.e.c.",
+    "Subclass Code": "08109"
+  },
+  {
+    "Subclass Description": "Baryte mining",
+    "Subclass Code": "08911"
+  },
+  {
+    "Subclass Description": "Guano gathering",
+    "Subclass Code": "08912"
+  },
+  {
+    "Subclass Description": "Pyrite mining",
+    "Subclass Code": "08913"
+  },
+  {
+    "Subclass Description": "Rock phosphate mining",
+    "Subclass Code": "08914"
+  },
+  {
+    "Subclass Description": "Sulphur mining",
+    "Subclass Code": "08915"
+  },
+  {
+    "Subclass Description": "Other chemical and fertilizer mineral mining",
+    "Subclass Code": "08919"
+  },
+  {
+    "Subclass Description": "Extraction of peat",
+    "Subclass Code": "08920"
+  },
+  {
+    "Subclass Description": "Extraction of salt",
+    "Subclass Code": "08930"
+  },
+  {
+    "Subclass Description": "Other mining and quarrying, n.e.c.",
+    "Subclass Code": "08990"
+  },
+  {
+    "Subclass Description": "Oil and gas extraction activities on a fee or contract basis",
+    "Subclass Code": "09101"
+  },
+  {
+    "Subclass Description": "Oil and gas extraction activities not performed on a fee or contract basis",
+    "Subclass Code": "09102"
+  },
+  {
+    "Subclass Description": "Support activities for other mining and quarrying",
+    "Subclass Code": "09900"
+  },
+  {
+    "Subclass Description": "Slaughtering and meat packing",
+    "Subclass Code": 10110
+  },
+  {
+    "Subclass Description": "Production, processing and preserving of meat and meat products including tocino, tapa, ham, bacon, sausage, longanisa, corned beef, hotdog, meat loaf, and bologna",
+    "Subclass Code": 10121
+  },
+  {
+    "Subclass Description": "Production of fresh, chilled or frozen meat or poultry",
+    "Subclass Code": 10122
+  },
+  {
+    "Subclass Description": "Rendering of lard and other edible fats of animal origin",
+    "Subclass Code": 10123
+  },
+  {
+    "Subclass Description": "Production of flours and meals of meat or meat offal",
+    "Subclass Code": 10124
+  },
+  {
+    "Subclass Description": "Production, processing and preserving of meat and meat products, n.e.c.",
+    "Subclass Code": 10129
+  },
+  {
+    "Subclass Description": "Canning/packing of fish and other marine products",
+    "Subclass Code": 10201
+  },
+  {
+    "Subclass Description": "Drying of fish and other marine products",
+    "Subclass Code": 10202
+  },
+  {
+    "Subclass Description": "Smoking of fish (tinapa) and other marine products",
+    "Subclass Code": 10203
+  },
+  {
+    "Subclass Description": "Manufacture of fish paste (bagoong) and fish sauce (patis)",
+    "Subclass Code": 10204
+  },
+  {
+    "Subclass Description": "Processing of seaweeds; manufacture of agar-agar or carrageenan",
+    "Subclass Code": 10205
+  },
+  {
+    "Subclass Description": "Production of fishmeal/prawn feeds",
+    "Subclass Code": 10206
+  },
+  {
+    "Subclass Description": "Manufacture of unprepared animal feeds from fish, crustaceans and mollusks and other aquatic animals",
+    "Subclass Code": 10207
+  },
+  {
+    "Subclass Description": "Processing, preserving and canning of fish, crustacean and mollusks, n.e.c.",
+    "Subclass Code": 10209
+  },
+  {
+    "Subclass Description": "Canning/packing and preserving of fruits and fruit juices",
+    "Subclass Code": 10301
+  },
+  {
+    "Subclass Description": "Canning/packing and preserving of vegetables and vegetable juices",
+    "Subclass Code": 10302
+  },
+  {
+    "Subclass Description": "Manufacture of fruit and vegetable sauces (e.g. tomato sauce and paste)",
+    "Subclass Code": 10303
+  },
+  {
+    "Subclass Description": "Quick-freezing of fruits and vegetables",
+    "Subclass Code": 10304
+  },
+  {
+    "Subclass Description": "Manufacture of potato flour and meal",
+    "Subclass Code": 10305
+  },
+  {
+    "Subclass Description": "Roasting of nut or manufacture of nut foods and pastes",
+    "Subclass Code": 10306
+  },
+  {
+    "Subclass Description": "Manufacture of perishable prepared foods of fruit and vegetables, such as: salad, peeled or cut vegetables, tofu (bean curd)",
+    "Subclass Code": 10307
+  },
+  {
+    "Subclass Description": "Manufacture of desiccated coconut",
+    "Subclass Code": 10308
+  },
+  {
+    "Subclass Description": "Processing and preserving of fruits and vegetables, n.e.c.",
+    "Subclass Code": 10309
+  },
+  {
+    "Subclass Description": "Manufacture of virgin coconut oil",
+    "Subclass Code": 10410
+  },
+  {
+    "Subclass Description": "Production of crude vegetable oil, cake and meals, other than virgin coconut oil (see class 1041)",
+    "Subclass Code": 10440
+  },
+  {
+    "Subclass Description": "Manufacture of refined coconut and other vegetable oil (including corn oil) and margarine",
+    "Subclass Code": 10450
+  },
+  {
+    "Subclass Description": "Manufacture of fish oil and other marine animal oils",
+    "Subclass Code": 10460
+  },
+  {
+    "Subclass Description": "Manufacture of unprepared animal feeds from vegetable, animal oils and fats",
+    "Subclass Code": 10470
+  },
+  {
+    "Subclass Description": "Manufacture of vegetable and animal oil and fats, n.e.c.",
+    "Subclass Code": 10490
+  },
+  {
+    "Subclass Description": "Processing of fresh milk and cream",
+    "Subclass Code": 10510
+  },
+  {
+    "Subclass Description": "Manufacture of powdered milk (except for infants) and condensed or evaporated milk (filled, combined or reconstituted)",
+    "Subclass Code": 10520
+  },
+  {
+    "Subclass Description": "Manufacture of infantsNULL powdered milk",
+    "Subclass Code": 10530
+  },
+  {
+    "Subclass Description": "Manufacture of butter, cheese and curd",
+    "Subclass Code": 10540
+  },
+  {
+    "Subclass Description": "Manufacture of ice cream and sherbet, ice drop, ice candy and other flavored ices",
+    "Subclass Code": 10550
+  },
+  {
+    "Subclass Description": "Manufacture of milk-based infantsNULL and dietetic foods",
+    "Subclass Code": 10560
+  },
+  {
+    "Subclass Description": "Manufacture of yoghurt",
+    "Subclass Code": 10570
+  },
+  {
+    "Subclass Description": "Manufacture of whey",
+    "Subclass Code": 10580
+  },
+  {
+    "Subclass Description": "Manufacture of dairy products, n.e.c.",
+    "Subclass Code": 10590
+  },
+  {
+    "Subclass Description": "Rice/corn milling",
+    "Subclass Code": 10610
+  },
+  {
+    "Subclass Description": "Cassava flour milling",
+    "Subclass Code": 10621
+  },
+  {
+    "Subclass Description": "Flour milling except cassava flour milling",
+    "Subclass Code": 10622
+  },
+  {
+    "Subclass Description": "Manufacture of cereal breakfast foods obtained by roasting or swelling, etc.",
+    "Subclass Code": 10623
+  },
+  {
+    "Subclass Description": "Manufacture of unprepared animal feeds from grain milling residues",
+    "Subclass Code": 10624
+  },
+  {
+    "Subclass Description": "Manufacture of flour mixes and prepared blended flour and dough for bread, cakes, biscuits or pancakes",
+    "Subclass Code": 10625
+  },
+  {
+    "Subclass Description": "Manufacture of grain and vegetable mill products, n.e.c.",
+    "Subclass Code": 10629
+  },
+  {
+    "Subclass Description": "Manufacture of starches and starch products",
+    "Subclass Code": 10630
+  },
+  {
+    "Subclass Description": "Baking of bread, cakes, pastries, pies and similar \"perishable\" bakery products, including hopia and doughnut making",
+    "Subclass Code": 10711
+  },
+  {
+    "Subclass Description": "Baking of biscuits cookies, crackers, pretzels and similar dry bakery products",
+    "Subclass Code": 10712
+  },
+  {
+    "Subclass Description": "Manufacture of ice cream cones (apa) and wafers (barquillos)",
+    "Subclass Code": 10713
+  },
+  {
+    "Subclass Description": "Manufacture of snack products such as corn curls, wheat crunchies and similar products",
+    "Subclass Code": 10714
+  },
+  {
+    "Subclass Description": "Sugarcane milling",
+    "Subclass Code": 10721
+  },
+  {
+    "Subclass Description": "Sugar refining",
+    "Subclass Code": 10722
+  },
+  {
+    "Subclass Description": "Manufacture of muscovado sugar not carried on in the farm",
+    "Subclass Code": 10723
+  },
+  {
+    "Subclass Description": "Manufacture of molasses",
+    "Subclass Code": 10724
+  },
+  {
+    "Subclass Description": "Manufacture of coconut sap sugar",
+    "Subclass Code": 10725
+  },
+  {
+    "Subclass Description": "Manufacture of palm sugar (buri, nipa), except coconut",
+    "Subclass Code": 10726
+  },
+  {
+    "Subclass Description": "Manufacture of sugar, n.e.c.",
+    "Subclass Code": 10729
+  },
+  {
+    "Subclass Description": "Manufacture of chocolate and cocoa products including chocolate candies",
+    "Subclass Code": 10731
+  },
+  {
+    "Subclass Description": "Manufacture of candies (excluding chocolate candies) and chewing gum",
+    "Subclass Code": 10732
+  },
+  {
+    "Subclass Description": "Manufacture of popcorn and poprice",
+    "Subclass Code": 10733
+  },
+  {
+    "Subclass Description": "Manufacture of chocolate and sugar confectionery products, n.e.c.",
+    "Subclass Code": 10739
+  },
+  {
+    "Subclass Description": "Manufacture of macaroni, noodles, couscous and similar farinaceous products",
+    "Subclass Code": 10740
+  },
+  {
+    "Subclass Description": "Manufactured of prepared meals and dishes",
+    "Subclass Code": 10750
+  },
+  {
+    "Subclass Description": "Manufacture of food supplements from herbs and other plants",
+    "Subclass Code": 10760
+  },
+  {
+    "Subclass Description": "Coffee roasting and processing",
+    "Subclass Code": 10770
+  },
+  {
+    "Subclass Description": "Manufacture of nata de coco",
+    "Subclass Code": 10781
+  },
+  {
+    "Subclass Description": "Manufacturing of native delicacies or \"kakanin\" e.g., bibingka, puto, suman, kalamay, binagol, moron and other similar products",
+    "Subclass Code": 10782
+  },
+  {
+    "Subclass Description": "Manufacture of herb from drying and further extraction (e.g. banaba, ampalaya, moringa (malunggay), sambong, lagundi etc.)",
+    "Subclass Code": 10791
+  },
+  {
+    "Subclass Description": "Manufacture of ice, except dry ice",
+    "Subclass Code": 10792
+  },
+  {
+    "Subclass Description": "Manufacture of soup containing meat, fish, crustaceans, mollusks or pasta",
+    "Subclass Code": 10793
+  },
+  {
+    "Subclass Description": "Manufacture of infant or dietetic foods containing homogenized ingredients",
+    "Subclass Code": 10794
+  },
+  {
+    "Subclass Description": "Egg processing including fertilized egg (balut) and salted eggs",
+    "Subclass Code": 10795
+  },
+  {
+    "Subclass Description": "Manufacture of flavoring extracts and food coloring",
+    "Subclass Code": 10796
+  },
+  {
+    "Subclass Description": "Manufacture of mayonnaise, salad dressing, sandwich spread and similar products",
+    "Subclass Code": 10797
+  },
+  {
+    "Subclass Description": "Manufacture of vinegar",
+    "Subclass Code": 10798
+  },
+  {
+    "Subclass Description": "Manufacture of food products, n.e.c.",
+    "Subclass Code": 10799
+  },
+  {
+    "Subclass Description": "Manufacture of prepared animal feeds",
+    "Subclass Code": 10800
+  },
+  {
+    "Subclass Description": "Distilling, rectifying and blending of spirits",
+    "Subclass Code": 11010
+  },
+  {
+    "Subclass Description": "Fruit wine manufacturing",
+    "Subclass Code": 11021
+  },
+  {
+    "Subclass Description": "Wine manufacturing, n.e.c.",
+    "Subclass Code": 11029
+  },
+  {
+    "Subclass Description": "Manufacture of malt liquors and malt",
+    "Subclass Code": 11030
+  },
+  {
+    "Subclass Description": "Manufacture of soft drinks except drinks flavored with fruit juices, syrups or other materials",
+    "Subclass Code": 11041
+  },
+  {
+    "Subclass Description": "Manufacture of drinks flavored with fruit juices, syrups or other materials",
+    "Subclass Code": 11042
+  },
+  {
+    "Subclass Description": "Manufacture of bottled drinking water",
+    "Subclass Code": 11051
+  },
+  {
+    "Subclass Description": "Manufacture of carbonated water",
+    "Subclass Code": 11052
+  },
+  {
+    "Subclass Description": "Water purifying and refilling station",
+    "Subclass Code": 11053
+  },
+  {
+    "Subclass Description": "Manufacture of drinking water and mineral water, n.e.c.",
+    "Subclass Code": 11059
+  },
+  {
+    "Subclass Description": "Manufacture of sports and energy drink",
+    "Subclass Code": 11060
+  },
+  {
+    "Subclass Description": "Manufacture of other beverages, n.e.c.",
+    "Subclass Code": 11090
+  },
+  {
+    "Subclass Description": "Manufacture of cigarettes",
+    "Subclass Code": 12010
+  },
+  {
+    "Subclass Description": "Manufacture of cigars",
+    "Subclass Code": 12020
+  },
+  {
+    "Subclass Description": "Manufacture of chewing and smoking tobacco, snuff",
+    "Subclass Code": 12030
+  },
+  {
+    "Subclass Description": "Curing and redrying tobacco leaves",
+    "Subclass Code": 12040
+  },
+  {
+    "Subclass Description": "Tobacco manufacturing, n.e.c.",
+    "Subclass Code": 12090
+  },
+  {
+    "Subclass Description": "Spinning",
+    "Subclass Code": 13111
+  },
+  {
+    "Subclass Description": "Texturizing",
+    "Subclass Code": 13112
+  },
+  {
+    "Subclass Description": "Manufacture of paper yarn",
+    "Subclass Code": 13113
+  },
+  {
+    "Subclass Description": "Preparation of textiles, n.e.c.",
+    "Subclass Code": 13119
+  },
+  {
+    "Subclass Description": "Weaving of textiles",
+    "Subclass Code": 13120
+  },
+  {
+    "Subclass Description": "Finishing of textiles",
+    "Subclass Code": 13130
+  },
+  {
+    "Subclass Description": "Preparation and finishing of textiles (integrated)",
+    "Subclass Code": 13140
+  },
+  {
+    "Subclass Description": "Manufacture of knitted and crocheted fabrics",
+    "Subclass Code": 13910
+  },
+  {
+    "Subclass Description": "Manufacture of textile industrial bags",
+    "Subclass Code": 13921
+  },
+  {
+    "Subclass Description": "Manufacture of made-up textile goods for house furnishings",
+    "Subclass Code": 13922
+  },
+  {
+    "Subclass Description": "Manufacture of canvas products",
+    "Subclass Code": 13923
+  },
+  {
+    "Subclass Description": "Manufacture of made-up textile articles, except wearing apparel, n.e.c.",
+    "Subclass Code": 13929
+  },
+  {
+    "Subclass Description": "Manufacture of carpets and rugs, except mats of textile materials",
+    "Subclass Code": 13931
+  },
+  {
+    "Subclass Description": "Manufacture of mats (including mattings) of textile materials",
+    "Subclass Code": 13932
+  },
+  {
+    "Subclass Description": "Manufacture of cordage, rope, and twine",
+    "Subclass Code": 13941
+  },
+  {
+    "Subclass Description": "Manufacture of fishing nets and other nettings, (excluding mosquito and hairnets)",
+    "Subclass Code": 13942
+  },
+  {
+    "Subclass Description": "Manufacture of products of cordage, rope and twine",
+    "Subclass Code": 13943
+  },
+  {
+    "Subclass Description": "Manufacture of embroidered fabrics",
+    "Subclass Code": 13950
+  },
+  {
+    "Subclass Description": "Manufacture of narrow fabrics, laces, tulles and other net fabrics",
+    "Subclass Code": 13991
+  },
+  {
+    "Subclass Description": "Manufacture of felt and non-woven fabrics",
+    "Subclass Code": 13992
+  },
+  {
+    "Subclass Description": "Manufacture of fabrics, impregnated, coated, covered or laminated with plastic",
+    "Subclass Code": 13993
+  },
+  {
+    "Subclass Description": "Manufacture of fabrics, impregnated, coated, covered or laminated other than with plastic and rubber",
+    "Subclass Code": 13994
+  },
+  {
+    "Subclass Description": "Manufacture of fabrics for industrial use (wicks and gas mantles)",
+    "Subclass Code": 13995
+  },
+  {
+    "Subclass Description": "Manufacture of fiber batting, padding and upholstery filling including coir",
+    "Subclass Code": 13996
+  },
+  {
+    "Subclass Description": "Manufacture of miscellaneous textiles, n.e.c.",
+    "Subclass Code": 13999
+  },
+  {
+    "Subclass Description": "MenNULLs and boyNULLs garment manufacturing",
+    "Subclass Code": 14110
+  },
+  {
+    "Subclass Description": "WomenNULLs and girlNULLs garment manufacturing",
+    "Subclass Code": 14120
+  },
+  {
+    "Subclass Description": "Ready-made embroidered garments manufacturing",
+    "Subclass Code": 14130
+  },
+  {
+    "Subclass Description": "BabiesNULL Garment Manufacturing",
+    "Subclass Code": 14140
+  },
+  {
+    "Subclass Description": "Manufacture of raincoats by cutting or sewing except rubber or plastics",
+    "Subclass Code": 14191
+  },
+  {
+    "Subclass Description": "Manufacture of hats, gloves, handkerchiefs, neckwear and belts regardless of material",
+    "Subclass Code": 14192
+  },
+  {
+    "Subclass Description": "Manufacture of sportswear",
+    "Subclass Code": 14193
+  },
+  {
+    "Subclass Description": "Manufacture of wearing apparel, n.e.c",
+    "Subclass Code": 14199
+  },
+  {
+    "Subclass Description": "Custom tailoring",
+    "Subclass Code": 14210
+  },
+  {
+    "Subclass Description": "Custom dressmaking",
+    "Subclass Code": 14220
+  },
+  {
+    "Subclass Description": "Manufacture of knitted and crocheted apparel",
+    "Subclass Code": 14301
+  },
+  {
+    "Subclass Description": "Manufacture of knitted or crocheted hosiery, underwear and outerwear when knitted or crocheted directly into shape",
+    "Subclass Code": 14302
+  },
+  {
+    "Subclass Description": "Manufacture of knitted and crocheted articles, n.e.c.",
+    "Subclass Code": 14309
+  },
+  {
+    "Subclass Description": "Manufacture of articles of fur",
+    "Subclass Code": 14400
+  },
+  {
+    "Subclass Description": "Tanning and dressing of leather",
+    "Subclass Code": 15110
+  },
+  {
+    "Subclass Description": "Manufacture of luggage, handbags and wallets of leather and imitation leather",
+    "Subclass Code": 15121
+  },
+  {
+    "Subclass Description": "Manufacture of products of leather and imitation leather, n.e.c.",
+    "Subclass Code": 15129
+  },
+  {
+    "Subclass Description": "Manufacture of leather shoes",
+    "Subclass Code": 15210
+  },
+  {
+    "Subclass Description": "Manufacture of rubber shoes",
+    "Subclass Code": 15220
+  },
+  {
+    "Subclass Description": "Manufacture of plastic shoes",
+    "Subclass Code": 15230
+  },
+  {
+    "Subclass Description": "Manufacture of shoes made of textile materials with applied soles",
+    "Subclass Code": 15240
+  },
+  {
+    "Subclass Description": "Manufacture of wooden footwear and accessories",
+    "Subclass Code": 15250
+  },
+  {
+    "Subclass Description": "Manufacture of rubber slippers",
+    "Subclass Code": 15291
+  },
+  {
+    "Subclass Description": "Manufacture of slippers and sandals, other than rubber",
+    "Subclass Code": 15292
+  },
+  {
+    "Subclass Description": "Manufacture of leather parts of footwear",
+    "Subclass Code": 15293
+  },
+  {
+    "Subclass Description": "Manufacture of other footwear, n.e.c.",
+    "Subclass Code": 15299
+  },
+  {
+    "Subclass Description": "Manufacture of rough lumber",
+    "Subclass Code": 16101
+  },
+  {
+    "Subclass Description": "Manufacture of worked lumber",
+    "Subclass Code": 16102
+  },
+  {
+    "Subclass Description": "Wood preserving and drying",
+    "Subclass Code": 16103
+  },
+  {
+    "Subclass Description": "Sawmilling and planing of wood products, n.e.c.",
+    "Subclass Code": 16109
+  },
+  {
+    "Subclass Description": "Manufacture of veneer sheets and plywood",
+    "Subclass Code": 16211
+  },
+  {
+    "Subclass Description": "Manufacture of laminboard, particle board and other panels and board",
+    "Subclass Code": 16212
+  },
+  {
+    "Subclass Description": "Manufacture of wooden window and door screens, shades and venetian blinds",
+    "Subclass Code": 16220
+  },
+  {
+    "Subclass Description": "Manufacture of other buildersNULL carpentry and joinery; millworking",
+    "Subclass Code": 16230
+  },
+  {
+    "Subclass Description": "Manufacture of wooden containers",
+    "Subclass Code": 16240
+  },
+  {
+    "Subclass Description": "Manufacture of wood carvings",
+    "Subclass Code": 16250
+  },
+  {
+    "Subclass Description": "Manufacture of charcoal outside the forest",
+    "Subclass Code": 16260
+  },
+  {
+    "Subclass Description": "Manufacture of wooden wares",
+    "Subclass Code": 16270
+  },
+  {
+    "Subclass Description": "Manufacture of rattan and cane containers",
+    "Subclass Code": 16281
+  },
+  {
+    "Subclass Description": "Manufacture of sawali, nipa and split canes",
+    "Subclass Code": 16282
+  },
+  {
+    "Subclass Description": "Manufacture of mats, matting or screen",
+    "Subclass Code": 16283
+  },
+  {
+    "Subclass Description": "Manufacture of small cane wares",
+    "Subclass Code": 16284
+  },
+  {
+    "Subclass Description": "Manufacture of articles of cork, straw and plaiting materials",
+    "Subclass Code": 16285
+  },
+  {
+    "Subclass Description": "Manufacture of other products of bamboo, cane, rattan and the like, and plaiting materials except furniture, n.e.c.",
+    "Subclass Code": 16289
+  },
+  {
+    "Subclass Description": "Manufacture of other products of wood; manufacture of articles of cork and plaiting materials, except furniture, n.e.c.",
+    "Subclass Code": 16290
+  },
+  {
+    "Subclass Description": "Integrated pulp, paper and paperboard milling",
+    "Subclass Code": 17011
+  },
+  {
+    "Subclass Description": "Pulp milling",
+    "Subclass Code": 17012
+  },
+  {
+    "Subclass Description": "Paper and paperboard milling",
+    "Subclass Code": 17013
+  },
+  {
+    "Subclass Description": "Manufacture of hand-made paper",
+    "Subclass Code": 17014
+  },
+  {
+    "Subclass Description": "Manufacture of pulp, paper and paperboard, n.e.c.",
+    "Subclass Code": 17019
+  },
+  {
+    "Subclass Description": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
+    "Subclass Code": 17020
+  },
+  {
+    "Subclass Description": "Manufacture of household and personal hygiene paper and cellulose wadding products",
+    "Subclass Code": 17091
+  },
+  {
+    "Subclass Description": "Manufacture of wadding of textile materials and articles of wadding (e.g. sanitary towels, tampons, etc.)",
+    "Subclass Code": 17092
+  },
+  {
+    "Subclass Description": "Manufacture of other articles of paper",
+    "Subclass Code": 17093
+  },
+  {
+    "Subclass Description": "Manufacture of other articles of paperboard",
+    "Subclass Code": 17099
+  },
+  {
+    "Subclass Description": "Printing",
+    "Subclass Code": 18110
+  },
+  {
+    "Subclass Description": "Electrotyping, stereotyping and photoengraving",
+    "Subclass Code": 18121
+  },
+  {
+    "Subclass Description": "Bookbinding and related work",
+    "Subclass Code": 18122
+  },
+  {
+    "Subclass Description": "Service activities related to printing, n.e.c.",
+    "Subclass Code": 18129
+  },
+  {
+    "Subclass Description": "Reproduction of video and computer tapes from master copies",
+    "Subclass Code": 18201
+  },
+  {
+    "Subclass Description": "Reproduction of floppy, hard or compact disks",
+    "Subclass Code": 18202
+  },
+  {
+    "Subclass Description": "Film and video reproduction",
+    "Subclass Code": 18203
+  },
+  {
+    "Subclass Description": "Manufacture of coke oven products",
+    "Subclass Code": 19100
+  },
+  {
+    "Subclass Description": "Manufacture of refined petroleum products",
+    "Subclass Code": 19200
+  },
+  {
+    "Subclass Description": "Manufacture of other fuel products",
+    "Subclass Code": 19900
+  },
+  {
+    "Subclass Description": "Manufacture of ethanol",
+    "Subclass Code": 20111
+  },
+  {
+    "Subclass Description": "Manufacture of industrial (compressed and liquefied) gases",
+    "Subclass Code": 20112
+  },
+  {
+    "Subclass Description": "Manufacture of inorganic salts and compounds",
+    "Subclass Code": 20113
+  },
+  {
+    "Subclass Description": "Manufacture of ethyl alcohol",
+    "Subclass Code": 20114
+  },
+  {
+    "Subclass Description": "Manufacture of alcohol except ethyl",
+    "Subclass Code": 20115
+  },
+  {
+    "Subclass Description": "Manufacture of inorganic acids, alkalis and chlorine",
+    "Subclass Code": 20116
+  },
+  {
+    "Subclass Description": "Manufacture of organic acids and organic compounds",
+    "Subclass Code": 20117
+  },
+  {
+    "Subclass Description": "Manufacture of basic chemicals, except fertilizers and nitrogen compounds, n.e.c.",
+    "Subclass Code": 20119
+  },
+  {
+    "Subclass Description": "Manufacture of fertilizers and nitrogen compounds",
+    "Subclass Code": 20120
+  },
+  {
+    "Subclass Description": "Manufacture of synthetic rubber and factice derived from oils, in primary forms",
+    "Subclass Code": 20131
+  },
+  {
+    "Subclass Description": "Production of mixtures of synthetic rubber and natural rubber or rubber-like gums (e.g., balata), in primary forms",
+    "Subclass Code": 20132
+  },
+  {
+    "Subclass Description": "Manufacture of plastic synthetic resins",
+    "Subclass Code": 20133
+  },
+  {
+    "Subclass Description": "Manufacture of plastic materials except man-made fiber and glass fiber",
+    "Subclass Code": 20134
+  },
+  {
+    "Subclass Description": "Manufacture of pesticides and other agro-chemical products",
+    "Subclass Code": 20210
+  },
+  {
+    "Subclass Description": "Manufacture of paints",
+    "Subclass Code": 20221
+  },
+  {
+    "Subclass Description": "Manufacture of varnishes, lacquers, shellac and stains",
+    "Subclass Code": 20222
+  },
+  {
+    "Subclass Description": "Manufacture of paint removers, thinners, and brush cleaners",
+    "Subclass Code": 20223
+  },
+  {
+    "Subclass Description": "Manufacture of pigments and other coloring matter of a kind used in the manufacture of paints or by artists or other painters",
+    "Subclass Code": 20224
+  },
+  {
+    "Subclass Description": "Manufacture of printing ink",
+    "Subclass Code": 20225
+  },
+  {
+    "Subclass Description": "Manufacture of paint products, n.e.c.",
+    "Subclass Code": 20229
+  },
+  {
+    "Subclass Description": "Manufacture of soap and detergents",
+    "Subclass Code": 20231
+  },
+  {
+    "Subclass Description": "Manufacture of cleaning preparations, except soap and detergents",
+    "Subclass Code": 20232
+  },
+  {
+    "Subclass Description": "Manufacture of waxes and polishing preparations",
+    "Subclass Code": 20233
+  },
+  {
+    "Subclass Description": "Manufacture of perfumes, cosmetics and other toilet preparations",
+    "Subclass Code": 20234
+  },
+  {
+    "Subclass Description": "Manufacture of explosives, fireworks and firecrackers",
+    "Subclass Code": 20291
+  },
+  {
+    "Subclass Description": "Manufacture of matches",
+    "Subclass Code": 20292
+  },
+  {
+    "Subclass Description": "Manufacture of writing and drawing ink",
+    "Subclass Code": 20293
+  },
+  {
+    "Subclass Description": "Manufacture of glues and adhesives",
+    "Subclass Code": 20294
+  },
+  {
+    "Subclass Description": "Manufacture of activated carbon",
+    "Subclass Code": 20295
+  },
+  {
+    "Subclass Description": "Manufacture of miscellaneous chemical products, n.e.c.",
+    "Subclass Code": 20299
+  },
+  {
+    "Subclass Description": "Manufacture of synthetic or artificial filament yarn",
+    "Subclass Code": 20301
+  },
+  {
+    "Subclass Description": "Manufacture of man-made filament tow or staple fibers, except glass fiber",
+    "Subclass Code": 20302
+  },
+  {
+    "Subclass Description": "Manufacture of drugs and medicines including biological products such as bacterial and virus vaccines, sera and plasma",
+    "Subclass Code": 21001
+  },
+  {
+    "Subclass Description": "Manufacture of surgical dressings, medicated wadding , fracture bandages, catgut, and other prepared sutures",
+    "Subclass Code": 21002
+  },
+  {
+    "Subclass Description": "Manufacture of rubber tires (including parts) and tubes",
+    "Subclass Code": 22111
+  },
+  {
+    "Subclass Description": "Retreading and rebuilding of tires",
+    "Subclass Code": 22112
+  },
+  {
+    "Subclass Description": "Manufacture of rubber garments",
+    "Subclass Code": 22191
+  },
+  {
+    "Subclass Description": "Manufacture of industrial and other molded rubber products, excluding tires and tubes",
+    "Subclass Code": 22192
+  },
+  {
+    "Subclass Description": "Manufacture of other rubber products, n.e.c.",
+    "Subclass Code": 22199
+  },
+  {
+    "Subclass Description": "Manufacture of plastic articles for packing goods (e.g. boxes, bags, sacks, etc)",
+    "Subclass Code": 22201
+  },
+  {
+    "Subclass Description": "Manufacture of plastic household wares",
+    "Subclass Code": 22202
+  },
+  {
+    "Subclass Description": "Manufacture of plastic furniture fittings",
+    "Subclass Code": 22203
+  },
+  {
+    "Subclass Description": "Manufacture of plastic pipes and tubes",
+    "Subclass Code": 22204
+  },
+  {
+    "Subclass Description": "Manufacture of other plastic, industrial /office/school supplies",
+    "Subclass Code": 22205
+  },
+  {
+    "Subclass Description": "Manufacture of primary plastic products (e.g. sheets, film, plates, etc.)",
+    "Subclass Code": 22206
+  },
+  {
+    "Subclass Description": "Manufacture of linoleum and hard surface floor coverings",
+    "Subclass Code": 22207
+  },
+  {
+    "Subclass Description": "Manufacture of plastic window and doorscreen, shades and venetian blinds",
+    "Subclass Code": 22208
+  },
+  {
+    "Subclass Description": "Manufacture of plastics products, n.e.c.",
+    "Subclass Code": 22209
+  },
+  {
+    "Subclass Description": "Manufacture of flat glass (including float glass)",
+    "Subclass Code": 23101
+  },
+  {
+    "Subclass Description": "Manufacture of glass containers",
+    "Subclass Code": 23102
+  },
+  {
+    "Subclass Description": "Manufacture of glass fibers (including glass wool) and yarn of glass fibers",
+    "Subclass Code": 23103
+  },
+  {
+    "Subclass Description": "Manufacture of glass and glass products, n.e.c.",
+    "Subclass Code": 23109
+  },
+  {
+    "Subclass Description": "Manufacture of refractory products",
+    "Subclass Code": 23910
+  },
+  {
+    "Subclass Description": "Manufacture of clay building materials",
+    "Subclass Code": 23920
+  },
+  {
+    "Subclass Description": "Manufacture of vitreous china tableware and other kitchen articles of a kind commonly used for domestic or toilet purposes",
+    "Subclass Code": 23931
+  },
+  {
+    "Subclass Description": "Manufacture of articles of porcelain or china, stoneware, earthenware, imitation porcelain or common pottery",
+    "Subclass Code": 23932
+  },
+  {
+    "Subclass Description": "Manufacture of coarse clay products",
+    "Subclass Code": 23933
+  },
+  {
+    "Subclass Description": "Manufacture of sanitary ware, vitreous china plumbing fittings and fixtures",
+    "Subclass Code": 23934
+  },
+  {
+    "Subclass Description": "Manufacture of other porcelain and ceramic products, n.e.c.",
+    "Subclass Code": 23939
+  },
+  {
+    "Subclass Description": "Manufacture of cement",
+    "Subclass Code": 23940
+  },
+  {
+    "Subclass Description": "Manufacture of lime",
+    "Subclass Code": 23951
+  },
+  {
+    "Subclass Description": "Manufacture of plaster",
+    "Subclass Code": 23952
+  },
+  {
+    "Subclass Description": "Manufacture of structural concrete products",
+    "Subclass Code": 23961
+  },
+  {
+    "Subclass Description": "Manufacture of articles of concrete, cement and plaster, n.e.c.",
+    "Subclass Code": 23969
+  },
+  {
+    "Subclass Description": "Cutting, shaping and finishing of stone",
+    "Subclass Code": 23970
+  },
+  {
+    "Subclass Description": "Manufacture of asphalt products",
+    "Subclass Code": 23991
+  },
+  {
+    "Subclass Description": "Manufacture of asbestos products",
+    "Subclass Code": 23992
+  },
+  {
+    "Subclass Description": "Manufacture of marble products",
+    "Subclass Code": 23993
+  },
+  {
+    "Subclass Description": "Manufacture of abrasive products",
+    "Subclass Code": 23994
+  },
+  {
+    "Subclass Description": "Manufacture of miscellaneous non-metallic mineral products, n.e.c.",
+    "Subclass Code": 23999
+  },
+  {
+    "Subclass Description": "Operation of blast furnaces and steel making furnaces",
+    "Subclass Code": 24110
+  },
+  {
+    "Subclass Description": "Operation of rolling mills",
+    "Subclass Code": 24121
+  },
+  {
+    "Subclass Description": "Pipes and tubes manufacturing, iron or steel",
+    "Subclass Code": 24122
+  },
+  {
+    "Subclass Description": "Manufacture of pipe fittings of iron or steel",
+    "Subclass Code": 24123
+  },
+  {
+    "Subclass Description": "Manufacture of galvanized steel sheets, tinplates and other coated metal products made in steel works or rolling mills",
+    "Subclass Code": 24124
+  },
+  {
+    "Subclass Description": "Operation of steel works and rolling mills, n.e.c.",
+    "Subclass Code": 24129
+  },
+  {
+    "Subclass Description": "Gold and other precious metal refining",
+    "Subclass Code": 24210
+  },
+  {
+    "Subclass Description": "Non-ferrous smelting and refining , except precious metals",
+    "Subclass Code": 24220
+  },
+  {
+    "Subclass Description": "Non-ferrous rolling, drawing and extrusion mills",
+    "Subclass Code": 24230
+  },
+  {
+    "Subclass Description": "Manufacture of pipe fittings of non-ferrous metals",
+    "Subclass Code": 24240
+  },
+  {
+    "Subclass Description": "Manufacture of basic precious and other non-ferrous metals, n.e.c.",
+    "Subclass Code": 24290
+  },
+  {
+    "Subclass Description": "Casting/foundry of iron",
+    "Subclass Code": 24311
+  },
+  {
+    "Subclass Description": "Casting/foundry of steel",
+    "Subclass Code": 24312
+  },
+  {
+    "Subclass Description": "Aluminum and aluminum base alloy casting",
+    "Subclass Code": 24321
+  },
+  {
+    "Subclass Description": "Copper and copper base alloy (brass, bronze) casting",
+    "Subclass Code": 24322
+  },
+  {
+    "Subclass Description": "Zinc and zinc alloy casting",
+    "Subclass Code": 24323
+  },
+  {
+    "Subclass Description": "Casting of non-ferrous metal, n.e.c.",
+    "Subclass Code": 24329
+  },
+  {
+    "Subclass Description": "Manufacture of structural steel products and metal components of bridges, smoke stacks and buildings",
+    "Subclass Code": 25111
+  },
+  {
+    "Subclass Description": "Manufacture of other architectural and related metal work (e.g., doors, windows, shutters, gates, etc.)",
+    "Subclass Code": 25112
+  },
+  {
+    "Subclass Description": "Manufacture of structural metal products, n.e.c.",
+    "Subclass Code": 25119
+  },
+  {
+    "Subclass Description": "Manufacture of tanks, reservoirs and containers of metal",
+    "Subclass Code": 25120
+  },
+  {
+    "Subclass Description": "Manufacture of steam generators, except central heating hot water boilers",
+    "Subclass Code": 25130
+  },
+  {
+    "Subclass Description": "Manufacture of small arms and accessories",
+    "Subclass Code": 25201
+  },
+  {
+    "Subclass Description": "Manufacture of weapons and ammunitions, n.e.c.",
+    "Subclass Code": 25209
+  },
+  {
+    "Subclass Description": "Forging, pressing, stamping and roll-forming of metal products",
+    "Subclass Code": 25911
+  },
+  {
+    "Subclass Description": "Powder metallurgy",
+    "Subclass Code": 25912
+  },
+  {
+    "Subclass Description": "Treatment and coating of metals; machining",
+    "Subclass Code": 25920
+  },
+  {
+    "Subclass Description": "Manufacture of cutlery",
+    "Subclass Code": 25931
+  },
+  {
+    "Subclass Description": "Manufacture of hand tools",
+    "Subclass Code": 25932
+  },
+  {
+    "Subclass Description": "Manufacture of general hardware",
+    "Subclass Code": 25933
+  },
+  {
+    "Subclass Description": "Manufacture of blacksmithing tools and welding shop operation",
+    "Subclass Code": 25934
+  },
+  {
+    "Subclass Description": "Manufacture of molding boxes for metal foundry",
+    "Subclass Code": 25935
+  },
+  {
+    "Subclass Description": "Manufacture of metal containers used for the packing or conveyance of goods",
+    "Subclass Code": 25991
+  },
+  {
+    "Subclass Description": "Manufacture of wire nails, not in steel rolling",
+    "Subclass Code": 25992
+  },
+  {
+    "Subclass Description": "Manufacture of fabricated wire products",
+    "Subclass Code": 25993
+  },
+  {
+    "Subclass Description": "Manufacture of small hand-operated kitchen appliances",
+    "Subclass Code": 25994
+  },
+  {
+    "Subclass Description": "Manufacture of metal sanitary ware and plumbing fixtures",
+    "Subclass Code": 25995
+  },
+  {
+    "Subclass Description": "Manufacture of needles (except for knitting and sewing machines), pins and fasteners including zippers",
+    "Subclass Code": 25996
+  },
+  {
+    "Subclass Description": "Manufacture of aluminum window and door screens, shades and venetian blinds",
+    "Subclass Code": 25997
+  },
+  {
+    "Subclass Description": "Manufacture of miscellaneous fabricated metal products, n.e.c.",
+    "Subclass Code": 25999
+  },
+  {
+    "Subclass Description": "Manufacture of electronic valves and tubes",
+    "Subclass Code": 26110
+  },
+  {
+    "Subclass Description": "Manufacture of sensors",
+    "Subclass Code": 26121
+  },
+  {
+    "Subclass Description": "Manufacture of actuators",
+    "Subclass Code": 26122
+  },
+  {
+    "Subclass Description": "Manufacture of oscillators",
+    "Subclass Code": 26123
+  },
+  {
+    "Subclass Description": "Manufacture of resonators",
+    "Subclass Code": 26124
+  },
+  {
+    "Subclass Description": "Manufacture of semi-conductor devices and other electronic components, n.e.c.",
+    "Subclass Code": 26129
+  },
+  {
+    "Subclass Description": "Manufacture of computers and peripheral equipment and accessories",
+    "Subclass Code": 26200
+  },
+  {
+    "Subclass Description": "Manufacture of communication equipment",
+    "Subclass Code": 26300
+  },
+  {
+    "Subclass Description": "Manufacture of consumer electronics",
+    "Subclass Code": 26400
+  },
+  {
+    "Subclass Description": "Manufacture of radar equipment, radio remote control apparatus",
+    "Subclass Code": 26511
+  },
+  {
+    "Subclass Description": "Manufacture of electrical quantities measuring and controlling instruments",
+    "Subclass Code": 26512
+  },
+  {
+    "Subclass Description": "Manufacture of temperature measuring and controlling hygrometric instruments",
+    "Subclass Code": 26513
+  },
+  {
+    "Subclass Description": "Manufacture of pressure measuring and controlling instruments and gauges",
+    "Subclass Code": 26514
+  },
+  {
+    "Subclass Description": "Manufacture of flow of liquids or gases measuring and controlling instruments",
+    "Subclass Code": 26515
+  },
+  {
+    "Subclass Description": "Manufacture of mechanical motion, measuring and controlling, timing and cycle instruments",
+    "Subclass Code": 26516
+  },
+  {
+    "Subclass Description": "Manufacture of industrial process control equipment",
+    "Subclass Code": 26517
+  },
+  {
+    "Subclass Description": "Manufacture of professional and scientific and measuring and controlling equipment, n.e.c.",
+    "Subclass Code": 26519
+  },
+  {
+    "Subclass Description": "Manufacture of watches and clocks of all kinds including cases of precious metals",
+    "Subclass Code": 26521
+  },
+  {
+    "Subclass Description": "Manufacture of other watch and clocks parts, n.e.c.",
+    "Subclass Code": 26529
+  },
+  {
+    "Subclass Description": "Manufacture of X-ray apparatus",
+    "Subclass Code": 26601
+  },
+  {
+    "Subclass Description": "Manufacture of electrotherapeutic apparatus",
+    "Subclass Code": 26602
+  },
+  {
+    "Subclass Description": "Manufacture of medical laser equipment",
+    "Subclass Code": 26603
+  },
+  {
+    "Subclass Description": "Manufacture of Computerized Tomography (CT) scanner, Positron Emission Tomography (PET) scanner",
+    "Subclass Code": 26604
+  },
+  {
+    "Subclass Description": "Manufacture of MRI equipment",
+    "Subclass Code": 26605
+  },
+  {
+    "Subclass Description": "Manufacture of medical ultrasound equipment",
+    "Subclass Code": 26606
+  },
+  {
+    "Subclass Description": "Manufacture of other irradiation, electromedical and electrotherapeutic equipment, n.e.c.",
+    "Subclass Code": 26609
+  },
+  {
+    "Subclass Description": "Manufacture of optical instruments and lenses",
+    "Subclass Code": 26701
+  },
+  {
+    "Subclass Description": "Manufacture of photographic equipment and accessories",
+    "Subclass Code": 26702
+  },
+  {
+    "Subclass Description": "Manufacture of magnetic and optical media",
+    "Subclass Code": 26800
+  },
+  {
+    "Subclass Description": "Manufacture of electric motors and generators",
+    "Subclass Code": 27111
+  },
+  {
+    "Subclass Description": "Manufacture of electrical transformers",
+    "Subclass Code": 27112
+  },
+  {
+    "Subclass Description": "Manufacture of electric generating sets",
+    "Subclass Code": 27113
+  },
+  {
+    "Subclass Description": "Manufacture of switch gear and switchboard apparatus",
+    "Subclass Code": 27121
+  },
+  {
+    "Subclass Description": "Manufacture of electricity distribution equipment",
+    "Subclass Code": 27122
+  },
+  {
+    "Subclass Description": "Manufacture of switches, fuses, sockets, plugs, conductors and lightning arresters and other control apparatus",
+    "Subclass Code": 27123
+  },
+  {
+    "Subclass Description": "Manufacture of accumulators (storage batteries) including parts",
+    "Subclass Code": 27201
+  },
+  {
+    "Subclass Description": "Manufacture of primary cells and batteries",
+    "Subclass Code": 27202
+  },
+  {
+    "Subclass Description": "Manufacture of fiber optic cables",
+    "Subclass Code": 27310
+  },
+  {
+    "Subclass Description": "Manufacture of other electronic and electric wires and cables",
+    "Subclass Code": 27320
+  },
+  {
+    "Subclass Description": "Manufacture of wiring devices",
+    "Subclass Code": 27330
+  },
+  {
+    "Subclass Description": "Manufacture of electric lamps fluorescent and fixtures",
+    "Subclass Code": 27401
+  },
+  {
+    "Subclass Description": "Manufacture of lighting equipment and parts except for use on cycle and motor equipment",
+    "Subclass Code": 27402
+  },
+  {
+    "Subclass Description": "Manufacture of motor vehicle lighting equipment",
+    "Subclass Code": 27403
+  },
+  {
+    "Subclass Description": "Manufacture of bicycle lighting equipment",
+    "Subclass Code": 27404
+  },
+  {
+    "Subclass Description": "Manufacture of lighting sets used for Christmas trees and the like",
+    "Subclass Code": 27405
+  },
+  {
+    "Subclass Description": "Manufacture of domestic electric fans",
+    "Subclass Code": 27501
+  },
+  {
+    "Subclass Description": "Manufacture of domestic-type refrigerators and laundry equipment (e.g. clothes washers, washer-dryers, dryers)",
+    "Subclass Code": 27502
+  },
+  {
+    "Subclass Description": "Manufacture of domestic cooking appliances (e.g. ovens, ranges, cookers, stoves, grillers, etc.)",
+    "Subclass Code": 27503
+  },
+  {
+    "Subclass Description": "Manufacture of electrothermic domestic appliances (e.g. hair dressing appliances, electric instantaneous storage, heaters, flat-irons, plate warmers, coffee or tea makers)",
+    "Subclass Code": 27504
+  },
+  {
+    "Subclass Description": "Manufacture of domestic-type water filters and/or purifiers",
+    "Subclass Code": 27505
+  },
+  {
+    "Subclass Description": "Manufacture of domestic appliances, n.e.c.",
+    "Subclass Code": 27509
+  },
+  {
+    "Subclass Description": "Manufacture of battery chargers, solid state",
+    "Subclass Code": 27901
+  },
+  {
+    "Subclass Description": "Manufacture of uninterruptible power supplies (UPS)",
+    "Subclass Code": 27902
+  },
+  {
+    "Subclass Description": "Manufacture of appliance cords, extension cords, and other electrical cord",
+    "Subclass Code": 27903
+  },
+  {
+    "Subclass Description": "Manufacture of accelerators (cyclotrons, betatrons)",
+    "Subclass Code": 27904
+  },
+  {
+    "Subclass Description": "Manufacture of electrical signalling equipment such as traffic lights and pedestrian signalling equipment",
+    "Subclass Code": 27905
+  },
+  {
+    "Subclass Description": "Manufacture of other electrical equipment, n.e.c.",
+    "Subclass Code": 27909
+  },
+  {
+    "Subclass Description": "Manufacture of internal combustion engines (gas and diesel)",
+    "Subclass Code": 28111
+  },
+  {
+    "Subclass Description": "Manufacture of engines and turbines for marine propulsion",
+    "Subclass Code": 28112
+  },
+  {
+    "Subclass Description": "Manufacture of parts of engines and turbines, except for aircraft, vehicle and cycle engines",
+    "Subclass Code": 28113
+  },
+  {
+    "Subclass Description": "Manufacture of engines and turbines, except for transport, n.e.c.",
+    "Subclass Code": 28119
+  },
+  {
+    "Subclass Description": "Manufacture of fluid power equipment",
+    "Subclass Code": 28120
+  },
+  {
+    "Subclass Description": "Manufacture of pumps for liquids, vacuum pumps, air or other gas compressors",
+    "Subclass Code": 28131
+  },
+  {
+    "Subclass Description": "Manufacture of taps, cocks, valves and similar appliances for pipes, boiler shells, tanks, vats or the like",
+    "Subclass Code": 28132
+  },
+  {
+    "Subclass Description": "Manufacture of bearings, gears and driving elements",
+    "Subclass Code": 28140
+  },
+  {
+    "Subclass Description": "Manufacture of ovens, furnaces and furnace burners",
+    "Subclass Code": 28150
+  },
+  {
+    "Subclass Description": "Manufacture of lifting and hoisting machinery, cranes, elevators, industrial trucks, tractors, stackers, specialized ports for lifting and handling equipment",
+    "Subclass Code": 28161
+  },
+  {
+    "Subclass Description": "Manufacture of derricks, lifting and handling equipment for construction and mining",
+    "Subclass Code": 28162
+  },
+  {
+    "Subclass Description": "Manufacture of marine capstans, pulley tackle and hoists, etc.",
+    "Subclass Code": 28163
+  },
+  {
+    "Subclass Description": "Manufacture of other lifting and handling equipment, n.e.c.",
+    "Subclass Code": 28169
+  },
+  {
+    "Subclass Description": "Manufacture of calculating machines, adding machines, cash registers, calculators",
+    "Subclass Code": 28171
+  },
+  {
+    "Subclass Description": "Manufacture of bills/coin counting and coin wrapping machinery",
+    "Subclass Code": 28172
+  },
+  {
+    "Subclass Description": "Manufacture of postage meters, mail handling machines (envelope stuffing, sealing and addressing machinery, opening, sorting, scanning), collating machinery",
+    "Subclass Code": 28173
+  },
+  {
+    "Subclass Description": "Manufacture of typewriters",
+    "Subclass Code": 28174
+  },
+  {
+    "Subclass Description": "Manufacture of duplicating machines",
+    "Subclass Code": 28175
+  },
+  {
+    "Subclass Description": "Manufacture of photo-copying apparatus incorporating an optical system or of the contact type and thermo copying apparatus",
+    "Subclass Code": 28176
+  },
+  {
+    "Subclass Description": "Manufacture of other office and accounting machineries",
+    "Subclass Code": 28177
+  },
+  {
+    "Subclass Description": "Manufacture of other office machinery and equipment (except computers and peripheral equipment), n.e.c.",
+    "Subclass Code": 28179
+  },
+  {
+    "Subclass Description": "Manufacture of power-driven hand tools",
+    "Subclass Code": 28180
+  },
+  {
+    "Subclass Description": "Manufacture of weighing machines except scientific weighing apparatus used for laboratories",
+    "Subclass Code": 28191
+  },
+  {
+    "Subclass Description": "Manufacture of refrigerating or freezing equipment for commercial purposes",
+    "Subclass Code": 28192
+  },
+  {
+    "Subclass Description": "Manufacture of unit air-conditioners",
+    "Subclass Code": 28193
+  },
+  {
+    "Subclass Description": "Manufacture of packing and wrapping machinery",
+    "Subclass Code": 28194
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for cleaning or drying bottles or other containers or for aerating beverages",
+    "Subclass Code": 28195
+  },
+  {
+    "Subclass Description": "Manufacture of fans intended for industrial applications, exhaust hoods for commercial, laboratory or industrial use",
+    "Subclass Code": 28196
+  },
+  {
+    "Subclass Description": "Manufacture of calendering or other rolling machines other than for metals or glass",
+    "Subclass Code": 28197
+  },
+  {
+    "Subclass Description": "Manufacture of gas or electric welding, brazing or soldering machines",
+    "Subclass Code": 28198
+  },
+  {
+    "Subclass Description": "Manufacture of other general-purpose machinery, n.e.c. (including manufacture of specialized parts for general purpose machinery and equipment)",
+    "Subclass Code": 28199
+  },
+  {
+    "Subclass Description": "Manufacture of farm tractors",
+    "Subclass Code": 28211
+  },
+  {
+    "Subclass Description": "Manufacture of mechanical implements for crop production",
+    "Subclass Code": 28212
+  },
+  {
+    "Subclass Description": "Manufacture of animal husbandry machinery and equipment",
+    "Subclass Code": 28213
+  },
+  {
+    "Subclass Description": "Manufacture of agricultural and forestry machinery and equipment, n.e.c.",
+    "Subclass Code": 28219
+  },
+  {
+    "Subclass Description": "Manufacture of machine tools for working metal",
+    "Subclass Code": 28221
+  },
+  {
+    "Subclass Description": "Manufacture of machine tools and accessories including precision measuring tools",
+    "Subclass Code": 28222
+  },
+  {
+    "Subclass Description": "Parts and accessories for the machine tools classified in this group",
+    "Subclass Code": 28223
+  },
+  {
+    "Subclass Description": "Manufacture of apparatus for electroplating, electrolysis and electrophoresis",
+    "Subclass Code": 28224
+  },
+  {
+    "Subclass Description": "Manufacture of metal-forming machinery and machine tools, n.e.c.",
+    "Subclass Code": 28229
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for metallurgy",
+    "Subclass Code": 28230
+  },
+  {
+    "Subclass Description": "Manufacture of heavy machinery and equipment used for mining and quarrying",
+    "Subclass Code": 28241
+  },
+  {
+    "Subclass Description": "Manufacture of heavy machinery and equipment used for construction",
+    "Subclass Code": 28242
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for food processing",
+    "Subclass Code": 28251
+  },
+  {
+    "Subclass Description": "Manufacture of presses, crushers and similar machinery used to make wine, cider, fruit juices or similar beverages",
+    "Subclass Code": 28252
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for the preparation of tobacco and for the making of cigarettes or cigars, or pipe or chewing tobacco or snuff",
+    "Subclass Code": 28253
+  },
+  {
+    "Subclass Description": "Manufacture of textile machinery",
+    "Subclass Code": 28261
+  },
+  {
+    "Subclass Description": "Manufacture of machineries for man-made textile fibers or yarns",
+    "Subclass Code": 28262
+  },
+  {
+    "Subclass Description": "Manufacture of sewing machines",
+    "Subclass Code": 28263
+  },
+  {
+    "Subclass Description": "Manufacture of commericial washing, laundry, dry-cleaning and pressing machines",
+    "Subclass Code": 28264
+  },
+  {
+    "Subclass Description": "Manufacture of needles for knitting, sewing machines",
+    "Subclass Code": 28265
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for textile apparel and leather production, n.e.c.",
+    "Subclass Code": 28269
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for pulp, paper and paperboard industries",
+    "Subclass Code": 28291
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for working rubber or plastic or for the manufacture of products of these materials",
+    "Subclass Code": 28292
+  },
+  {
+    "Subclass Description": "Manufacture of printing-trade machinery and equipment",
+    "Subclass Code": 28293
+  },
+  {
+    "Subclass Description": "Manufacture of machinery for producing tiles, bricks, shaped ceramic pastes, pipes, graphite, electrodes, blackboard chalk, foundry molds, etc.",
+    "Subclass Code": 28294
+  },
+  {
+    "Subclass Description": "Manufacture of machines for production or hot-working of glass; glassware or yarn",
+    "Subclass Code": 28295
+  },
+  {
+    "Subclass Description": "Manufacture of centrifugal clothes driers",
+    "Subclass Code": 28296
+  },
+  {
+    "Subclass Description": "Manufacture of other special-purpose machinery, n.e.c.",
+    "Subclass Code": 28299
+  },
+  {
+    "Subclass Description": "Manufacture of motor vehicles",
+    "Subclass Code": 29100
+  },
+  {
+    "Subclass Description": "Manufacture of bodies (coachwork) for motor vehicles",
+    "Subclass Code": 29201
+  },
+  {
+    "Subclass Description": "Manufacture of trailers and semi-trailers",
+    "Subclass Code": 29202
+  },
+  {
+    "Subclass Description": "Manufacture of electric ignition or starting equipment for internal combustion engines",
+    "Subclass Code": 29301
+  },
+  {
+    "Subclass Description": "Manufacture of parts and accessories for motor vehicles and their engines",
+    "Subclass Code": 29302
+  },
+  {
+    "Subclass Description": "Building of ships and boats other than sports and pleasure boats",
+    "Subclass Code": 30111
+  },
+  {
+    "Subclass Description": "Manufacture of floating or submersible drilling platforms",
+    "Subclass Code": 30112
+  },
+  {
+    "Subclass Description": "Manufacture of inflatable rafts",
+    "Subclass Code": 30113
+  },
+  {
+    "Subclass Description": "Manufacture of metal sections for ships and barges",
+    "Subclass Code": 30114
+  },
+  {
+    "Subclass Description": "Manufacture of inflatable boats",
+    "Subclass Code": 30121
+  },
+  {
+    "Subclass Description": "Manufacture of other pleasure and sporting boats, n.e.c.",
+    "Subclass Code": 30129
+  },
+  {
+    "Subclass Description": "Building and rebuilding of locomotives of any type of gauge, and railroad and tramway cars for freight and passenger service",
+    "Subclass Code": 30201
+  },
+  {
+    "Subclass Description": "Production of specialized parts for locomotives, railroad and tramway",
+    "Subclass Code": 30202
+  },
+  {
+    "Subclass Description": "Manufacture of airplanes for the transport of goods or passengers, for use by the defense forces, for sport or other purposes",
+    "Subclass Code": 30301
+  },
+  {
+    "Subclass Description": "Manufacture of spacecraft and launch vehicles, satellites, planetary probes, orbital, shuttles",
+    "Subclass Code": 30302
+  },
+  {
+    "Subclass Description": "Conversion, modification and overhaul of aircrafts",
+    "Subclass Code": 30303
+  },
+  {
+    "Subclass Description": "Manufacture of other air and spacecraft and related machinery, n.e.c.",
+    "Subclass Code": 30309
+  },
+  {
+    "Subclass Description": "Manufacture of military fighting vehicles",
+    "Subclass Code": 30400
+  },
+  {
+    "Subclass Description": "Manufacture and assembly of motorcycles",
+    "Subclass Code": 30911
+  },
+  {
+    "Subclass Description": "Manufacture of motorcycle engines and parts thereof",
+    "Subclass Code": 30912
+  },
+  {
+    "Subclass Description": "Manufacture of tricycles and parts thereof",
+    "Subclass Code": 30913
+  },
+  {
+    "Subclass Description": "Manufacture of side cars",
+    "Subclass Code": 30914
+  },
+  {
+    "Subclass Description": "Manufacture of parts and accessories of motorcycles",
+    "Subclass Code": 30915
+  },
+  {
+    "Subclass Description": "Manufacture of bicycles and bicycle parts",
+    "Subclass Code": 30921
+  },
+  {
+    "Subclass Description": "Manufacture of invalid carriages, motorized and non-motorized",
+    "Subclass Code": 30922
+  },
+  {
+    "Subclass Description": "Manufacture of baby carriages",
+    "Subclass Code": 30923
+  },
+  {
+    "Subclass Description": "Manufacture of hand-propelled vehicles",
+    "Subclass Code": 30991
+  },
+  {
+    "Subclass Description": "Manufacture of animal drawn vehicles",
+    "Subclass Code": 30992
+  },
+  {
+    "Subclass Description": "Manufacture of wood furniture",
+    "Subclass Code": 31010
+  },
+  {
+    "Subclass Description": "Manufacture of rattan furniture (reed, wicker, and cane)",
+    "Subclass Code": 31020
+  },
+  {
+    "Subclass Description": "Manufacture of box beds and mattresses",
+    "Subclass Code": 31030
+  },
+  {
+    "Subclass Description": "Manufacture of partitions, shelves, lockers and office and store fixtures",
+    "Subclass Code": 31040
+  },
+  {
+    "Subclass Description": "Manufacture of plastic furniture",
+    "Subclass Code": 31050
+  },
+  {
+    "Subclass Description": "Manufacture of furniture and fixtures of metal",
+    "Subclass Code": 31060
+  },
+  {
+    "Subclass Description": "Manufacture of other furniture and fixtures, n.e.c.",
+    "Subclass Code": 31090
+  },
+  {
+    "Subclass Description": "Manufacture of jewelry made of precious and semi-precious stones",
+    "Subclass Code": 32111
+  },
+  {
+    "Subclass Description": "Manufacture of silverware and plated ware",
+    "Subclass Code": 32112
+  },
+  {
+    "Subclass Description": "Manufacture of watchbands and bracelets of precious metals",
+    "Subclass Code": 32113
+  },
+  {
+    "Subclass Description": "Manufacture of articles related to jewelry",
+    "Subclass Code": 32119
+  },
+  {
+    "Subclass Description": "Manufacture of imitation of jewelry and related articles",
+    "Subclass Code": 32120
+  },
+  {
+    "Subclass Description": "Manufacture of guitars",
+    "Subclass Code": 32201
+  },
+  {
+    "Subclass Description": "Manufacture of string instruments, other than guitars",
+    "Subclass Code": 32202
+  },
+  {
+    "Subclass Description": "Manufacture of pianos",
+    "Subclass Code": 32203
+  },
+  {
+    "Subclass Description": "Manufacture of musical organs (all types)",
+    "Subclass Code": 32204
+  },
+  {
+    "Subclass Description": "Manufacture of wind and percussion instruments",
+    "Subclass Code": 32205
+  },
+  {
+    "Subclass Description": "Manufacture of musical instrument parts and accessories",
+    "Subclass Code": 32206
+  },
+  {
+    "Subclass Description": "Manufacture of musical instruments, n.e.c.",
+    "Subclass Code": 32209
+  },
+  {
+    "Subclass Description": "Manufacture of sporting gloves and mitts",
+    "Subclass Code": 32301
+  },
+  {
+    "Subclass Description": "Manufacture of sporting balls",
+    "Subclass Code": 32302
+  },
+  {
+    "Subclass Description": "Manufacture of sporting and athletic goods, n.e.c.",
+    "Subclass Code": 32309
+  },
+  {
+    "Subclass Description": "Manufacture of dolls and doll garments",
+    "Subclass Code": 32401
+  },
+  {
+    "Subclass Description": "Manufacture of wheeled toys",
+    "Subclass Code": 32402
+  },
+  {
+    "Subclass Description": "Manufacture of billiard, pool, bowling alley and similar games equipment",
+    "Subclass Code": 32403
+  },
+  {
+    "Subclass Description": "Manufacture of electronic games (video games, checkers)",
+    "Subclass Code": 32404
+  },
+  {
+    "Subclass Description": "Manufacture of toys and games, n.e.c.",
+    "Subclass Code": 32409
+  },
+  {
+    "Subclass Description": "Manufacture of medical, surgical, dental furniture and fixtures",
+    "Subclass Code": 32501
+  },
+  {
+    "Subclass Description": "Manufacture of ophthalmic goods, eyeglasses, sunglasses, lenses ground to prescription, contact lenses, safety goggles",
+    "Subclass Code": 32502
+  },
+  {
+    "Subclass Description": "Manufacture of prosthetic appliances, artificial teeth made to order",
+    "Subclass Code": 32503
+  },
+  {
+    "Subclass Description": "Manufacture of medical and precision instruments",
+    "Subclass Code": 32504
+  },
+  {
+    "Subclass Description": "Manufacture of medical thermometers",
+    "Subclass Code": 32505
+  },
+  {
+    "Subclass Description": "Manufacture of cement used in dentistry",
+    "Subclass Code": 32506
+  },
+  {
+    "Subclass Description": "Manufacture of other medical and dental instruments and supplies, n.e.c.",
+    "Subclass Code": 32509
+  },
+  {
+    "Subclass Description": "Manufacture of pens and pencils of all kinds",
+    "Subclass Code": 32910
+  },
+  {
+    "Subclass Description": "Manufacture of umbrellas, walking sticks, canes, whips and riding crops",
+    "Subclass Code": 32920
+  },
+  {
+    "Subclass Description": "Manufacture of articles for personal use, e.g. smoking pipes, combs, slides and similar articles",
+    "Subclass Code": 32930
+  },
+  {
+    "Subclass Description": "Manufacture of candles",
+    "Subclass Code": 32940
+  },
+  {
+    "Subclass Description": "Manufacture of artificial flowers, fruits and foliage",
+    "Subclass Code": 32950
+  },
+  {
+    "Subclass Description": "Manufacture of wooden coffin",
+    "Subclass Code": 32961
+  },
+  {
+    "Subclass Description": "Manufacture of metal coffin",
+    "Subclass Code": 32962
+  },
+  {
+    "Subclass Description": "Manufacture of buttons, except plastic",
+    "Subclass Code": 32991
+  },
+  {
+    "Subclass Description": "Manufacture of brooms, brushes and fans",
+    "Subclass Code": 32992
+  },
+  {
+    "Subclass Description": "Manufacture of identification plates, badges, emblems and tags",
+    "Subclass Code": 32993
+  },
+  {
+    "Subclass Description": "Manufacture of signs and advertising displays",
+    "Subclass Code": 32994
+  },
+  {
+    "Subclass Description": "Manufacture of cigarette lighters",
+    "Subclass Code": 32995
+  },
+  {
+    "Subclass Description": "Manufacture of miscellaneous articles, n.e.c.",
+    "Subclass Code": 32999
+  },
+  {
+    "Subclass Description": "Repair of fabricated metal products",
+    "Subclass Code": 33110
+  },
+  {
+    "Subclass Description": "Repair of machinery",
+    "Subclass Code": 33120
+  },
+  {
+    "Subclass Description": "Repair of electronic and optical equipment",
+    "Subclass Code": 33130
+  },
+  {
+    "Subclass Description": "Repair of electrical equipment",
+    "Subclass Code": 33140
+  },
+  {
+    "Subclass Description": "Repairing of ships and boats other than sports and pleasure boats",
+    "Subclass Code": 33151
+  },
+  {
+    "Subclass Description": "Repairing of sports and pleasure boats",
+    "Subclass Code": 33152
+  },
+  {
+    "Subclass Description": "Repairing of aircraft",
+    "Subclass Code": 33153
+  },
+  {
+    "Subclass Description": "Repair and maintenance of aircraft engines",
+    "Subclass Code": 33154
+  },
+  {
+    "Subclass Description": "Repair of transport equipment, except motor vehicles, n.e.c.",
+    "Subclass Code": 33159
+  },
+  {
+    "Subclass Description": "Repair of other equipment",
+    "Subclass Code": 33190
+  },
+  {
+    "Subclass Description": "Installation of industrial machinery and equipment",
+    "Subclass Code": 33200
+  },
+  {
+    "Subclass Description": "Electric power generation",
+    "Subclass Code": 35101
+  },
+  {
+    "Subclass Description": "Electric power transmission",
+    "Subclass Code": 35102
+  },
+  {
+    "Subclass Description": "Electric power distribution",
+    "Subclass Code": 35103
+  },
+  {
+    "Subclass Description": "Manufacture of gas; distribution of gaseous fuels through mains",
+    "Subclass Code": 35200
+  },
+  {
+    "Subclass Description": "Steam, air conditioning supply and production of ice",
+    "Subclass Code": 35300
+  },
+  {
+    "Subclass Description": "Water collection, treatment and supply",
+    "Subclass Code": 36000
+  },
+  {
+    "Subclass Description": "Sewerage",
+    "Subclass Code": 37000
+  },
+  {
+    "Subclass Description": "Collection of non-hazardous waste",
+    "Subclass Code": 38110
+  },
+  {
+    "Subclass Description": "Collection of hazardous waste",
+    "Subclass Code": 38120
+  },
+  {
+    "Subclass Description": "Treatment and disposal of non-hazardous waste",
+    "Subclass Code": 38210
+  },
+  {
+    "Subclass Description": "Treatment and disposal of hazardous waste",
+    "Subclass Code": 38220
+  },
+  {
+    "Subclass Description": "Materials recovery",
+    "Subclass Code": 38300
+  },
+  {
+    "Subclass Description": "Remediation activities and other waste management services",
+    "Subclass Code": 39000
+  },
+  {
+    "Subclass Description": "Residential (dwelling) building constructions",
+    "Subclass Code": 41001
+  },
+  {
+    "Subclass Description": "Non-residential building constructions",
+    "Subclass Code": 41002
+  },
+  {
+    "Subclass Description": "Construction of roads and railways",
+    "Subclass Code": 42100
+  },
+  {
+    "Subclass Description": "Construction of telecommunication lines and pipelines",
+    "Subclass Code": 42201
+  },
+  {
+    "Subclass Description": "Water main and line construction",
+    "Subclass Code": 42202
+  },
+  {
+    "Subclass Description": "Construction of gas and energy pipelines",
+    "Subclass Code": 42203
+  },
+  {
+    "Subclass Description": "Construction of electric power lines",
+    "Subclass Code": 42204
+  },
+  {
+    "Subclass Description": "Other construction of utility projects, n.e.c.",
+    "Subclass Code": 42209
+  },
+  {
+    "Subclass Description": "Construction of other civil engineering projects",
+    "Subclass Code": 42900
+  },
+  {
+    "Subclass Description": "Demolition",
+    "Subclass Code": 43110
+  },
+  {
+    "Subclass Description": "Site preparation",
+    "Subclass Code": 43120
+  },
+  {
+    "Subclass Description": "Electrical installation",
+    "Subclass Code": 43210
+  },
+  {
+    "Subclass Description": "Plumbing, heat and air-conditioning installation",
+    "Subclass Code": 43220
+  },
+  {
+    "Subclass Description": "Other construction installation",
+    "Subclass Code": 43290
+  },
+  {
+    "Subclass Description": "Painting and related work",
+    "Subclass Code": 43301
+  },
+  {
+    "Subclass Description": "Floor and wall tiling or covering with other material",
+    "Subclass Code": 43302
+  },
+  {
+    "Subclass Description": "Carpentry",
+    "Subclass Code": 43303
+  },
+  {
+    "Subclass Description": "Other building completion and finishing activities",
+    "Subclass Code": 43309
+  },
+  {
+    "Subclass Description": "Other specialized construction activities",
+    "Subclass Code": 43900
+  },
+  {
+    "Subclass Description": "Sale of passenger motor vehicles",
+    "Subclass Code": 45101
+  },
+  {
+    "Subclass Description": "Sale of lorries, trailers and semi-trailers",
+    "Subclass Code": 45102
+  },
+  {
+    "Subclass Description": "Sale of other motor vehicles",
+    "Subclass Code": 45109
+  },
+  {
+    "Subclass Description": "Repair of motor vehicles, including overhauling",
+    "Subclass Code": 45201
+  },
+  {
+    "Subclass Description": "Repair of batteries for motor vehicles",
+    "Subclass Code": 45202
+  },
+  {
+    "Subclass Description": "Vulcanizing or preparing of tires for motor vehicles",
+    "Subclass Code": 45203
+  },
+  {
+    "Subclass Description": "Car washing and auto-detailing services",
+    "Subclass Code": 45204
+  },
+  {
+    "Subclass Description": "Maintenance of motor vehicles, n.e.c.",
+    "Subclass Code": 45209
+  },
+  {
+    "Subclass Description": "Wholesale of motor vehicles parts and accessories",
+    "Subclass Code": 45301
+  },
+  {
+    "Subclass Description": "Retail sale of motor vehicles parts and accessories",
+    "Subclass Code": 45302
+  },
+  {
+    "Subclass Description": "Wholesale of motor vehicles tires and batteries",
+    "Subclass Code": 45303
+  },
+  {
+    "Subclass Description": "Retail sale of motor vehicles tires and batteries",
+    "Subclass Code": 45304
+  },
+  {
+    "Subclass Description": "Sale of motor vehicle parts and accessories, n.e.c.",
+    "Subclass Code": 45309
+  },
+  {
+    "Subclass Description": "Sale of motorcycles",
+    "Subclass Code": 45401
+  },
+  {
+    "Subclass Description": "Maintenance and repair of motorcycles and their parts and components",
+    "Subclass Code": 45402
+  },
+  {
+    "Subclass Description": "Sale of motorcycles parts and components",
+    "Subclass Code": 45403
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of agricultural raw materials and live animals",
+    "Subclass Code": 46101
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of food, beverages and tobacco",
+    "Subclass Code": 46102
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of textile, clothing, and footwear",
+    "Subclass Code": 46103
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of household appliances, articles and equipment",
+    "Subclass Code": 46104
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of miscellaneous consumer goods",
+    "Subclass Code": 46105
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of construction materials and hardware",
+    "Subclass Code": 46106
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of chemical and pharmaceutical products",
+    "Subclass Code": 46107
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of machinery, equipment and supplies",
+    "Subclass Code": 46108
+  },
+  {
+    "Subclass Description": "Wholesale on a fee or contract basis, of other products",
+    "Subclass Code": 46109
+  },
+  {
+    "Subclass Description": "Wholesale of palay, corn (unmilled) and other grains",
+    "Subclass Code": 46201
+  },
+  {
+    "Subclass Description": "Wholesale of abaca and other fibers, except synthetic fibers",
+    "Subclass Code": 46202
+  },
+  {
+    "Subclass Description": "Wholesale of coconut, coconut-based products, and coconut by-products (e.g., copra, macapuno, coconut husk, coconut shell)",
+    "Subclass Code": 46203
+  },
+  {
+    "Subclass Description": "Wholesale of oleaginous fruits (e.g., oil seeds, palm oil, sunflower seeds, etc.)",
+    "Subclass Code": 46204
+  },
+  {
+    "Subclass Description": "Wholesale of tobacco leaf",
+    "Subclass Code": 46205
+  },
+  {
+    "Subclass Description": "Wholesale of flowers and plants",
+    "Subclass Code": 46206
+  },
+  {
+    "Subclass Description": "Wholesale of livestock and poultry and unprocessed animal products",
+    "Subclass Code": 46207
+  },
+  {
+    "Subclass Description": "Wholesale of fish and other seafood",
+    "Subclass Code": 46208
+  },
+  {
+    "Subclass Description": "Wholesale of farm, forest and marine products, including seeds and animal feeds, hides and skins, leather, etc. n.e.c.",
+    "Subclass Code": 46209
+  },
+  {
+    "Subclass Description": "Wholesale of fruits, nuts and vegetables",
+    "Subclass Code": 46301
+  },
+  {
+    "Subclass Description": "Wholesale of sugar, confectionery and bakery products and other processed foods",
+    "Subclass Code": 46302
+  },
+  {
+    "Subclass Description": "Wholesale of meat and poultry products, including eggs",
+    "Subclass Code": 46303
+  },
+  {
+    "Subclass Description": "Wholesale of rice, corn and other cereals",
+    "Subclass Code": 46304
+  },
+  {
+    "Subclass Description": "Wholesale of fishery products",
+    "Subclass Code": 46305
+  },
+  {
+    "Subclass Description": "Wholesale of drinking water, juices (including powder), coffee, tea, cocoa, soft drinks, energy and sports drinks, alcoholic and other beverages",
+    "Subclass Code": 46306
+  },
+  {
+    "Subclass Description": "Wholesale of tobacco products",
+    "Subclass Code": 46307
+  },
+  {
+    "Subclass Description": "Wholesale of spices",
+    "Subclass Code": 46308
+  },
+  {
+    "Subclass Description": "Wholesale of food, beverage and tobacco, n.e.c.",
+    "Subclass Code": 46309
+  },
+  {
+    "Subclass Description": "Wholesale of textile fabrics, all kinds, including man-made fibers",
+    "Subclass Code": 46411
+  },
+  {
+    "Subclass Description": "Wholesale of wearing apparel, except footwear",
+    "Subclass Code": 46412
+  },
+  {
+    "Subclass Description": "Wholesale of made-up textile goods, except wearing apparel",
+    "Subclass Code": 46413
+  },
+  {
+    "Subclass Description": "Wholesale of articles of clothing, including accessories",
+    "Subclass Code": 46414
+  },
+  {
+    "Subclass Description": "Wholesale of footwear, all kinds of materials",
+    "Subclass Code": 46415
+  },
+  {
+    "Subclass Description": "Wholesale of embroideries",
+    "Subclass Code": 46416
+  },
+  {
+    "Subclass Description": "Wholesale of cordage, rope and twine",
+    "Subclass Code": 46417
+  },
+  {
+    "Subclass Description": "Wholesale of leather and leather goods, including man-made leather, except footwear",
+    "Subclass Code": 46418
+  },
+  {
+    "Subclass Description": "Wholesale of textiles, clothing and footwear, n.e.c.",
+    "Subclass Code": 46419
+  },
+  {
+    "Subclass Description": "Wholesale of medicinal and pharmaceutical products",
+    "Subclass Code": 46421
+  },
+  {
+    "Subclass Description": "Wholesale of surgical and orthopedic instruments and devices",
+    "Subclass Code": 46422
+  },
+  {
+    "Subclass Description": "Wholesale of photographic and optical goods",
+    "Subclass Code": 46423
+  },
+  {
+    "Subclass Description": "Wholesale of musical instruments/sporting goods (including bicycles), and games and toys",
+    "Subclass Code": 46424
+  },
+  {
+    "Subclass Description": "Wholesale of paper and paper products (including stationeries)",
+    "Subclass Code": 46425
+  },
+  {
+    "Subclass Description": "Wholesale of books, magazines and newspapers",
+    "Subclass Code": 46426
+  },
+  {
+    "Subclass Description": "Wholesale of perfumeries, cosmetics and soaps",
+    "Subclass Code": 46427
+  },
+  {
+    "Subclass Description": "Wholesale of watches, clocks and jewelries",
+    "Subclass Code": 46428
+  },
+  {
+    "Subclass Description": "Wholesale of miscellaneous consumer goods, n.e.c.",
+    "Subclass Code": 46429
+  },
+  {
+    "Subclass Description": "Wholesale of household-type appliances, except radio and television equipment, CD and DVD players/recorders",
+    "Subclass Code": 46491
+  },
+  {
+    "Subclass Description": "Wholesale of household furniture, furnishing and fixtures",
+    "Subclass Code": 46492
+  },
+  {
+    "Subclass Description": "Wholesale of recorded audio and video tapes, CDs, DVDs",
+    "Subclass Code": 46493
+  },
+  {
+    "Subclass Description": "Wholesale of chinaware, glassware, earthenware, woodenware, wickerware, corkware, plasticware, cutlery and utensils",
+    "Subclass Code": 46494
+  },
+  {
+    "Subclass Description": "Wholesale of handicraft products",
+    "Subclass Code": 46495
+  },
+  {
+    "Subclass Description": "Wholesale of lighting equipment",
+    "Subclass Code": 46496
+  },
+  {
+    "Subclass Description": "Wholesale of radio and television including parts and accessories",
+    "Subclass Code": 46497
+  },
+  {
+    "Subclass Description": "Wholesale of other household goods, n.e.c.",
+    "Subclass Code": 46499
+  },
+  {
+    "Subclass Description": "Wholesale of computers, computer peripheral equipment and software",
+    "Subclass Code": 46510
+  },
+  {
+    "Subclass Description": "Wholesale of electronic valves and tubes",
+    "Subclass Code": 46521
+  },
+  {
+    "Subclass Description": "Wholesale of semi-conductor devices",
+    "Subclass Code": 46522
+  },
+  {
+    "Subclass Description": "Wholesale micro-chips and integrated circuits",
+    "Subclass Code": 46523
+  },
+  {
+    "Subclass Description": "Wholesale of printed circuits",
+    "Subclass Code": 46524
+  },
+  {
+    "Subclass Description": "Wholesale of telephone and communications equipment including parts and accessories",
+    "Subclass Code": 46525
+  },
+  {
+    "Subclass Description": "Wholesale of blank audio and video tapes and diskettes, magnetic and optical disks (CDs, DVDs)",
+    "Subclass Code": 46526
+  },
+  {
+    "Subclass Description": "Wholesale of agricultural machinery, equipment and supplies",
+    "Subclass Code": 46530
+  },
+  {
+    "Subclass Description": "Wholesale of commercial machinery and equipment",
+    "Subclass Code": 46591
+  },
+  {
+    "Subclass Description": "Wholesale of industrial machinery and equipment",
+    "Subclass Code": 46592
+  },
+  {
+    "Subclass Description": "Wholesale of office machinery equipment including office furniture, furnishings, appliances and vases",
+    "Subclass Code": 46593
+  },
+  {
+    "Subclass Description": "Wholesale of professional and scientific and measuring and controlling equipment",
+    "Subclass Code": 46594
+  },
+  {
+    "Subclass Description": "Wholesale of transport equipment and supplies, except land motor vehicles, motorcycles and bicycles",
+    "Subclass Code": 46595
+  },
+  {
+    "Subclass Description": "Wholesale of other machinery and equipment, n.e.c.",
+    "Subclass Code": 46599
+  },
+  {
+    "Subclass Description": "Wholesale of solid, liquid and gaseous fuels and related products",
+    "Subclass Code": 46610
+  },
+  {
+    "Subclass Description": "Wholesale of metals and metal ores",
+    "Subclass Code": 46620
+  },
+  {
+    "Subclass Description": "Wholesale of lumber and planing mill products, wood in the rough",
+    "Subclass Code": 46631
+  },
+  {
+    "Subclass Description": "Wholesale of cement, hydraulic",
+    "Subclass Code": 46632
+  },
+  {
+    "Subclass Description": "Wholesale of masonry materials, except cement",
+    "Subclass Code": 46633
+  },
+  {
+    "Subclass Description": "Wholesale of flat glass",
+    "Subclass Code": 46634
+  },
+  {
+    "Subclass Description": "Wholesale of hardware, paints, varnishes and lacquers, and plumbing materials, including fittings and fixtures",
+    "Subclass Code": 46635
+  },
+  {
+    "Subclass Description": "Wholesale of electrical materials",
+    "Subclass Code": 46636
+  },
+  {
+    "Subclass Description": "Wholesale of wallpaper and floor coverings",
+    "Subclass Code": 46637
+  },
+  {
+    "Subclass Description": "Wholesale of construction materials and supplies, n.e.c.",
+    "Subclass Code": 46639
+  },
+  {
+    "Subclass Description": "Wholesale of industrial chemical products",
+    "Subclass Code": 46691
+  },
+  {
+    "Subclass Description": "Wholesale of fertilizers and agro-chemical products",
+    "Subclass Code": 46692
+  },
+  {
+    "Subclass Description": "Wholesale of non-metallic products except cement, sand and gravel",
+    "Subclass Code": 46693
+  },
+  {
+    "Subclass Description": "Wholesale of scrap metals, waste and junk",
+    "Subclass Code": 46694
+  },
+  {
+    "Subclass Description": "Wholesale of scraps, except metal",
+    "Subclass Code": 46695
+  },
+  {
+    "Subclass Description": "Wholesale of other waste and scrap and other products, n.e.c.",
+    "Subclass Code": 46699
+  },
+  {
+    "Subclass Description": "Non-specialized wholesale trade",
+    "Subclass Code": 46900
+  },
+  {
+    "Subclass Description": "Retail selling in groceries",
+    "Subclass Code": 47111
+  },
+  {
+    "Subclass Description": "Retail selling in supermarkets",
+    "Subclass Code": 47112
+  },
+  {
+    "Subclass Description": "Retail selling in sari-sari stores",
+    "Subclass Code": 47113
+  },
+  {
+    "Subclass Description": "Retail selling in convenience stores",
+    "Subclass Code": 47114
+  },
+  {
+    "Subclass Description": "Retail selling in hypermarkets",
+    "Subclass Code": 47115
+  },
+  {
+    "Subclass Description": "Retail selling of food products in pasalubong store/center",
+    "Subclass Code": 47116
+  },
+  {
+    "Subclass Description": "Retail selling in department stores",
+    "Subclass Code": 47191
+  },
+  {
+    "Subclass Description": "Retail selling in non-specialized stores, n.e.c.",
+    "Subclass Code": 47199
+  },
+  {
+    "Subclass Description": "Retail sale of fruits and vegetables",
+    "Subclass Code": 47211
+  },
+  {
+    "Subclass Description": "Retail sale of eggs and dairy products",
+    "Subclass Code": 47212
+  },
+  {
+    "Subclass Description": "Retail sale of meat and poultry products",
+    "Subclass Code": 47213
+  },
+  {
+    "Subclass Description": "Retail sale of bakery products",
+    "Subclass Code": 47214
+  },
+  {
+    "Subclass Description": "Retail sale of fish and other seafood (fresh and dried)",
+    "Subclass Code": 47215
+  },
+  {
+    "Subclass Description": "Retail sale of rice, corn and other cereals",
+    "Subclass Code": 47216
+  },
+  {
+    "Subclass Description": "Retail sale of food products, n.e.c.",
+    "Subclass Code": 47219
+  },
+  {
+    "Subclass Description": "Retail sale of alcoholic beverages (not consumed on the spot)",
+    "Subclass Code": 47221
+  },
+  {
+    "Subclass Description": "Retail sale of non-alcoholic beverages (not consumed on the spot)",
+    "Subclass Code": 47222
+  },
+  {
+    "Subclass Description": "Retail sale of tobacco products in specialized stores",
+    "Subclass Code": 47230
+  },
+  {
+    "Subclass Description": "Retail sale of automotive fuel in specialized stores",
+    "Subclass Code": 47300
+  },
+  {
+    "Subclass Description": "Retail sale of computers",
+    "Subclass Code": 47411
+  },
+  {
+    "Subclass Description": "Retail sale of computer peripheral equipment",
+    "Subclass Code": 47412
+  },
+  {
+    "Subclass Description": "Retail sale of computer software",
+    "Subclass Code": 47413
+  },
+  {
+    "Subclass Description": "Retail sale of mobile phones and other handheld mobile devices (e.g. cellular phones, smart phones, tablets)",
+    "Subclass Code": 47414
+  },
+  {
+    "Subclass Description": "Retail sale of parts and accessories of cellular phones and other handheld mobile devices",
+    "Subclass Code": 47415
+  },
+  {
+    "Subclass Description": "Retail sale of other telecommunications equipment, n.e.c.",
+    "Subclass Code": 47419
+  },
+  {
+    "Subclass Description": "Retail sale of radio and television, including parts and accessories",
+    "Subclass Code": 47421
+  },
+  {
+    "Subclass Description": "Retail sale of audio and video equipment",
+    "Subclass Code": 47422
+  },
+  {
+    "Subclass Description": "Retail sale of stereo equipment, CD and DVD players and equipment",
+    "Subclass Code": 47423
+  },
+  {
+    "Subclass Description": "Retail sale of audio and video equipment, n.e.c.",
+    "Subclass Code": 47429
+  },
+  {
+    "Subclass Description": "Retail sale of textiles, all kinds",
+    "Subclass Code": 47511
+  },
+  {
+    "Subclass Description": "Retail sale of modistesNULL supplies",
+    "Subclass Code": 47512
+  },
+  {
+    "Subclass Description": "Retail sale of hardware materials",
+    "Subclass Code": 47521
+  },
+  {
+    "Subclass Description": "Retail sale of glass and mirror",
+    "Subclass Code": 47522
+  },
+  {
+    "Subclass Description": "Retail sale of lumber",
+    "Subclass Code": 47523
+  },
+  {
+    "Subclass Description": "Retail sale of construction materials",
+    "Subclass Code": 47524
+  },
+  {
+    "Subclass Description": "Retail sale of masonry materials",
+    "Subclass Code": 47525
+  },
+  {
+    "Subclass Description": "Retail sale of nipa, bamboo and rattan",
+    "Subclass Code": 47526
+  },
+  {
+    "Subclass Description": "Retail sale of paints, varnishes and lacquers",
+    "Subclass Code": 47527
+  },
+  {
+    "Subclass Description": "Retail sale of construction supplies, n.e.c.",
+    "Subclass Code": 47529
+  },
+  {
+    "Subclass Description": "Retail sale of carpets, rugs, wall and floor coverings in specialized stores",
+    "Subclass Code": 47530
+  },
+  {
+    "Subclass Description": "Retail sale of home furnishing, furniture and fixtures, including lamps and lamp shades",
+    "Subclass Code": 47591
+  },
+  {
+    "Subclass Description": "Retail sale of chinaware, glassware, earthenware and utensils",
+    "Subclass Code": 47592
+  },
+  {
+    "Subclass Description": "Retail sale of household appliances, articles and equipment",
+    "Subclass Code": 47593
+  },
+  {
+    "Subclass Description": "Retail sale of musical instruments and records, tapes and cartridges",
+    "Subclass Code": 47594
+  },
+  {
+    "Subclass Description": "Retail sale of handicrafts",
+    "Subclass Code": 47595
+  },
+  {
+    "Subclass Description": "Retail sale of electrical household appliances, furniture, lighting equipment and other household articles in specialized stores, n.e.c.",
+    "Subclass Code": 47599
+  },
+  {
+    "Subclass Description": "Retail sale of books, newspapers and stationery in specialized stores",
+    "Subclass Code": 47610
+  },
+  {
+    "Subclass Description": "Retail sale of music and video recordings in specialized stores",
+    "Subclass Code": 47620
+  },
+  {
+    "Subclass Description": "Retail sale of sporting goods and athletic supplies",
+    "Subclass Code": 47631
+  },
+  {
+    "Subclass Description": "Retail sale of marine supplies, including nets and gears",
+    "Subclass Code": 47632
+  },
+  {
+    "Subclass Description": "Retail sale of camping goods and bicycles",
+    "Subclass Code": 47633
+  },
+  {
+    "Subclass Description": "Retail sale of games and toys in specialized stores",
+    "Subclass Code": 47640
+  },
+  {
+    "Subclass Description": "Retail sale of wearing apparel, except footwear",
+    "Subclass Code": 47711
+  },
+  {
+    "Subclass Description": "Retail sale of made-up textile goods",
+    "Subclass Code": 47712
+  },
+  {
+    "Subclass Description": "Retail sale of footwear, all kinds",
+    "Subclass Code": 47713
+  },
+  {
+    "Subclass Description": "Retail sale of leather and artificial leather goods and travel accessories, except footwear",
+    "Subclass Code": 47714
+  },
+  {
+    "Subclass Description": "Retail sale of other clothing, footwear and leather articles in specialized stores, n.e.c.",
+    "Subclass Code": 47719
+  },
+  {
+    "Subclass Description": "Retail sale of drugs and pharmaceutical goods",
+    "Subclass Code": 47721
+  },
+  {
+    "Subclass Description": "Retail sale of medical, surgical and orthopedic goods/instruments and dental supplies",
+    "Subclass Code": 47722
+  },
+  {
+    "Subclass Description": "Retail sale of perfumery, cosmetic and toilet articles",
+    "Subclass Code": 47723
+  },
+  {
+    "Subclass Description": "Retail sale of feeds, fertilizers and insecticides",
+    "Subclass Code": 47731
+  },
+  {
+    "Subclass Description": "Retail sale of gifts and novelty goods",
+    "Subclass Code": 47732
+  },
+  {
+    "Subclass Description": "Retail sale of office machines and equipment, excluding computers and computer peripheral equipment",
+    "Subclass Code": 47733
+  },
+  {
+    "Subclass Description": "Retail sale of jewelry, watches and clocks",
+    "Subclass Code": 47734
+  },
+  {
+    "Subclass Description": "Retail sale of fresh and artificial flowers and plants",
+    "Subclass Code": 47735
+  },
+  {
+    "Subclass Description": "Retail sale of beauty parlor supplies and equipment",
+    "Subclass Code": 47736
+  },
+  {
+    "Subclass Description": "Retail sale of art goods, marble products, painting and artistsNULL supplies",
+    "Subclass Code": 47737
+  },
+  {
+    "Subclass Description": "Retail sale of optical goods and supplies",
+    "Subclass Code": 47738
+  },
+  {
+    "Subclass Description": "Other retail sale of new goods in specialized stores, n.e.c.",
+    "Subclass Code": 47739
+  },
+  {
+    "Subclass Description": "Retail sale of second-hand clothing, footwear and leather articles",
+    "Subclass Code": 47741
+  },
+  {
+    "Subclass Description": "Retail sale of books and other goods",
+    "Subclass Code": 47742
+  },
+  {
+    "Subclass Description": "Retail sale of antiques and auctioning houses",
+    "Subclass Code": 47743
+  },
+  {
+    "Subclass Description": "Retail sale of second-hand goods, n.e.c.",
+    "Subclass Code": 47749
+  },
+  {
+    "Subclass Description": "Retail sale of liquefied petroleum gas and other fuel products",
+    "Subclass Code": 47750
+  },
+  {
+    "Subclass Description": "Retail sale of pet",
+    "Subclass Code": 47761
+  },
+  {
+    "Subclass Description": "Retail sale of pet supplies",
+    "Subclass Code": 47762
+  },
+  {
+    "Subclass Description": "Retail sale via stalls and markets of food, beverages and tobacco products",
+    "Subclass Code": 47810
+  },
+  {
+    "Subclass Description": "Retail sale via stalls and markets of textiles, clothing and footwear",
+    "Subclass Code": 47820
+  },
+  {
+    "Subclass Description": "Retail sale of prepaid cards",
+    "Subclass Code": 47891
+  },
+  {
+    "Subclass Description": "Retail sale of internet card",
+    "Subclass Code": 47892
+  },
+  {
+    "Subclass Description": "Retail sale of electronic load",
+    "Subclass Code": 47893
+  },
+  {
+    "Subclass Description": "Retail sale of music and video recordings",
+    "Subclass Code": 47894
+  },
+  {
+    "Subclass Description": "Retail sale of household appliances and consumer electronics",
+    "Subclass Code": 47895
+  },
+  {
+    "Subclass Description": "Retail sale of books",
+    "Subclass Code": 47896
+  },
+  {
+    "Subclass Description": "Retail sale of games and toys",
+    "Subclass Code": 47897
+  },
+  {
+    "Subclass Description": "Retail sale of carpets and rugs",
+    "Subclass Code": 47898
+  },
+  {
+    "Subclass Description": "Other retail sale via stalls and markets of other goods, n.e.c.",
+    "Subclass Code": 47899
+  },
+  {
+    "Subclass Description": "Retail sale via mail order",
+    "Subclass Code": 47911
+  },
+  {
+    "Subclass Description": "Retail sale via telephone order",
+    "Subclass Code": 47912
+  },
+  {
+    "Subclass Description": "Retail sale via internet",
+    "Subclass Code": 47913
+  },
+  {
+    "Subclass Description": "Door-to-door retailing",
+    "Subclass Code": 47991
+  },
+  {
+    "Subclass Description": "Selling by vending machine",
+    "Subclass Code": 47992
+  },
+  {
+    "Subclass Description": "Retail sale of health products, non-store",
+    "Subclass Code": 47993
+  },
+  {
+    "Subclass Description": "Retail sale of water (including distribution)",
+    "Subclass Code": 47994
+  },
+  {
+    "Subclass Description": "Other retail sale not in stores, stalls or markets, n.e.c",
+    "Subclass Code": 47999
+  },
+  {
+    "Subclass Description": "Inter-urban passenger railway transport",
+    "Subclass Code": 49111
+  },
+  {
+    "Subclass Description": "Urban and suburban passenger railway transport",
+    "Subclass Code": 49112
+  },
+  {
+    "Subclass Description": "Freight rail transport",
+    "Subclass Code": 49120
+  },
+  {
+    "Subclass Description": "Inter-urban bus line operation",
+    "Subclass Code": 49201
+  },
+  {
+    "Subclass Description": "Urban and suburban bus line operation",
+    "Subclass Code": 49202
+  },
+  {
+    "Subclass Description": "Local bus line operation",
+    "Subclass Code": 49203
+  },
+  {
+    "Subclass Description": "Chartered buses operation (e.g. tourist buses, renting of bus)",
+    "Subclass Code": 49204
+  },
+  {
+    "Subclass Description": "Operation of school buses/shuttle",
+    "Subclass Code": 49205
+  },
+  {
+    "Subclass Description": "Transport via buses, n.e.c.",
+    "Subclass Code": 49209
+  },
+  {
+    "Subclass Description": "Urban or suburban passenger land transport, except railway or bus",
+    "Subclass Code": 49310
+  },
+  {
+    "Subclass Description": "Jeepney and UV Express operation",
+    "Subclass Code": 49321
+  },
+  {
+    "Subclass Description": "Tricycles and pedicabs operation",
+    "Subclass Code": 49322
+  },
+  {
+    "Subclass Description": "Public utility cars and taxicabs operation",
+    "Subclass Code": 49323
+  },
+  {
+    "Subclass Description": "Chartered cars (rent-a-car)",
+    "Subclass Code": 49324
+  },
+  {
+    "Subclass Description": "Operations of vehicles for transportation network service (ride-sharing services)",
+    "Subclass Code": 49325
+  },
+  {
+    "Subclass Description": "Public Utility Electric Vehicle (EV) Operation such as Plug-in electric vehicle (PEV), Battery Electric Vehicle (BEV) and Hybrid Electric Vehicle (HEV)",
+    "Subclass Code": 49326
+  },
+  {
+    "Subclass Description": "Other land transport operation, n.e.c.",
+    "Subclass Code": 49329
+  },
+  {
+    "Subclass Description": "Truck-for-hire operation (with driver)",
+    "Subclass Code": 49331
+  },
+  {
+    "Subclass Description": "Freight truck operation",
+    "Subclass Code": 49332
+  },
+  {
+    "Subclass Description": "Tank truck delivery services",
+    "Subclass Code": 49333
+  },
+  {
+    "Subclass Description": "Freight transport operation, by road, n.e.c.",
+    "Subclass Code": 49339
+  },
+  {
+    "Subclass Description": "Transport via pipeline",
+    "Subclass Code": 49400
+  },
+  {
+    "Subclass Description": "Ocean passenger transport",
+    "Subclass Code": 50111
+  },
+  {
+    "Subclass Description": "Interisland water passenger transport",
+    "Subclass Code": 50112
+  },
+  {
+    "Subclass Description": "Renting of ship with operator",
+    "Subclass Code": 50113
+  },
+  {
+    "Subclass Description": "Ocean freight transport",
+    "Subclass Code": 50121
+  },
+  {
+    "Subclass Description": "Interisland water freight transport",
+    "Subclass Code": 50122
+  },
+  {
+    "Subclass Description": "Towing and pushing services on coastal and trans-oceanic waters",
+    "Subclass Code": 50123
+  },
+  {
+    "Subclass Description": "Inland passenger water transport",
+    "Subclass Code": 50210
+  },
+  {
+    "Subclass Description": "Inland freight water transport",
+    "Subclass Code": 50220
+  },
+  {
+    "Subclass Description": "Domestic air passenger transport",
+    "Subclass Code": 51101
+  },
+  {
+    "Subclass Description": "International air passenger transport",
+    "Subclass Code": 51102
+  },
+  {
+    "Subclass Description": "Non-scheduled air passenger transport",
+    "Subclass Code": 51103
+  },
+  {
+    "Subclass Description": "Domestic air-freight transport",
+    "Subclass Code": 51201
+  },
+  {
+    "Subclass Description": "International air freight transport",
+    "Subclass Code": 51202
+  },
+  {
+    "Subclass Description": "Non-scheduled air freight transport",
+    "Subclass Code": 51203
+  },
+  {
+    "Subclass Description": "General bonded warehouses except grain warehouse",
+    "Subclass Code": 52101
+  },
+  {
+    "Subclass Description": "Grain warehouses",
+    "Subclass Code": 52102
+  },
+  {
+    "Subclass Description": "Customs bonded warehouses",
+    "Subclass Code": 52103
+  },
+  {
+    "Subclass Description": "Cold storage",
+    "Subclass Code": 52104
+  },
+  {
+    "Subclass Description": "Storage and warehousing, n.e.c.",
+    "Subclass Code": 52109
+  },
+  {
+    "Subclass Description": "Freight terminal facilities for trucking companies",
+    "Subclass Code": 52211
+  },
+  {
+    "Subclass Description": "Operation of parking lots",
+    "Subclass Code": 52212
+  },
+  {
+    "Subclass Description": "Operation of toll roads and bridges",
+    "Subclass Code": 52213
+  },
+  {
+    "Subclass Description": "Other supporting land transport activities, including towing services and truck weighing services, n.e.c.",
+    "Subclass Code": 52219
+  },
+  {
+    "Subclass Description": "Service activities incidental to water transportation",
+    "Subclass Code": 52220
+  },
+  {
+    "Subclass Description": "Service activities incidental to air transportation",
+    "Subclass Code": 52230
+  },
+  {
+    "Subclass Description": "Containerized cargo handling, auxiliary activity to land transport",
+    "Subclass Code": 52241
+  },
+  {
+    "Subclass Description": "Non- containerized cargo handling, auxiliary activity to land transport",
+    "Subclass Code": 52242
+  },
+  {
+    "Subclass Description": "Cargo handling, auxiliary activity to water transport",
+    "Subclass Code": 52243
+  },
+  {
+    "Subclass Description": "Cargo handling, auxiliary activity to air transport",
+    "Subclass Code": 52244
+  },
+  {
+    "Subclass Description": "Freight forwarding services",
+    "Subclass Code": 52291
+  },
+  {
+    "Subclass Description": "Customs brokerage (ship and aircraft)",
+    "Subclass Code": 52292
+  },
+  {
+    "Subclass Description": "Logistics services",
+    "Subclass Code": 52293
+  },
+  {
+    "Subclass Description": "Activities of other transport agencies, n.e.c.",
+    "Subclass Code": 52299
+  },
+  {
+    "Subclass Description": "Postal activities",
+    "Subclass Code": 53100
+  },
+  {
+    "Subclass Description": "Private postal service",
+    "Subclass Code": 53201
+  },
+  {
+    "Subclass Description": "Messenger service",
+    "Subclass Code": 53202
+  },
+  {
+    "Subclass Description": "Delivery of food",
+    "Subclass Code": 53203
+  },
+  {
+    "Subclass Description": "Other courier activities, n.e.c.",
+    "Subclass Code": 53209
+  },
+  {
+    "Subclass Description": "Hotels",
+    "Subclass Code": 55101
+  },
+  {
+    "Subclass Description": "Resort hotels",
+    "Subclass Code": 55102
+  },
+  {
+    "Subclass Description": "Condotels",
+    "Subclass Code": 55103
+  },
+  {
+    "Subclass Description": "Pension houses",
+    "Subclass Code": 55104
+  },
+  {
+    "Subclass Description": "Camping sites/facilities",
+    "Subclass Code": 55105
+  },
+  {
+    "Subclass Description": "Motels",
+    "Subclass Code": 55106
+  },
+  {
+    "Subclass Description": "Tourist Inn",
+    "Subclass Code": 55107
+  },
+  {
+    "Subclass Description": "Other short term accommodation activities, n.e.c",
+    "Subclass Code": 55109
+  },
+  {
+    "Subclass Description": "Dormitories/boarding houses",
+    "Subclass Code": 55901
+  },
+  {
+    "Subclass Description": "Other accommodation, n.e.c.",
+    "Subclass Code": 55909
+  },
+  {
+    "Subclass Description": "Restaurants (full-service)",
+    "Subclass Code": 56101
+  },
+  {
+    "Subclass Description": "Fast-food restaurants/ Quick Service Restaurant",
+    "Subclass Code": 56102
+  },
+  {
+    "Subclass Description": "Cafeterias",
+    "Subclass Code": 56103
+  },
+  {
+    "Subclass Description": "Refreshment stands, kiosks and counters",
+    "Subclass Code": 56104
+  },
+  {
+    "Subclass Description": "Mobile food services e.g., truck, van and other motorized vehicles and non-motorized carts",
+    "Subclass Code": 56105
+  },
+  {
+    "Subclass Description": "Buffet and eat-all-you-can restaurants",
+    "Subclass Code": 56106
+  },
+  {
+    "Subclass Description": "Carinderia or eatery",
+    "Subclass Code": 56107
+  },
+  {
+    "Subclass Description": "Food-to-go counter (e.g., fried/lechon/grilled chicken, pork, beef or fish and other related products)",
+    "Subclass Code": 56108
+  },
+  {
+    "Subclass Description": "Other restaurants and mobile food service activities, n.e.c.",
+    "Subclass Code": 56109
+  },
+  {
+    "Subclass Description": "Event catering",
+    "Subclass Code": 56210
+  },
+  {
+    "Subclass Description": "Other food service activities",
+    "Subclass Code": 56290
+  },
+  {
+    "Subclass Description": "Night clubs",
+    "Subclass Code": 56301
+  },
+  {
+    "Subclass Description": "Bars and cocktail lounges",
+    "Subclass Code": 56302
+  },
+  {
+    "Subclass Description": "Café or coffee shops",
+    "Subclass Code": 56303
+  },
+  {
+    "Subclass Description": "Tea shops",
+    "Subclass Code": 56304
+  },
+  {
+    "Subclass Description": "Other beverage serving activities, n.e.c.",
+    "Subclass Code": 56309
+  },
+  {
+    "Subclass Description": "Book Publishing",
+    "Subclass Code": 58110
+  },
+  {
+    "Subclass Description": "Publishing of directories and mailing lists",
+    "Subclass Code": 58120
+  },
+  {
+    "Subclass Description": "Publishing of newspapers, journals and periodicals",
+    "Subclass Code": 58130
+  },
+  {
+    "Subclass Description": "Other publishing activities",
+    "Subclass Code": 58190
+  },
+  {
+    "Subclass Description": "Software publishing",
+    "Subclass Code": 58200
+  },
+  {
+    "Subclass Description": "Complete production of motion picture, video and television programme activities",
+    "Subclass Code": 59111
+  },
+  {
+    "Subclass Description": "Pre and main production of traditional and 2D animation",
+    "Subclass Code": 59112
+  },
+  {
+    "Subclass Description": "Pre and main production of 3D animation",
+    "Subclass Code": 59113
+  },
+  {
+    "Subclass Description": "Pre and main production of other motion films and etc.",
+    "Subclass Code": 59119
+  },
+  {
+    "Subclass Description": "Post production of traditional and 2D animation",
+    "Subclass Code": 59121
+  },
+  {
+    "Subclass Description": "Post production of 3D animation",
+    "Subclass Code": 59122
+  },
+  {
+    "Subclass Description": "Post production of other motion films and etc.",
+    "Subclass Code": 59129
+  },
+  {
+    "Subclass Description": "Motion picture, video and television programme distribution activities",
+    "Subclass Code": 59130
+  },
+  {
+    "Subclass Description": "Motion picture projection activities",
+    "Subclass Code": 59140
+  },
+  {
+    "Subclass Description": "Sound recording activities",
+    "Subclass Code": 59201
+  },
+  {
+    "Subclass Description": "Publishing of music",
+    "Subclass Code": 59202
+  },
+  {
+    "Subclass Description": "Radio broadcasting and relay station and studios",
+    "Subclass Code": 60101
+  },
+  {
+    "Subclass Description": "Radio program production",
+    "Subclass Code": 60102
+  },
+  {
+    "Subclass Description": "Radio broadcasting activities over the Internet (Internet radio stations)",
+    "Subclass Code": 60103
+  },
+  {
+    "Subclass Description": "Television broadcasting and relay stations and studios including closed circuit television services",
+    "Subclass Code": 60201
+  },
+  {
+    "Subclass Description": "Television program production",
+    "Subclass Code": 60202
+  },
+  {
+    "Subclass Description": "Television broadcasting activities over the Internet (Internet television stations)",
+    "Subclass Code": 60203
+  },
+  {
+    "Subclass Description": "Wired (landline) services",
+    "Subclass Code": 61101
+  },
+  {
+    "Subclass Description": "Wired internet access service activities (e.g. DSL, leased line, dial-up)",
+    "Subclass Code": 61102
+  },
+  {
+    "Subclass Description": "Telegraph, facsimile/telefax, and telex services",
+    "Subclass Code": 61103
+  },
+  {
+    "Subclass Description": "Other wired telecommunications activities",
+    "Subclass Code": 61109
+  },
+  {
+    "Subclass Description": "Wireless landline services",
+    "Subclass Code": 61201
+  },
+  {
+    "Subclass Description": "Mobile telecommunications services",
+    "Subclass Code": 61202
+  },
+  {
+    "Subclass Description": "Wireless internet access services (e.g. Internet Service Provider, broadband)",
+    "Subclass Code": 61203
+  },
+  {
+    "Subclass Description": "Other wireless telecommunication services, n.e.c.",
+    "Subclass Code": 61209
+  },
+  {
+    "Subclass Description": "Satellite telecommunications activities",
+    "Subclass Code": 61300
+  },
+  {
+    "Subclass Description": "Telephone access in facilities open to the public service activities",
+    "Subclass Code": 61901
+  },
+  {
+    "Subclass Description": "Internet access in facilities open to the public service activities",
+    "Subclass Code": 61902
+  },
+  {
+    "Subclass Description": "Voice Over Internet Protocol (VOIP) service activities",
+    "Subclass Code": 61903
+  },
+  {
+    "Subclass Description": "Other telecommunications service activities, n.e.c.",
+    "Subclass Code": 61909
+  },
+  {
+    "Subclass Description": "Game design and development",
+    "Subclass Code": 62011
+  },
+  {
+    "Subclass Description": "Other computer programming activities",
+    "Subclass Code": 62019
+  },
+  {
+    "Subclass Description": "Computer consultancy and computer facilities management activities",
+    "Subclass Code": 62020
+  },
+  {
+    "Subclass Description": "Other information technology and computer service activities",
+    "Subclass Code": 62090
+  },
+  {
+    "Subclass Description": "Data processing",
+    "Subclass Code": 63111
+  },
+  {
+    "Subclass Description": "Website hosting services",
+    "Subclass Code": 63112
+  },
+  {
+    "Subclass Description": "Application hosting services",
+    "Subclass Code": 63113
+  },
+  {
+    "Subclass Description": "Web portals",
+    "Subclass Code": 63120
+  },
+  {
+    "Subclass Description": "News agency activities",
+    "Subclass Code": 63910
+  },
+  {
+    "Subclass Description": "Other information service activities, n.e.c.",
+    "Subclass Code": 63990
+  },
+  {
+    "Subclass Description": "Central banking",
+    "Subclass Code": 64110
+  },
+  {
+    "Subclass Description": "Universal Banking",
+    "Subclass Code": 64191
+  },
+  {
+    "Subclass Description": "Commercial Banking",
+    "Subclass Code": 64192
+  },
+  {
+    "Subclass Description": "Thrift Banking",
+    "Subclass Code": 64193
+  },
+  {
+    "Subclass Description": "Private development banking",
+    "Subclass Code": 64194
+  },
+  {
+    "Subclass Description": "Stock savings and loan activities",
+    "Subclass Code": 64195
+  },
+  {
+    "Subclass Description": "Rural Banking",
+    "Subclass Code": 64196
+  },
+  {
+    "Subclass Description": "Cooperative banking",
+    "Subclass Code": 64197
+  },
+  {
+    "Subclass Description": "Specialized government banking",
+    "Subclass Code": 64198
+  },
+  {
+    "Subclass Description": "Other monetary intermediation i.e., Islamic Banking, n.e.c.",
+    "Subclass Code": 64199
+  },
+  {
+    "Subclass Description": "Activities of holding companies",
+    "Subclass Code": 64200
+  },
+  {
+    "Subclass Description": "Investment company operation",
+    "Subclass Code": 64301
+  },
+  {
+    "Subclass Description": "Investment house operation",
+    "Subclass Code": 64302
+  },
+  {
+    "Subclass Description": "Securities dealership, own account",
+    "Subclass Code": 64303
+  },
+  {
+    "Subclass Description": "Trust corporation operation",
+    "Subclass Code": 64304
+  },
+  {
+    "Subclass Description": "Mutual fund company operation",
+    "Subclass Code": 64305
+  },
+  {
+    "Subclass Description": "Financial leasing",
+    "Subclass Code": 64910
+  },
+  {
+    "Subclass Description": "Credit card activities",
+    "Subclass Code": 64921
+  },
+  {
+    "Subclass Description": "Lending company operation",
+    "Subclass Code": 64922
+  },
+  {
+    "Subclass Description": "Financing company operations",
+    "Subclass Code": 64923
+  },
+  {
+    "Subclass Description": "Venture capital corporation operation",
+    "Subclass Code": 64924
+  },
+  {
+    "Subclass Description": "Credit granting entity operation",
+    "Subclass Code": 64925
+  },
+  {
+    "Subclass Description": "Other credit granting, n.e.c",
+    "Subclass Code": 64929
+  },
+  {
+    "Subclass Description": "Pawnshop operations",
+    "Subclass Code": 64930
+  },
+  {
+    "Subclass Description": "Mutual building and loan association operation",
+    "Subclass Code": 64991
+  },
+  {
+    "Subclass Description": "Non-stock savings and loan association operation",
+    "Subclass Code": 64992
+  },
+  {
+    "Subclass Description": "Credit cooperative activities",
+    "Subclass Code": 64993
+  },
+  {
+    "Subclass Description": "Mutual benefit association operation",
+    "Subclass Code": 64994
+  },
+  {
+    "Subclass Description": "Foreign Exchange Dealing/ Money Changing (Money Service Businesses (MSBs))",
+    "Subclass Code": 64995
+  },
+  {
+    "Subclass Description": "Remittance and Transfer Operations (MSBs)",
+    "Subclass Code": 64996
+  },
+  {
+    "Subclass Description": "Other MSBs, i.e., virtual currency exchange dealing",
+    "Subclass Code": 64997
+  },
+  {
+    "Subclass Description": "Non-bank thrift institution operations, n.e.c.",
+    "Subclass Code": 64999
+  },
+  {
+    "Subclass Description": "Life insurance",
+    "Subclass Code": 65110
+  },
+  {
+    "Subclass Description": "Non-life insurance",
+    "Subclass Code": 65120
+  },
+  {
+    "Subclass Description": "Reinsurance for life insurance",
+    "Subclass Code": 65201
+  },
+  {
+    "Subclass Description": "Reinsurance for non-life insurance",
+    "Subclass Code": 65202
+  },
+  {
+    "Subclass Description": "Pension funding",
+    "Subclass Code": 65300
+  },
+  {
+    "Subclass Description": "Administration of financial markets",
+    "Subclass Code": 66110
+  },
+  {
+    "Subclass Description": "Security and commodity contracts brokerage",
+    "Subclass Code": 66120
+  },
+  {
+    "Subclass Description": "Other activities auxiliary to financial service activities",
+    "Subclass Code": 66190
+  },
+  {
+    "Subclass Description": "Risk and damage evaluation",
+    "Subclass Code": 66210
+  },
+  {
+    "Subclass Description": "Activities of insurance agents and brokers",
+    "Subclass Code": 66220
+  },
+  {
+    "Subclass Description": "Pre-need plan for health",
+    "Subclass Code": 66231
+  },
+  {
+    "Subclass Description": "Pre-need plan for education",
+    "Subclass Code": 66232
+  },
+  {
+    "Subclass Description": "Pre-need plan for memorial and interment",
+    "Subclass Code": 66233
+  },
+  {
+    "Subclass Description": "Pre-need plan for pension",
+    "Subclass Code": 66234
+  },
+  {
+    "Subclass Description": "Pre-need plan activities, n.e.c.",
+    "Subclass Code": 66239
+  },
+  {
+    "Subclass Description": "Other activities auxiliary to insurance and pension funding",
+    "Subclass Code": 66290
+  },
+  {
+    "Subclass Description": "Fund management activities",
+    "Subclass Code": 66300
+  },
+  {
+    "Subclass Description": "Real estate buying, selling, renting, leasing and operating of self-owned/leased apartment buildings, non-residential and dwellings",
+    "Subclass Code": 68110
+  },
+  {
+    "Subclass Description": "Real estate buying, developing, subdividing and selling, of residential including mass housing",
+    "Subclass Code": 68120
+  },
+  {
+    "Subclass Description": "Cemetery development, selling, renting, leasing and operating of self-owned cemetery",
+    "Subclass Code": 68131
+  },
+  {
+    "Subclass Description": "Columbarium development, selling, renting, leasing and operating of self-owned columbarium (including burial crypt)",
+    "Subclass Code": 68132
+  },
+  {
+    "Subclass Description": "Renting or leasing services of residential properties",
+    "Subclass Code": 68140
+  },
+  {
+    "Subclass Description": "Other real estate activities with own or leased property",
+    "Subclass Code": 68190
+  },
+  {
+    "Subclass Description": "Real estate activities on a fee or contract basis",
+    "Subclass Code": 68200
+  },
+  {
+    "Subclass Description": "Legal activities",
+    "Subclass Code": 69100
+  },
+  {
+    "Subclass Description": "Accounting, bookkeeping and auditing activities; tax consultancy",
+    "Subclass Code": 69200
+  },
+  {
+    "Subclass Description": "Activities of head offices",
+    "Subclass Code": 70100
+  },
+  {
+    "Subclass Description": "Management consultancy activities",
+    "Subclass Code": 70200
+  },
+  {
+    "Subclass Description": "Environmental engineering activities",
+    "Subclass Code": 71101
+  },
+  {
+    "Subclass Description": "Architectural and other engineering activities",
+    "Subclass Code": 71102
+  },
+  {
+    "Subclass Description": "Land surveying services",
+    "Subclass Code": 71103
+  },
+  {
+    "Subclass Description": "Other technical activities related to architectural and engineering",
+    "Subclass Code": 71109
+  },
+  {
+    "Subclass Description": "Technical testing and analysis",
+    "Subclass Code": 71200
+  },
+  {
+    "Subclass Description": "Research and experimental development in natural sciences",
+    "Subclass Code": 72101
+  },
+  {
+    "Subclass Description": "Research and experimental development in engineering and technology",
+    "Subclass Code": 72102
+  },
+  {
+    "Subclass Description": "Research and experimental development in health sciences",
+    "Subclass Code": 72103
+  },
+  {
+    "Subclass Description": "Research and experimental development in agricultural sciences",
+    "Subclass Code": 72104
+  },
+  {
+    "Subclass Description": "Research and experimental development on social sciences and humanities",
+    "Subclass Code": 72200
+  },
+  {
+    "Subclass Description": "Research and experimental development in information technology",
+    "Subclass Code": 72300
+  },
+  {
+    "Subclass Description": "Advertising agency, except billboard and outdoor advertising",
+    "Subclass Code": 73101
+  },
+  {
+    "Subclass Description": "Billboard and outdoor advertising services",
+    "Subclass Code": 73102
+  },
+  {
+    "Subclass Description": "Media representation",
+    "Subclass Code": 73103
+  },
+  {
+    "Subclass Description": "Commercial art services",
+    "Subclass Code": 73104
+  },
+  {
+    "Subclass Description": "Advertising services, n.e.c.",
+    "Subclass Code": 73109
+  },
+  {
+    "Subclass Description": "Market research and public opinion polling",
+    "Subclass Code": 73200
+  },
+  {
+    "Subclass Description": "Fashion design",
+    "Subclass Code": 74101
+  },
+  {
+    "Subclass Description": "Interior decoration services other than those in class 4330",
+    "Subclass Code": 74102
+  },
+  {
+    "Subclass Description": "Digital photograph processing",
+    "Subclass Code": 74201
+  },
+  {
+    "Subclass Description": "Commercial and consumer photograph production (except aerial photography)",
+    "Subclass Code": 74202
+  },
+  {
+    "Subclass Description": "Photograph and motion pictures processing (not related to motion pictures and TV industries)",
+    "Subclass Code": 74203
+  },
+  {
+    "Subclass Description": "Film developing and printing and photograph enlarging",
+    "Subclass Code": 74204
+  },
+  {
+    "Subclass Description": "Aerial photography",
+    "Subclass Code": 74205
+  },
+  {
+    "Subclass Description": "Microfilming activities",
+    "Subclass Code": 74206
+  },
+  {
+    "Subclass Description": "Underwater photography",
+    "Subclass Code": 74207
+  },
+  {
+    "Subclass Description": "Photographic activities, n.e.c.",
+    "Subclass Code": 74209
+  },
+  {
+    "Subclass Description": "Business brokerage activities",
+    "Subclass Code": 74901
+  },
+  {
+    "Subclass Description": "Weather forecasting and meteorological services",
+    "Subclass Code": 74902
+  },
+  {
+    "Subclass Description": "Translation and interpretation services",
+    "Subclass Code": 74903
+  },
+  {
+    "Subclass Description": "Environmental consulting services",
+    "Subclass Code": 74904
+  },
+  {
+    "Subclass Description": "Statistical and data analytics consulting services",
+    "Subclass Code": 74905
+  },
+  {
+    "Subclass Description": "Food safety consulting services",
+    "Subclass Code": 74906
+  },
+  {
+    "Subclass Description": "Halal consulting services",
+    "Subclass Code": 74907
+  },
+  {
+    "Subclass Description": "Other professional, scientific and technical activities, n.e.c.",
+    "Subclass Code": 74909
+  },
+  {
+    "Subclass Description": "Veterinary activities",
+    "Subclass Code": 75000
+  },
+  {
+    "Subclass Description": "Renting and leasing of motor vehicles (except motorcycle, caravans, campers)",
+    "Subclass Code": 77100
+  },
+  {
+    "Subclass Description": "Renting and leasing of recreational and sports goods",
+    "Subclass Code": 77210
+  },
+  {
+    "Subclass Description": "Renting of video tapes and disks",
+    "Subclass Code": 77220
+  },
+  {
+    "Subclass Description": "Renting of wearing apparel",
+    "Subclass Code": 77291
+  },
+  {
+    "Subclass Description": "Renting of furniture",
+    "Subclass Code": 77292
+  },
+  {
+    "Subclass Description": "Renting of books, journals and magazines",
+    "Subclass Code": 77293
+  },
+  {
+    "Subclass Description": "Renting of ornamental plants",
+    "Subclass Code": 77294
+  },
+  {
+    "Subclass Description": "Renting of electrical appliances",
+    "Subclass Code": 77295
+  },
+  {
+    "Subclass Description": "Renting of audio-video machines",
+    "Subclass Code": 77296
+  },
+  {
+    "Subclass Description": "Renting of personal and household goods, n.e.c.",
+    "Subclass Code": 77299
+  },
+  {
+    "Subclass Description": "Renting of land transport equipment",
+    "Subclass Code": 77301
+  },
+  {
+    "Subclass Description": "Renting of water transport equipment",
+    "Subclass Code": 77302
+  },
+  {
+    "Subclass Description": "Renting of air transport equipment",
+    "Subclass Code": 77303
+  },
+  {
+    "Subclass Description": "Renting of agricultural machinery and equipment",
+    "Subclass Code": 77304
+  },
+  {
+    "Subclass Description": "Renting of construction and civil engineering machinery and equipment",
+    "Subclass Code": 77305
+  },
+  {
+    "Subclass Description": "Renting of computers and computer peripherals equipment",
+    "Subclass Code": 77306
+  },
+  {
+    "Subclass Description": "Renting of office machinery and equipment (excluding computers)",
+    "Subclass Code": 77307
+  },
+  {
+    "Subclass Description": "Renting and leasing of other machinery, equipment and tangible goods, n.e.c.",
+    "Subclass Code": 77309
+  },
+  {
+    "Subclass Description": "Leasing of intellectual property and similar products, except copyrighted works",
+    "Subclass Code": 77400
+  },
+  {
+    "Subclass Description": "Labor recruitment and provision of personnel, local",
+    "Subclass Code": 78101
+  },
+  {
+    "Subclass Description": "Labor recruitment and provision of personnel, overseas",
+    "Subclass Code": 78102
+  },
+  {
+    "Subclass Description": "On-line employment placement agencies",
+    "Subclass Code": 78103
+  },
+  {
+    "Subclass Description": "Casting agencies activities",
+    "Subclass Code": 78104
+  },
+  {
+    "Subclass Description": "Other activities of employment placement agencies, n.e.c.",
+    "Subclass Code": 78109
+  },
+  {
+    "Subclass Description": "Temporary labor recruitment and provision of personnel, local",
+    "Subclass Code": 78201
+  },
+  {
+    "Subclass Description": "Temporary labor recruitment and provision of personnel, overseas",
+    "Subclass Code": 78202
+  },
+  {
+    "Subclass Description": "Other human resources provision",
+    "Subclass Code": 78300
+  },
+  {
+    "Subclass Description": "Travel agency activities",
+    "Subclass Code": 79110
+  },
+  {
+    "Subclass Description": "Tour operator activities",
+    "Subclass Code": 79120
+  },
+  {
+    "Subclass Description": "Activities of booking offices",
+    "Subclass Code": 79901
+  },
+  {
+    "Subclass Description": "Accommodation reservation activities",
+    "Subclass Code": 79902
+  },
+  {
+    "Subclass Description": "Transportation reservation activities",
+    "Subclass Code": 79903
+  },
+  {
+    "Subclass Description": "Package tour reservation activities",
+    "Subclass Code": 79904
+  },
+  {
+    "Subclass Description": "Tourist assistance activities (e.g. tourist guides)",
+    "Subclass Code": 79905
+  },
+  {
+    "Subclass Description": "Tickets sales/booking, for theatrical, entertainment and recreational reservation activities",
+    "Subclass Code": 79906
+  },
+  {
+    "Subclass Description": "Visitor information activities",
+    "Subclass Code": 79907
+  },
+  {
+    "Subclass Description": "Activities of transportation network service",
+    "Subclass Code": 79908
+  },
+  {
+    "Subclass Description": "Other reservation service and related activities, n.e.c.",
+    "Subclass Code": 79909
+  },
+  {
+    "Subclass Description": "Private security activities",
+    "Subclass Code": 80100
+  },
+  {
+    "Subclass Description": "Security systems service activities",
+    "Subclass Code": 80200
+  },
+  {
+    "Subclass Description": "Investigation activities",
+    "Subclass Code": 80300
+  },
+  {
+    "Subclass Description": "Combined facilities support activities",
+    "Subclass Code": 81100
+  },
+  {
+    "Subclass Description": "General cleaning of buildings",
+    "Subclass Code": 81210
+  },
+  {
+    "Subclass Description": "Industrial cleaning activities",
+    "Subclass Code": 81291
+  },
+  {
+    "Subclass Description": "Pest control services, non-agricultural",
+    "Subclass Code": 81292
+  },
+  {
+    "Subclass Description": "Other building and industrial cleaning activities, n.e.c.",
+    "Subclass Code": 81299
+  },
+  {
+    "Subclass Description": "Landscape care and maintenance service activities",
+    "Subclass Code": 81300
+  },
+  {
+    "Subclass Description": "Combined office administrative service activities",
+    "Subclass Code": 82110
+  },
+  {
+    "Subclass Description": "Photocopying service activities",
+    "Subclass Code": 82191
+  },
+  {
+    "Subclass Description": "Duplicating and mailing activities",
+    "Subclass Code": 82192
+  },
+  {
+    "Subclass Description": "Other specialized office support activities",
+    "Subclass Code": 82199
+  },
+  {
+    "Subclass Description": "Customer relationship management activities",
+    "Subclass Code": 82211
+  },
+  {
+    "Subclass Description": "Sales and marketing (including telemarketing) activities",
+    "Subclass Code": 82212
+  },
+  {
+    "Subclass Description": "Other call centers activities (voice), n.e.c.",
+    "Subclass Code": 82219
+  },
+  {
+    "Subclass Description": "Finance and accounting activities",
+    "Subclass Code": 82221
+  },
+  {
+    "Subclass Description": "Human resources and training activities",
+    "Subclass Code": 82222
+  },
+  {
+    "Subclass Description": "Administrative support activities",
+    "Subclass Code": 82223
+  },
+  {
+    "Subclass Description": "Document processes activities",
+    "Subclass Code": 82224
+  },
+  {
+    "Subclass Description": "Payroll maintenance and other transaction processing activities",
+    "Subclass Code": 82225
+  },
+  {
+    "Subclass Description": "Medical transcription activities",
+    "Subclass Code": 82226
+  },
+  {
+    "Subclass Description": "Legal services activities",
+    "Subclass Code": 82227
+  },
+  {
+    "Subclass Description": "Supply chain management activities",
+    "Subclass Code": 82228
+  },
+  {
+    "Subclass Description": "Other back office operations activities, n.e.c",
+    "Subclass Code": 82229
+  },
+  {
+    "Subclass Description": "Engineering outsourcing activities",
+    "Subclass Code": 82291
+  },
+  {
+    "Subclass Description": "Product development activities",
+    "Subclass Code": 82292
+  },
+  {
+    "Subclass Description": "Publishing outsourcing activities",
+    "Subclass Code": 82293
+  },
+  {
+    "Subclass Description": "Research and analysis activities",
+    "Subclass Code": 82294
+  },
+  {
+    "Subclass Description": "Intellectual property research and documentation activities",
+    "Subclass Code": 82295
+  },
+  {
+    "Subclass Description": "Security outsourcing activities",
+    "Subclass Code": 82296
+  },
+  {
+    "Subclass Description": "Knowledge process outsourcing (KPO) activities",
+    "Subclass Code": 82297
+  },
+  {
+    "Subclass Description": "Other non-voice related activities, n.e.c.",
+    "Subclass Code": 82299
+  },
+  {
+    "Subclass Description": "Conventions, trade shows, exhibits, conferences and meetings activities",
+    "Subclass Code": 82301
+  },
+  {
+    "Subclass Description": "Other organization of conventions and trade shows, n.e.c._x000D_",
+    "Subclass Code": 82309
+  },
+  {
+    "Subclass Description": "Activities of collection agencies and credit bureaus",
+    "Subclass Code": 82910
+  },
+  {
+    "Subclass Description": "Packaging activities",
+    "Subclass Code": 82920
+  },
+  {
+    "Subclass Description": "Other business support service activities, n.e.c.",
+    "Subclass Code": 82990
+  },
+  {
+    "Subclass Description": "National executive and legislative administration",
+    "Subclass Code": 84111
+  },
+  {
+    "Subclass Description": "Public administration, regional government",
+    "Subclass Code": 84112
+  },
+  {
+    "Subclass Description": "Public administration, local government",
+    "Subclass Code": 84113
+  },
+  {
+    "Subclass Description": "Public administration and supervision of financial and fiscal affairs; operation of taxation schemes",
+    "Subclass Code": 84114
+  },
+  {
+    "Subclass Description": "Ancillary service activities for the Government as a whole",
+    "Subclass Code": 84115
+  },
+  {
+    "Subclass Description": "General public administration activities, n.e.c.",
+    "Subclass Code": 84119
+  },
+  {
+    "Subclass Description": "Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security",
+    "Subclass Code": 84120
+  },
+  {
+    "Subclass Description": "Regulation of and contribution to more efficient operation of businesses",
+    "Subclass Code": 84130
+  },
+  {
+    "Subclass Description": "Foreign affairs",
+    "Subclass Code": 84210
+  },
+  {
+    "Subclass Description": "Defense activities",
+    "Subclass Code": 84220
+  },
+  {
+    "Subclass Description": "Public order and safety activities",
+    "Subclass Code": 84230
+  },
+  {
+    "Subclass Description": "Compulsory social security activities",
+    "Subclass Code": 84300
+  },
+  {
+    "Subclass Description": "Public pre-primary/pre-school education",
+    "Subclass Code": 85111
+  },
+  {
+    "Subclass Description": "Private pre-primary/pre-school education",
+    "Subclass Code": 85112
+  },
+  {
+    "Subclass Description": "Public pre-primary education for children with special needs",
+    "Subclass Code": 85121
+  },
+  {
+    "Subclass Description": "Private pre-primary and primary education for children with special needs",
+    "Subclass Code": 85122
+  },
+  {
+    "Subclass Description": "Public primary/elementary education",
+    "Subclass Code": 85211
+  },
+  {
+    "Subclass Description": "Private primary/elementary education",
+    "Subclass Code": 85212
+  },
+  {
+    "Subclass Description": "Public primary/elementary education for children with special needs",
+    "Subclass Code": 85221
+  },
+  {
+    "Subclass Description": "Private primary/elementary education for children with special needs",
+    "Subclass Code": 85222
+  },
+  {
+    "Subclass Description": "Public general secondary education",
+    "Subclass Code": 85311
+  },
+  {
+    "Subclass Description": "Private general secondary education",
+    "Subclass Code": 85312
+  },
+  {
+    "Subclass Description": "Public general secondary education for children with special needs",
+    "Subclass Code": 85321
+  },
+  {
+    "Subclass Description": "Private general secondary education for children with special needs",
+    "Subclass Code": 85322
+  },
+  {
+    "Subclass Description": "Public technical and vocational secondary education",
+    "Subclass Code": 85331
+  },
+  {
+    "Subclass Description": "Private technical and vocational secondary education",
+    "Subclass Code": 85332
+  },
+  {
+    "Subclass Description": "Public technical and vocational secondary education for children with special needs",
+    "Subclass Code": 85341
+  },
+  {
+    "Subclass Description": "Private technical and vocational secondary education for children with special needs",
+    "Subclass Code": 85342
+  },
+  {
+    "Subclass Description": "Public higher education",
+    "Subclass Code": 85401
+  },
+  {
+    "Subclass Description": "Private higher education",
+    "Subclass Code": 85402
+  },
+  {
+    "Subclass Description": "Sports and recreation education",
+    "Subclass Code": 85510
+  },
+  {
+    "Subclass Description": "Cultural education",
+    "Subclass Code": 85520
+  },
+  {
+    "Subclass Description": "Professional and licensure review services",
+    "Subclass Code": 85591
+  },
+  {
+    "Subclass Description": "Training centers and facilities activities including culinary, caregiving, language proficiency",
+    "Subclass Code": 85592
+  },
+  {
+    "Subclass Description": "Online tutorial services",
+    "Subclass Code": 85593
+  },
+  {
+    "Subclass Description": "Driving schools",
+    "Subclass Code": 85594
+  },
+  {
+    "Subclass Description": "Other education, n.e.c.",
+    "Subclass Code": 85599
+  },
+  {
+    "Subclass Description": "Public educational support services",
+    "Subclass Code": 85601
+  },
+  {
+    "Subclass Description": "Private educational support services",
+    "Subclass Code": 85602
+  },
+  {
+    "Subclass Description": "Public general hospitals activities",
+    "Subclass Code": 86111
+  },
+  {
+    "Subclass Description": "Public sanitaria and other similar activities",
+    "Subclass Code": 86112
+  },
+  {
+    "Subclass Description": "Public mental health and substance abuse hospitals activities",
+    "Subclass Code": 86113
+  },
+  {
+    "Subclass Description": "Public maternity hospitals activities",
+    "Subclass Code": 86114
+  },
+  {
+    "Subclass Description": "Other public hospitals, sanitaria and other similar activities, n.e.c.",
+    "Subclass Code": 86119
+  },
+  {
+    "Subclass Description": "Private general hospitals activities",
+    "Subclass Code": 86121
+  },
+  {
+    "Subclass Description": "Private sanitaria and other similar activities",
+    "Subclass Code": 86122
+  },
+  {
+    "Subclass Description": "Private mental health and substance abuse hospitals activities",
+    "Subclass Code": 86123
+  },
+  {
+    "Subclass Description": "Private maternity hospitals activities",
+    "Subclass Code": 86124
+  },
+  {
+    "Subclass Description": "Other private hospitals, sanitaria and other similar activities, n.e.c.",
+    "Subclass Code": 86129
+  },
+  {
+    "Subclass Description": "Public medical activities (including puericulture and laboratory services)",
+    "Subclass Code": 86211
+  },
+  {
+    "Subclass Description": "Public dental and laboratory services",
+    "Subclass Code": 86212
+  },
+  {
+    "Subclass Description": "Public medical, dental and other health activities, n.e.c.",
+    "Subclass Code": 86219
+  },
+  {
+    "Subclass Description": "Private medical activities",
+    "Subclass Code": 86221
+  },
+  {
+    "Subclass Description": "Private dental and laboratory services",
+    "Subclass Code": 86222
+  },
+  {
+    "Subclass Description": "Child care/pediatric clinic services",
+    "Subclass Code": 86223
+  },
+  {
+    "Subclass Description": "Medical and diagnostic laboratory services",
+    "Subclass Code": 86224
+  },
+  {
+    "Subclass Description": "Dialysis center activities",
+    "Subclass Code": 86225
+  },
+  {
+    "Subclass Description": "Private medical, dental and other health activities, n.e.c.",
+    "Subclass Code": 86229
+  },
+  {
+    "Subclass Description": "Other human health activities",
+    "Subclass Code": 86900
+  },
+  {
+    "Subclass Description": "Residential nursing care facilities",
+    "Subclass Code": 87100
+  },
+  {
+    "Subclass Description": "Rehabilitation of people addicted to drugs or alcohol",
+    "Subclass Code": 87201
+  },
+  {
+    "Subclass Description": "Caring for the mentally and physically handicapped",
+    "Subclass Code": 87202
+  },
+  {
+    "Subclass Description": "Other residential care activities for mental retardation, mental health and substance abuse, n.e.c.",
+    "Subclass Code": 87209
+  },
+  {
+    "Subclass Description": "Residential care activities for the elderly and disabled",
+    "Subclass Code": 87300
+  },
+  {
+    "Subclass Description": "Child care services",
+    "Subclass Code": 87901
+  },
+  {
+    "Subclass Description": "Caring for unwed mothers and children",
+    "Subclass Code": 87902
+  },
+  {
+    "Subclass Description": "Caring for the orphans",
+    "Subclass Code": 87903
+  },
+  {
+    "Subclass Description": "Other residential care activities, n.e.c.",
+    "Subclass Code": 87909
+  },
+  {
+    "Subclass Description": "Welfare and guidance counseling activities (elderly and disabled)",
+    "Subclass Code": 88101
+  },
+  {
+    "Subclass Description": "Day-care activities for the elderly or for handicapped adults",
+    "Subclass Code": 88102
+  },
+  {
+    "Subclass Description": "Vocational rehabilitation and habilitation activities for disabled adults",
+    "Subclass Code": 88103
+  },
+  {
+    "Subclass Description": "Welfare and guidance counseling activities for children and adolescents",
+    "Subclass Code": 88901
+  },
+  {
+    "Subclass Description": "Child-care activities (including for the handicapped)",
+    "Subclass Code": 88902
+  },
+  {
+    "Subclass Description": "Vocational rehabilitation and habilitation activities for unemployed persons",
+    "Subclass Code": 88903
+  },
+  {
+    "Subclass Description": "Charitable activities",
+    "Subclass Code": 88904
+  },
+  {
+    "Subclass Description": "Other social work activities without accommodation, n.e.c.",
+    "Subclass Code": 88909
+  },
+  {
+    "Subclass Description": "Concerts and opera or dance production",
+    "Subclass Code": 90001
+  },
+  {
+    "Subclass Description": "Live theatrical presentations and other stage productions",
+    "Subclass Code": 90002
+  },
+  {
+    "Subclass Description": "Individual artists activities",
+    "Subclass Code": 90003
+  },
+  {
+    "Subclass Description": "Ancillary theatrical activities",
+    "Subclass Code": 90004
+  },
+  {
+    "Subclass Description": "Art galleries",
+    "Subclass Code": 90005
+  },
+  {
+    "Subclass Description": "Operation of concert and theatre halls and other arts facilities",
+    "Subclass Code": 90006
+  },
+  {
+    "Subclass Description": "Other creative, arts and entertainment activities, n.e.c.",
+    "Subclass Code": 90009
+  },
+  {
+    "Subclass Description": "Library and archives activities",
+    "Subclass Code": 91010
+  },
+  {
+    "Subclass Description": "Museums activities and operation of historical sites and buildings",
+    "Subclass Code": 91020
+  },
+  {
+    "Subclass Description": "Botanical and zoological gardens and nature reserves activities",
+    "Subclass Code": 91030
+  },
+  {
+    "Subclass Description": "Gambling and betting activities",
+    "Subclass Code": 92000
+  },
+  {
+    "Subclass Description": "Operation of sports facilities",
+    "Subclass Code": 93110
+  },
+  {
+    "Subclass Description": "Activities of sports clubs",
+    "Subclass Code": 93120
+  },
+  {
+    "Subclass Description": "Other sports activities",
+    "Subclass Code": 93190
+  },
+  {
+    "Subclass Description": "Activities of amusement parks and theme parks",
+    "Subclass Code": 93210
+  },
+  {
+    "Subclass Description": "Operation of ballrooms, discotheques (discoNULLs)",
+    "Subclass Code": 93291
+  },
+  {
+    "Subclass Description": "Operation of recreation parks, beaches, including renting of facilities such as bathhouses, lockers, chairs etc.;",
+    "Subclass Code": 93292
+  },
+  {
+    "Subclass Description": "Token, coin or cash-basis and card-operated games (arcade)",
+    "Subclass Code": 93293
+  },
+  {
+    "Subclass Description": "Indoor playground and playhouse operations for children",
+    "Subclass Code": 93294
+  },
+  {
+    "Subclass Description": "Light and/or sound system operation for fair and shows, discotheques and dance floor",
+    "Subclass Code": 93295
+  },
+  {
+    "Subclass Description": "Other amusement and recreation activities, n.e.c.",
+    "Subclass Code": 93299
+  },
+  {
+    "Subclass Description": "Activities of business and employers membership organizations",
+    "Subclass Code": 94110
+  },
+  {
+    "Subclass Description": "Activities of professional membership organizations",
+    "Subclass Code": 94120
+  },
+  {
+    "Subclass Description": "Activities of trade unions",
+    "Subclass Code": 94200
+  },
+  {
+    "Subclass Description": "Activities of religious organizations",
+    "Subclass Code": 94910
+  },
+  {
+    "Subclass Description": "Activities of political organizations",
+    "Subclass Code": 94920
+  },
+  {
+    "Subclass Description": "Activities of other membership organizations, n.e.c.",
+    "Subclass Code": 94990
+  },
+  {
+    "Subclass Description": "Repair of computers and peripheral equipment",
+    "Subclass Code": 95110
+  },
+  {
+    "Subclass Description": "Repair of communications equipment",
+    "Subclass Code": 95120
+  },
+  {
+    "Subclass Description": "Repair of consumer electronics",
+    "Subclass Code": 95210
+  },
+  {
+    "Subclass Description": "Repair and servicing of household appliances",
+    "Subclass Code": 95221
+  },
+  {
+    "Subclass Description": "Repair and servicing of home and garden equipment",
+    "Subclass Code": 95222
+  },
+  {
+    "Subclass Description": "Repair of boots and shoes",
+    "Subclass Code": 95231
+  },
+  {
+    "Subclass Description": "Repair of luggage and handbags",
+    "Subclass Code": 95232
+  },
+  {
+    "Subclass Description": "Repair of wood furniture",
+    "Subclass Code": 95241
+  },
+  {
+    "Subclass Description": "Repair of rattan furniture (reed, wicker and cane)",
+    "Subclass Code": 95242
+  },
+  {
+    "Subclass Description": "Repair of furniture and fixtures of metal",
+    "Subclass Code": 95243
+  },
+  {
+    "Subclass Description": "Repair of other furniture and fixtures, n.e.c.",
+    "Subclass Code": 95249
+  },
+  {
+    "Subclass Description": "Repair and alteration of jewelry",
+    "Subclass Code": 95291
+  },
+  {
+    "Subclass Description": "Repair of watches",
+    "Subclass Code": 95292
+  },
+  {
+    "Subclass Description": "Other repair of personal and household goods, n.e.c.",
+    "Subclass Code": 95299
+  },
+  {
+    "Subclass Description": "Spa activities",
+    "Subclass Code": 96101
+  },
+  {
+    "Subclass Description": "Steam and bath activities",
+    "Subclass Code": 96102
+  },
+  {
+    "Subclass Description": "Slendering and body building activities",
+    "Subclass Code": 96103
+  },
+  {
+    "Subclass Description": "Beauty treatment and personal grooming activities",
+    "Subclass Code": 96104
+  },
+  {
+    "Subclass Description": "Beauty parlor/salon activities",
+    "Subclass Code": 96105
+  },
+  {
+    "Subclass Description": "Barber shop activities",
+    "Subclass Code": 96106
+  },
+  {
+    "Subclass Description": "Massage parlor",
+    "Subclass Code": 96107
+  },
+  {
+    "Subclass Description": "Other personal services for wellness activities, n.e.c.",
+    "Subclass Code": 96109
+  },
+  {
+    "Subclass Description": "Washing and dry cleaning of textile and fur products",
+    "Subclass Code": 96210
+  },
+  {
+    "Subclass Description": "Funeral and related activities",
+    "Subclass Code": 96300
+  },
+  {
+    "Subclass Description": "Domestic services",
+    "Subclass Code": 96400
+  },
+  {
+    "Subclass Description": "Social escort service activities (excluding tourist guides)",
+    "Subclass Code": 96901
+  },
+  {
+    "Subclass Description": "Pet boarding activities",
+    "Subclass Code": 96902
+  },
+  {
+    "Subclass Description": "Astrological and spiritualist activities",
+    "Subclass Code": 96903
+  },
+  {
+    "Subclass Description": "Shoe shiner, porter, valet car parker activities",
+    "Subclass Code": 96904
+  },
+  {
+    "Subclass Description": "Coin/bill/card-operated machine activities",
+    "Subclass Code": 96905
+  },
+  {
+    "Subclass Description": "Event planning/organizing activities (e.g., wedding, birthday, debut, baptismal)",
+    "Subclass Code": 96906
+  },
+  {
+    "Subclass Description": "Miscellaneous service activities, n.e.c.",
+    "Subclass Code": 96909
+  },
+  {
+    "Subclass Description": "Activities of households as employers of domestic personnel",
+    "Subclass Code": 97000
+  },
+  {
+    "Subclass Description": "Undifferentiated goods-producing activities of private households for own use",
+    "Subclass Code": 98100
+  },
+  {
+    "Subclass Description": "Undifferentiated services-producing activities of private households for own use",
+    "Subclass Code": 98200
+  },
+  {
+    "Subclass Description": "Foreign diplomatic missions",
+    "Subclass Code": 99011
+  },
+  {
+    "Subclass Description": "International organizations",
+    "Subclass Code": 99012
+  },
+  {
+    "Subclass Description": "International organizations and extra-territorial organizations and bodies, n.e.c.",
+    "Subclass Code": 99019
+  },
+  {
+    "Subclass Description": "Activities of other international organizations",
+    "Subclass Code": 99090
+  }
+]
