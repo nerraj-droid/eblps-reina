@@ -47,11 +47,11 @@ export const businessPermitsApi = {
     api.get(`/business-permits/${id}`),
   
   // Create new business permit application
-  create: (data: any) => 
+  create: (data: Record<string, unknown>) => 
     api.post('/business-permits', data),
   
   // Update business permit
-  update: (id: string, data: any) => 
+  update: (id: string, data: Record<string, unknown>) => 
     api.put(`/business-permits/${id}`, data),
   
   // Delete business permit
@@ -77,11 +77,11 @@ export const applicationsApi = {
     api.get(`/applications/${id}`),
   
   // Create new application
-  create: (data: any) => 
+  create: (data: Record<string, unknown>) => 
     api.post('/applications', data),
   
   // Update application
-  update: (id: string, data: any) => 
+  update: (id: string, data: Record<string, unknown>) => 
     api.put(`/applications/${id}`, data),
   
   // Submit application for review
@@ -99,11 +99,11 @@ export const constituentsApi = {
     api.get(`/constituents/${id}`),
   
   // Create new constituent
-  create: (data: any) => 
+  create: (data: Record<string, unknown>) => 
     api.post('/constituents', data),
   
   // Update constituent
-  update: (id: string, data: any) => 
+  update: (id: string, data: Record<string, unknown>) => 
     api.put(`/constituents/${id}`, data),
   
   // Delete constituent
@@ -111,22 +111,19 @@ export const constituentsApi = {
     api.delete(`/constituents/${id}`),
 };
 
-export const paymentsApi = {
-  // Get all payments
-  getAll: (params?: { page?: number; search?: string }) => 
-    api.get('/payments', { params }),
+
+export const psicApi = {
+  // Get all PSIC codes with pagination and search
+  getAll: (params?: { page?: number; search?: string; per_page?: number }) => 
+    api.get('/psic', { params }),
   
-  // Get single payment
+  // Get single PSIC code
   getById: (id: string) => 
-    api.get(`/payments/${id}`),
+    api.get(`/psic/${id}`),
   
-  // Process payment
-  process: (data: any) => 
-    api.post('/payments', data),
-  
-  // Get payment by permit ID
-  getByPermitId: (permitId: string) => 
-    api.get(`/payments/permit/${permitId}`),
+  // Search PSIC codes
+  search: (query: string) => 
+    api.get('/psic/search', { params: { q: query } }),
 };
 
 export const reportsApi = {

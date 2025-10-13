@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BusinessPermitController;
+use App\Http\Controllers\PsicController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -72,6 +73,13 @@ Route::prefix('payments')->group(function () {
             'message' => 'Payment processed successfully'
         ]);
     });
+});
+
+// PSIC API
+Route::prefix('psic')->group(function () {
+    Route::get('/', [PsicController::class, 'index']);
+    Route::get('/search', [PsicController::class, 'search']);
+    Route::get('/{psic}', [PsicController::class, 'show']);
 });
 
 // Reports API (placeholder)

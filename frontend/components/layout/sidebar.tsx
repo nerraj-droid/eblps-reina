@@ -18,11 +18,6 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "Business Permits", href: "/business-permits", icon: FileText },
   { name: "Applications", href: "/applications", icon: FileCheck },
-  { name: "Constituents", href: "/constituents", icon: Users },
-  { name: "Payments", href: "/payments", icon: CreditCard },
-  { name: "Reports", href: "/reports", icon: BarChart3 },
-  { name: "Settings", href: "/settings", icon: Settings },
-  { name: "API Test", href: "/api-test", icon: Settings },
 ];
 
 export function Sidebar() {

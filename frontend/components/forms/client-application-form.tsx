@@ -2,13 +2,13 @@
 
 import { BusinessPermitForm } from "./business-permit-form";
 
-export function AdminForm() {
+export function ClientApplicationForm() {
   const handleSubmit = (formData: any) => {
-    console.log("Admin form submitted:", formData);
+    console.log("Client application submitted:", formData);
   };
 
   const handleCancel = () => {
-    console.log("Admin form cancelled");
+    console.log("Client application cancelled");
   };
 
   const handleBack = () => {
@@ -17,17 +17,17 @@ export function AdminForm() {
 
   return (
     <BusinessPermitForm
-      title="Admin - Business Permit Application"
-      subtitle="Administrative review and processing form"
+      title="Business Permit Application"
+      subtitle="Apply for a new business permit"
       showBackButton={true}
       onBack={handleBack}
       onSubmit={handleSubmit}
       onCancel={handleCancel}
-      submitButtonText="Submit"
+      submitButtonText="Submit Application"
       cancelButtonText="Cancel"
-      showApplicationType={true}
-      showBusinessFees={true}
-      isReadOnly={true}
+      showApplicationType={false}
+      showBusinessFees={false}
+      isReadOnly={false}
     />
   );
 }
