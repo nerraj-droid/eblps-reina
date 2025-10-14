@@ -2,8 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Bell, Settings, User, ChevronDown } from "lucide-react";
+import { Bell, Settings, User, ChevronDown, LogOut } from "lucide-react";
 import { useSidebar } from "@/lib/contexts/sidebar-context";
+import { useAuth } from "@/lib/contexts/auth-context";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
@@ -16,6 +17,7 @@ import {
 
 export function Header() {
   const { isCollapsed } = useSidebar();
+  const { user, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white">
@@ -60,9 +62,11 @@ export function Header() {
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">Christina Maria Newman</p>
+                  <p className="text-sm font-medium leading-none">
+                    {user?.name || "User"}
+                  </p>
                   <p className="text-xs leading-none text-slate-500">
-                    christina.newman@example.com
+                    {user?.email || "user@example.com"}
                   </p>
                 </div>
               </DropdownMenuLabel>
@@ -76,7 +80,11 @@ export function Header() {
                 <span>Settings</span>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="cursor-pointer text-red-600 focus:text-red-600">
+              <DropdownMenuItem
+                className="cursor-pointer text-red-600 focus:text-red-600"
+                onClick={logout}
+              >
+                <LogOut className="mr-2 h-4 w-4" />
                 <span>Logout</span>
               </DropdownMenuItem>
             </DropdownMenuContent>

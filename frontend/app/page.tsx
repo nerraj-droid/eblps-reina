@@ -2,6 +2,7 @@
 
 import { MainLayout } from "@/components/layout/main-layout";
 import { BusinessPermitList } from "@/components/business-permits/business-permit-list";
+import { ProtectedRoute } from "@/components/auth/protected-route";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,18 +15,20 @@ export default function Home() {
   usePageLoading();
 
   return (
-    <MainLayout>
-      <div className="space-y-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbPage>Dashboard</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+    <ProtectedRoute>
+      <MainLayout>
+        <div className="space-y-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbPage>Dashboard</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
 
-        <BusinessPermitList />
-      </div>
-    </MainLayout>
+          <BusinessPermitList />
+        </div>
+      </MainLayout>
+    </ProtectedRoute>
   );
 }

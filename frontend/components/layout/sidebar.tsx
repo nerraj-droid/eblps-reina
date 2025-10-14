@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useSidebar } from "@/lib/contexts/sidebar-context";
 import { useLoading } from "@/lib/contexts/loading-context";
+import { useAuth } from "@/lib/contexts/auth-context";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
@@ -28,12 +29,17 @@ export function Sidebar() {
   const router = useRouter();
   const { isCollapsed, toggleSidebar } = useSidebar();
   const { startLoading } = useLoading();
+  const { logout } = useAuth();
 
   const handleNavigation = (href: string) => {
     if (pathname !== href) {
       startLoading();
       router.push(href);
     }
+  };
+
+  const handleLogout = () => {
+    logout();
   };
 
   return (
@@ -115,6 +121,7 @@ export function Sidebar() {
               isCollapsed ? "justify-center px-0" : ""
             )}
             title={isCollapsed ? "Logout" : undefined}
+            onClick={handleLogout}
           >
             <LogOut className={cn(
               "h-4 w-4",
