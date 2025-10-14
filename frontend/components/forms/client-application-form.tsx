@@ -27,6 +27,7 @@ export function ClientApplicationForm() {
       cancelButtonText="Cancel"
       showApplicationType={false}
       showBusinessFees={false}
+      showTypeAndPayment={true}
       isReadOnly={false}
     />
   );

@@ -1,468 +1,432 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { MoreHorizontal, Search, Filter, Plus, Eye, Edit, Trash2, Loader2 } from "lucide-react";
-import { businessPermitsApi } from "@/lib/api";
 import { Checkbox } from "@/components/ui/checkbox";
-import { transformBackendArrayToFrontend, BackendBusinessPermit, formatDateTime } from "@/lib/data-transformer";
-import { useRouter } from "next/navigation";
+import { DeleteConfirmationDialog } from "@/components/ui/delete-confirmation-dialog";
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+    Plus,
+    Trash2,
+    Search,
+    Eye,
+    MoreHorizontal,
+    Edit,
+    CheckCircle,
+    XCircle,
+    FileText
+} from "lucide-react";
+import { useState, useEffect } from "react";
+import { businessPermitsApi } from "@/lib/api";
+import Link from "next/link";
 
 interface BusinessPermit {
-  id: string;
-  business_id_no: string;
-  business_name: string;
-  owner_name: string;
-  mobile_no: string;
-  email_address: string;
-  latest_status: string;
-  latest_status_date: string;
-  status_owner: string;
-  business_type: string;
-  application_date: string;
-  expiry_date: string;
-  permit_number: string;
-  address: string;
-  total_fee: number;
-  payment_status: string;
+    id: number;
+    permit_number: string;
+    status: string;
+    application_date: string;
+    approved_at?: string;
+    approved_by?: string;
+    business: {
+        business_name: string;
+        business_owner: {
+            first_name: string;
+            last_name: string;
+            middle_name?: string;
+            mobile_number: string;
+            email: string;
+        };
+    };
 }
 
-interface ApiResponse {
-  data: BackendBusinessPermit[];
-  meta: {
-    current_page: number;
-    last_page: number;
-    per_page: number;
-    total: number;
-  };
-  message: string;
-}
+export function BusinessPermitList() {
+    const [businessPermits, setBusinessPermits] = useState<BusinessPermit[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [selectedItems, setSelectedItems] = useState<number[]>([]);
+    const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
+    const [pagination, setPagination] = useState({
+        current_page: 1,
+        last_page: 1,
+        per_page: 10,
+        total: 0
+    });
 
-export default function BusinessPermitList() {
-  const router = useRouter();
-  const [businessPermits, setBusinessPermits] = useState<BusinessPermit[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [totalItems, setTotalItems] = useState(0);
-  const [statusFilter, setStatusFilter] = useState("");
-  const [selectedItems, setSelectedItems] = useState<string[]>([]);
-  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-  const [isDeleting, setIsDeleting] = useState(false);
+    const fetchBusinessPermits = async (page = 1, search = "") => {
+        try {
+            setLoading(true);
+            const response = await businessPermitsApi.getAll({
+                page,
+                search: search || undefined
+            });
 
-  const fetchBusinessPermits = async () => {
-    try {
-      setLoading(true);
-      const response = await businessPermitsApi.getAll({
-        page: currentPage,
-        search: searchTerm || undefined,
-        status: statusFilter || undefined,
-      });
-      
-      const data: ApiResponse = response.data;
-      // Transform backend data to frontend format
-      const transformedData = transformBackendArrayToFrontend(data.data);
-      setBusinessPermits(transformedData);
-      setTotalPages(data.meta.last_page);
-      setTotalItems(data.meta.total);
-    } catch (error) {
-      console.error("Error fetching business permits:", error);
-      // Fallback to mock data if API fails
-      setBusinessPermits([
-        {
-          id: "BP-2024-001",
-          business_id_no: "0203125-2025-0000669",
-          business_name: "ABC CORPORATION",
-          owner_name: "JOHN DOE",
-          mobile_no: "+639175201190",
-          email_address: "john.doe@abccorp.com",
-          latest_status: "ACTIVE",
-          latest_status_date: "2024-01-15T10:00:00",
-          status_owner: "JOHN DOE",
-          business_type: "Corporation",
-          application_date: "2024-01-15",
-          expiry_date: "2024-12-31",
-          permit_number: "BP-2024-001",
-          address: "123 Main St, Reina Mercedes",
-          total_fee: 5000,
-          payment_status: "Paid"
-        },
-        {
-          id: "BP-2024-002",
-          business_id_no: "0203125-2025-0000670",
-          business_name: "XYZ STORE",
-          owner_name: "JANE SMITH",
-          mobile_no: "+639175201191",
-          email_address: "jane.smith@xyzstore.com",
-          latest_status: "PENDING",
-          latest_status_date: "2024-01-20T14:30:00",
-          status_owner: "JANE SMITH",
-          business_type: "Sole Proprietorship",
-          application_date: "2024-01-20",
-          expiry_date: "2024-12-31",
-          permit_number: "BP-2024-002",
-          address: "456 Oak Ave, Reina Mercedes",
-          total_fee: 3000,
-          payment_status: "Unpaid"
+            setBusinessPermits(response.data.data);
+            setPagination(response.data.meta);
+        } catch (error) {
+            console.error("Error fetching business permits:", error);
+        } finally {
+            setLoading(false);
         }
-      ]);
-      setTotalPages(1);
-      setTotalItems(2);
-    } finally {
-      setLoading(false);
-    }
-  };
+    };
 
-  useEffect(() => {
-    fetchBusinessPermits();
-  }, [currentPage, searchTerm, statusFilter]);
+    useEffect(() => {
+        fetchBusinessPermits();
+    }, []);
 
-  const handleSearch = (value: string) => {
-    setSearchTerm(value);
-    setCurrentPage(1); // Reset to first page when searching
-  };
+    const handleSearch = (value: string) => {
+        setSearchTerm(value);
+        fetchBusinessPermits(1, value);
+    };
 
-  const handleStatusFilter = (status: string) => {
-    setStatusFilter(status);
-    setCurrentPage(1); // Reset to first page when filtering
-  };
+    const handleSelectAll = (checked: boolean) => {
+        if (checked) {
+            setSelectedItems(businessPermits.map(item => item.id));
+        } else {
+            setSelectedItems([]);
+        }
+    };
 
-  const handlePageChange = (page: number) => {
-    if (page >= 1 && page <= totalPages) {
-      setCurrentPage(page);
-    }
-  };
+    const handleSelectItem = (id: number, checked: boolean) => {
+        if (checked) {
+            setSelectedItems(prev => [...prev, id]);
+        } else {
+            setSelectedItems(prev => prev.filter(item => item !== id));
+        }
+    };
 
-  const handleSelectAll = (checked: boolean) => {
-    if (checked) {
-      setSelectedItems(businessPermits.map(permit => permit.id));
-    } else {
-      setSelectedItems([]);
-    }
-  };
+    const handleDeleteClick = () => {
+        if (selectedItems.length > 0) {
+            setDeleteDialogOpen(true);
+        }
+    };
 
-  const handleSelectItem = (itemId: string, checked: boolean) => {
-    if (checked) {
-      setSelectedItems(prev => [...prev, itemId]);
-    } else {
-      setSelectedItems(prev => prev.filter(id => id !== itemId));
-    }
-  };
+    const handleDeleteConfirm = async () => {
+        try {
+            for (const id of selectedItems) {
+                await businessPermitsApi.delete(id.toString());
+            }
+            setSelectedItems([]);
+            setDeleteDialogOpen(false);
+            fetchBusinessPermits(pagination.current_page, searchTerm);
+        } catch (error) {
+            console.error("Error deleting business permits:", error);
+        }
+    };
 
-  const handleDeleteSelected = () => {
-    if (selectedItems.length > 0) {
-      setShowDeleteDialog(true);
-    }
-  };
+    const handleViewPermit = (permitId: number) => {
+        // Navigate to view permit page
+        window.open(`/business-permits/${permitId}`, '_blank');
+    };
 
-  const confirmDelete = async () => {
-    try {
-      setIsDeleting(true);
-      
-      // Delete each selected item
-      for (const itemId of selectedItems) {
-        await businessPermitsApi.delete(itemId);
-      }
-      
-      // Refresh the list
-      await fetchBusinessPermits();
-      
-      // Clear selection
-      setSelectedItems([]);
-      setShowDeleteDialog(false);
-      
-      console.log(`Successfully deleted ${selectedItems.length} business permit(s)`);
-    } catch (error) {
-      console.error("Error deleting business permits:", error);
-      alert("Error deleting business permits. Please try again.");
-    } finally {
-      setIsDeleting(false);
-    }
-  };
+    const handleEditPermit = (permitId: number) => {
+        // Navigate to edit permit page
+        window.location.href = `/business-permits/${permitId}/edit`;
+    };
 
-  const handleSingleDelete = async (itemId: string) => {
-    try {
-      await businessPermitsApi.delete(itemId);
-      await fetchBusinessPermits();
-      console.log("Successfully deleted business permit");
-    } catch (error) {
-      console.error("Error deleting business permit:", error);
-      alert("Error deleting business permit. Please try again.");
-    }
-  };
+    const handleApprovePermit = async (permitId: number) => {
+        try {
+            await businessPermitsApi.approve(permitId.toString());
+            fetchBusinessPermits(pagination.current_page, searchTerm);
+        } catch (error) {
+            console.error("Error approving business permit:", error);
+        }
+    };
 
-  const handleAddNew = () => {
-    router.push('/admin');
-  };
+    const handleRejectPermit = async (permitId: number) => {
+        const reason = prompt("Please provide a reason for rejection:");
+        if (reason) {
+            try {
+                await businessPermitsApi.reject(permitId.toString(), reason);
+                fetchBusinessPermits(pagination.current_page, searchTerm);
+            } catch (error) {
+                console.error("Error rejecting business permit:", error);
+            }
+        }
+    };
 
-  const getStatusBadgeVariant = (status: string) => {
-    switch (status.toLowerCase()) {
-      case "active":
-      case "approved":
-        return "default";
-      case "pending":
-        return "secondary";
-      case "rejected":
-        return "destructive";
-      default:
-        return "outline";
-    }
-  };
+    const handlePrintPermit = (permitId: number) => {
+        // Open print dialog for permit
+        window.open(`/business-permits/${permitId}/print`, '_blank');
+    };
 
-  const getPaymentStatusBadgeVariant = (status: string) => {
-    switch (status.toLowerCase()) {
-      case "paid":
-        return "default";
-      case "unpaid":
-        return "destructive";
-      default:
-        return "outline";
-    }
-  };
+    const formatDate = (dateString: string) => {
+        return new Date(dateString).toLocaleDateString('en-US', {
+            month: '2-digit',
+            day: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+    };
 
-  return (
-    <div className="space-y-4">
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-2xl font-bold">Business Permit List</CardTitle>
-          <Button onClick={handleAddNew}>
-            <Plus className="mr-2 h-4 w-4" /> Add New
-          </Button>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center space-x-2 py-4">
-            <Button
-              variant={selectedItems.length > 0 ? "destructive" : "outline"}
-              onClick={handleDeleteSelected}
-              disabled={selectedItems.length === 0}
-              className="mr-2"
-            >
-              <Trash2 className="mr-2 h-4 w-4" />
-              Delete {selectedItems.length > 0 ? `(${selectedItems.length})` : ''}
-            </Button>
-            <div className="relative flex-1 max-w-sm">
-              <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Search permits..."
-                value={searchTerm}
-                onChange={(e) => handleSearch(e.target.value)}
-                className="pl-8"
-              />
+    const getStatusBadge = (status: string) => {
+        const statusMap = {
+            'pending': 'bg-yellow-100 text-yellow-800',
+            'approved': 'bg-green-100 text-green-800',
+            'rejected': 'bg-red-100 text-red-800',
+            'new_submission': 'bg-blue-100 text-blue-800'
+        };
+
+        return statusMap[status as keyof typeof statusMap] || 'bg-gray-100 text-gray-800';
+    };
+
+    return (
+        <div className="space-y-6">
+            {/* Header */}
+            <div className="flex items-center justify-between">
+                <h1 className="text-3xl font-semibold text-slate-900">Business Permit List</h1>
+                <Link href="/application/new">
+                    <Button className="bg-blue-500 hover:bg-blue-600 text-white">
+                        <Plus className="h-4 w-4 mr-2" />
+                        New Application
+                    </Button>
+                </Link>
             </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline">
-                  <Filter className="mr-2 h-4 w-4" />
-                  Filter
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => handleStatusFilter("")}>
-                  All Status
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleStatusFilter("active")}>
-                  Active
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleStatusFilter("pending")}>
-                  Pending
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleStatusFilter("rejected")}>
-                  Rejected
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
 
-          {loading ? (
-            <div className="flex items-center justify-center py-8">
-              <Loader2 className="h-8 w-8 animate-spin" />
-              <span className="ml-2">Loading business permits...</span>
-            </div>
-          ) : (
-            <>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className="w-12">
-                      <Checkbox
-                        checked={selectedItems.length === businessPermits.length && businessPermits.length > 0}
-                        onCheckedChange={handleSelectAll}
-                        aria-label="Select all"
-                      />
-                    </TableHead>
-                    <TableHead>Business ID No.</TableHead>
-                    <TableHead>Business Name</TableHead>
-                    <TableHead>
-                      <div className="flex flex-col">
-                        <span>Owner / President /</span>
-                        <span>Officer in Charge</span>
-                      </div>
-                    </TableHead>
-                    <TableHead>Mobile No.</TableHead>
-                    <TableHead>Email Address</TableHead>
-                    <TableHead>Latest Status</TableHead>
-                    <TableHead>
-                      <div className="flex flex-col">
-                        <span>Latest Status</span>
-                        <span>Date</span>
-                      </div>
-                    </TableHead>
-                    <TableHead>Status Owner</TableHead>
-                    <TableHead className="text-right">Actions</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {businessPermits.map((permit) => (
-                    <TableRow key={permit.id}>
-                      <TableCell>
-                        <Checkbox
-                          checked={selectedItems.includes(permit.id)}
-                          onCheckedChange={(checked) => handleSelectItem(permit.id, checked as boolean)}
-                          aria-label={`Select ${permit.business_name}`}
-                        />
-                      </TableCell>
-                      <TableCell className="font-medium uppercase">{permit.business_id_no || permit.permit_number}</TableCell>
-                      <TableCell className="uppercase">{permit.business_name}</TableCell>
-                      <TableCell className="uppercase">{permit.owner_name}</TableCell>
-                      <TableCell className="uppercase">{permit.mobile_no || 'N/A'}</TableCell>
-                      <TableCell>{permit.email_address || 'N/A'}</TableCell>
-                      <TableCell>
-                        <Badge variant={getStatusBadgeVariant(permit.latest_status)} className="uppercase">
-                          {permit.latest_status}
-                        </Badge>
-                      </TableCell>
-                      <TableCell>
-                        {formatDateTime(permit.latest_status_date || permit.application_date)}
-                      </TableCell>
-                      <TableCell className="uppercase">{permit.status_owner || 'N/A'}</TableCell>
-                      <TableCell className="text-right">
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button variant="ghost" className="h-8 w-8 p-0">
-                              <span className="sr-only">Open menu</span>
-                              <MoreHorizontal className="h-4 w-4" />
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuItem>
-                              <Eye className="mr-2 h-4 w-4" />
-                              View
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                              <Edit className="mr-2 h-4 w-4" />
-                              Edit
-                            </DropdownMenuItem>
-                            <DropdownMenuItem 
-                              className="text-red-600"
-                              onClick={() => handleSingleDelete(permit.id)}
+            {/* Table Card */}
+            <Card>
+                <CardContent className="p-6">
+                    {/* Search and Actions */}
+                    <div className="flex items-center gap-4 mb-6">
+                        <Button
+                            variant={selectedItems.length > 0 ? "destructive" : "outline"}
+                            size="sm"
+                            className={selectedItems.length > 0 ? "" : "bg-slate-100"}
+                            disabled={selectedItems.length === 0}
+                            onClick={handleDeleteClick}
+                        >
+                            <Trash2 className="h-4 w-4 mr-2" />
+                            Delete
+                        </Button>
+                        <div className="flex-1 max-w-md">
+                            <div className="relative">
+                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-slate-500" />
+                                <Input
+                                    placeholder="Search by details"
+                                    value={searchTerm}
+                                    onChange={(e) => handleSearch(e.target.value)}
+                                    className="pl-10"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Table */}
+                    <div className="border border-slate-200 rounded-lg overflow-hidden">
+                        {/* Table Header */}
+                        <div className="bg-blue-50 border-b border-slate-200">
+                            <div className="flex items-center gap-1 p-4 text-sm font-medium text-slate-900">
+                                <div className="w-8 flex justify-center">
+                                    <Checkbox
+                                        checked={selectedItems.length === businessPermits.length && businessPermits.length > 0}
+                                        onCheckedChange={handleSelectAll}
+                                    />
+                                </div>
+                                <div className="flex-1 min-w-0">Business ID No.</div>
+                                <div className="flex-2 min-w-0">Business Name</div>
+                                <div className="flex-2 min-w-0">
+                                    <div className="leading-tight">
+                                        <div>Owner / President /</div>
+                                        <div>Officer in Charge</div>
+                                    </div>
+                                </div>
+                                <div className="flex-1 min-w-0">Mobile No.</div>
+                                <div className="flex-2 min-w-0">Email Address</div>
+                                <div className="flex-1 min-w-0">Latest Status</div>
+                                <div className="flex-1 min-w-0">Latest Status Date</div>
+                                <div className="flex-1 min-w-0">Status Owner</div>
+                                <div className="w-20 flex justify-center">Actions</div>
+                            </div>
+                        </div>
+
+                        {/* Table Body */}
+                        <div className="bg-white">
+                            {loading ? (
+                                <div className="p-8 text-center text-slate-500">
+                                    Loading business permits...
+                                </div>
+                            ) : businessPermits.length === 0 ? (
+                                <div className="p-8 text-center text-slate-500">
+                                    No business permits found
+                                </div>
+                            ) : (
+                                businessPermits.map((permit) => (
+                                    <div key={permit.id} className="flex items-center gap-1 p-4 border-b border-slate-200 hover:bg-slate-50">
+                                        <div className="w-8 flex items-center justify-center">
+                                            <Checkbox
+                                                checked={selectedItems.includes(permit.id)}
+                                                onCheckedChange={(checked) => handleSelectItem(permit.id, checked as boolean)}
+                                            />
+                                        </div>
+                                        <div className="flex-1 min-w-0 text-sm text-slate-900">
+                                            {permit.permit_number}
+                                        </div>
+                                        <div className="flex-2 min-w-0 text-sm text-slate-900">
+                                            {permit.business.business_name}
+                                        </div>
+                                        <div className="flex-2 min-w-0 text-sm text-slate-900">
+                                            {`${permit.business.business_owner.last_name}, ${permit.business.business_owner.first_name} ${permit.business.business_owner.middle_name || ''}`.trim()}
+                                        </div>
+                                        <div className="flex-1 min-w-0 text-sm text-slate-900">
+                                            {permit.business.business_owner.mobile_number}
+                                        </div>
+                                        <div className="flex-2 min-w-0 text-sm text-slate-900">
+                                            {permit.business.business_owner.email}
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                            <span className={`inline-flex px-2 py-1 text-xs font-medium rounded-full ${getStatusBadge(permit.status)}`}>
+                                                {permit.status.replace('_', ' ').toUpperCase()}
+                                            </span>
+                                        </div>
+                                        <div className="flex-1 min-w-0 text-sm text-slate-900">
+                                            {permit.approved_at ? formatDate(permit.approved_at) : formatDate(permit.application_date)}
+                                        </div>
+                                        <div className="flex-1 min-w-0 text-sm text-slate-900">
+                                            {permit.approved_by || '-'}
+                                        </div>
+                                        <div className="w-20 flex items-center justify-center gap-2">
+                                            <Button
+                                                variant="outline"
+                                                size="sm"
+                                                className="h-8 w-8 p-0"
+                                                onClick={() => handleViewPermit(permit.id)}
+                                                title="View Permit"
+                                            >
+                                                <Eye className="h-4 w-4" />
+                                            </Button>
+                                            <DropdownMenu>
+                                                <DropdownMenuTrigger asChild>
+                                                    <Button
+                                                        variant="outline"
+                                                        size="sm"
+                                                        className="h-8 w-8 p-0"
+                                                        title="More Actions"
+                                                    >
+                                                        <MoreHorizontal className="h-4 w-4" />
+                                                    </Button>
+                                                </DropdownMenuTrigger>
+                                                <DropdownMenuContent align="end" className="w-48">
+                                                    <DropdownMenuItem
+                                                        onClick={() => handleEditPermit(permit.id)}
+                                                        className="cursor-pointer"
+                                                    >
+                                                        <Edit className="mr-2 h-4 w-4" />
+                                                        Edit Permit
+                                                    </DropdownMenuItem>
+                                                    <DropdownMenuItem
+                                                        onClick={() => handlePrintPermit(permit.id)}
+                                                        className="cursor-pointer"
+                                                    >
+                                                        <FileText className="mr-2 h-4 w-4" />
+                                                        Print Permit
+                                                    </DropdownMenuItem>
+                                                    <DropdownMenuSeparator />
+                                                    {permit.status === 'pending' && (
+                                                        <>
+                                                            <DropdownMenuItem
+                                                                onClick={() => handleApprovePermit(permit.id)}
+                                                                className="cursor-pointer text-green-600 focus:text-green-600"
+                                                            >
+                                                                <CheckCircle className="mr-2 h-4 w-4" />
+                                                                Approve
+                                                            </DropdownMenuItem>
+                                                            <DropdownMenuItem
+                                                                onClick={() => handleRejectPermit(permit.id)}
+                                                                className="cursor-pointer text-red-600 focus:text-red-600"
+                                                            >
+                                                                <XCircle className="mr-2 h-4 w-4" />
+                                                                Reject
+                                                            </DropdownMenuItem>
+                                                        </>
+                                                    )}
+                                                </DropdownMenuContent>
+                                            </DropdownMenu>
+                                        </div>
+                                    </div>
+                                ))
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Pagination */}
+                    <div className="flex items-center justify-between mt-6">
+                        <div className="flex items-center gap-4">
+                            <p className="text-sm text-slate-500">
+                                Showing {((pagination.current_page - 1) * pagination.per_page) + 1} to {Math.min(pagination.current_page * pagination.per_page, pagination.total)} of {pagination.total} rows
+                            </p>
+                            <div className="flex items-center gap-2">
+                                <span className="text-sm text-slate-500">10</span>
+                                <span className="text-sm text-slate-500">rows per page</span>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                disabled={pagination.current_page === 1}
+                                onClick={() => fetchBusinessPermits(pagination.current_page - 1, searchTerm)}
                             >
-                              <Trash2 className="mr-2 h-4 w-4" />
-                              Delete
-                            </DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+                                Previous
+                            </Button>
 
-              {businessPermits.length === 0 && !loading && (
-                <div className="text-center py-8 text-muted-foreground">
-                  No business permits found.
-                </div>
-              )}
+                            {Array.from({ length: Math.min(5, pagination.last_page) }, (_, i) => {
+                                const page = i + 1;
+                                return (
+                                    <Button
+                                        key={page}
+                                        variant={page === pagination.current_page ? "default" : "outline"}
+                                        size="sm"
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => fetchBusinessPermits(page, searchTerm)}
+                                    >
+                                        {page}
+                                    </Button>
+                                );
+                            })}
 
-              <div className="flex items-center justify-between space-x-2 py-4">
-                <div className="text-sm text-muted-foreground">
-                  Showing {((currentPage - 1) * 15) + 1} to {Math.min(currentPage * 15, totalItems)} of {totalItems} results.
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                  >
-                    Previous
-                  </Button>
-                  <span className="text-sm">
-                    Page {currentPage} of {totalPages}
-                  </span>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                  >
-                    Next
-                  </Button>
-                </div>
-              </div>
-            </>
-          )}
-        </CardContent>
-      </Card>
+                            {pagination.last_page > 5 && (
+                                <>
+                                    <span className="text-slate-500">...</span>
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => fetchBusinessPermits(pagination.last_page, searchTerm)}
+                                    >
+                                        {pagination.last_page}
+                                    </Button>
+                                </>
+                            )}
 
-      {/* Delete Confirmation Dialog */}
-      <AlertDialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Delete this?</AlertDialogTitle>
-            <AlertDialogDescription>
-              Are you sure you want to delete {selectedItems.length} business permit{selectedItems.length > 1 ? 's' : ''}?
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel disabled={isDeleting}>Cancel</AlertDialogCancel>
-            <AlertDialogAction
-              onClick={confirmDelete}
-              disabled={isDeleting}
-              className="bg-red-600 hover:bg-red-700"
-            >
-              {isDeleting ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Deleting...
-                </>
-              ) : (
-                <>
-                  <Trash2 className="mr-2 h-4 w-4" />
-                  Yes, Delete
-                </>
-              )}
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-    </div>
-  );
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                disabled={pagination.current_page === pagination.last_page}
+                                onClick={() => fetchBusinessPermits(pagination.current_page + 1, searchTerm)}
+                            >
+                                Next
+                            </Button>
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+
+            {/* Delete Confirmation Dialog */}
+            <DeleteConfirmationDialog
+                open={deleteDialogOpen}
+                onOpenChange={setDeleteDialogOpen}
+                onConfirm={handleDeleteConfirm}
+                itemCount={selectedItems.length}
+            />
+        </div>
+    );
 }
