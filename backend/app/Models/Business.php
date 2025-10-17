@@ -29,12 +29,40 @@ class Business extends Model
         'business_status',
         'dti_registration_number',
         'sec_registration_number',
-        'cooperative_registration_number'
+        'cooperative_registration_number',
+        // Additional fields from migration
+        'house_number',
+        'building_name',
+        'lot_number',
+        'block_number',
+        'street',
+        'subdivision',
+        'male_employees',
+        'female_employees',
+        'residing_employees',
+        'van_count',
+        'truck_count',
+        'motorcycle_count',
+        'business_area',
+        'business_hours',
+        'business_days',
+        'main_office',
+        'branch_office',
+        'admin_office_only',
+        'warehouse',
+        'others_activity',
+        'trade_name'
     ];
 
     protected $casts = [
         'capital_investment' => 'decimal:2',
-        'business_start_date' => 'date'
+        'business_start_date' => 'date',
+        'business_area' => 'decimal:2',
+        'main_office' => 'boolean',
+        'branch_office' => 'boolean',
+        'admin_office_only' => 'boolean',
+        'warehouse' => 'boolean',
+        'others_activity' => 'boolean'
     ];
 
     public function businessOwner(): BelongsTo
@@ -50,5 +78,10 @@ class Business extends Model
     public function businessPermits(): HasMany
     {
         return $this->hasMany(BusinessPermit::class);
+    }
+
+    public function businessLines(): HasMany
+    {
+        return $this->hasMany(BusinessLine::class);
     }
 }

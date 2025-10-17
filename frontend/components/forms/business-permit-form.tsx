@@ -111,6 +111,7 @@ interface BusinessPermitFormProps {
   showBusinessFees?: boolean;
   showTypeAndPayment?: boolean;
   isReadOnly?: boolean;
+  initialData?: any;
 }
 
 export function BusinessPermitForm({
@@ -125,7 +126,8 @@ export function BusinessPermitForm({
   showApplicationType = false,
   showBusinessFees = false,
   showTypeAndPayment = false,
-  isReadOnly = false
+  isReadOnly = false,
+  initialData
 }: BusinessPermitFormProps) {
   const [countrySearch, setCountrySearch] = useState("");
   const [filteredCountries, setFilteredCountries] = useState(countries);
@@ -144,7 +146,179 @@ export function BusinessPermitForm({
   // Tax Order Payment Dialog state
   const [showTaxOrderPaymentDialog, setShowTaxOrderPaymentDialog] = useState(false);
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState(() => {
+    console.log("=== BUSINESS PERMIT FORM INITIALIZATION ===");
+    console.log("Initial data received:", initialData);
+    console.log("Business data:", initialData?.business);
+    console.log("Business lines:", initialData?.business?.business_lines);
+    console.log("Business lines count:", initialData?.business?.business_lines?.length || 0);
+    
+    if (initialData) {
+      // Transform initialData to match form structure
+      return {
+        // Application Type - System Generated
+        dateOfReceipt: initialData.application_date ? new Date(initialData.application_date).toLocaleDateString('en-US') : new Date().toLocaleDateString('en-US'),
+        trackingNumber: initialData.permit_number || "",
+        businessIdNumber: initialData.id || "",
+
+        // Business Information
+        businessType: initialData.business?.business_type_id || "",
+        dtiSecCdaRegNo: initialData.business?.dti_registration_number || "",
+        tin: initialData.business?.businessOwner?.tin_number || "",
+        businessName: initialData.business?.business_name || "",
+        tradeName: initialData.business?.trade_name || "",
+
+        // Business Address
+        businessAddress: {
+          houseNumber: initialData.business?.house_number || "",
+          buildingName: initialData.business?.building_name || "",
+          lotNumber: initialData.business?.lot_number || "",
+          blockNumber: initialData.business?.block_number || "",
+          street: initialData.business?.street || "",
+          barangay: initialData.business?.business_barangay || "",
+          subdivision: initialData.business?.subdivision || "",
+          city: initialData.business?.business_city || "",
+          province: initialData.business?.business_province || "",
+          zipCode: initialData.business?.business_postal_code || ""
+        },
+
+        // Contact Information
+        contactInfo: {
+          telephone: initialData.business?.business_phone || "",
+          mobile: initialData.business?.businessOwner?.phone || "",
+          email: initialData.business?.business_email || "",
+          website: initialData.business?.business_website || ""
+        },
+
+        // Owner Information
+        ownerName: {
+          surname: initialData.business?.businessOwner?.last_name || "",
+          givenName: initialData.business?.businessOwner?.first_name || "",
+          middleName: initialData.business?.businessOwner?.middle_name || "",
+          suffix: initialData.business?.businessOwner?.suffix || ""
+        },
+
+        // President/Officer Information (same as owner for now)
+        presidentName: {
+          surname: initialData.business?.businessOwner?.last_name || "",
+          givenName: initialData.business?.businessOwner?.first_name || "",
+          middleName: initialData.business?.businessOwner?.middle_name || "",
+          suffix: initialData.business?.businessOwner?.suffix || ""
+        },
+
+        // Business Operation
+        businessArea: initialData.business?.business_area?.toString() || "",
+        maleEmployees: initialData.business?.male_employees?.toString() || "",
+        femaleEmployees: initialData.business?.female_employees?.toString() || "",
+        residingEmployees: initialData.business?.residing_employees?.toString() || "",
+        vanCount: initialData.business?.van_count?.toString() || "",
+        truckCount: initialData.business?.truck_count?.toString() || "",
+        motorcycleCount: initialData.business?.motorcycle_count?.toString() || "",
+        businessActivity: initialData.business?.business_activity || "",
+        businessDescription: initialData.business?.business_description || "",
+        capitalInvestment: initialData.business?.capital_investment?.toString() || "",
+        numberOfEmployees: initialData.business?.number_of_employees?.toString() || "",
+        businessHours: initialData.business?.business_hours || "",
+        businessDays: initialData.business?.business_days || "",
+
+        // Taxpayer Address (same as business address for now)
+        taxpayerAddress: {
+          houseNumber: initialData.business?.house_number || "",
+          buildingName: initialData.business?.building_name || "",
+          lotNumber: initialData.business?.lot_number || "",
+          blockNumber: initialData.business?.block_number || "",
+          street: initialData.business?.street || "",
+          barangay: initialData.business?.business_barangay || "",
+          subdivision: initialData.business?.subdivision || "",
+          city: initialData.business?.business_city || "",
+          province: initialData.business?.business_province || "",
+          zipCode: initialData.business?.business_postal_code || ""
+        },
+
+        // Ownership Details
+        owned: initialData.owned || false,
+        propertyDescription: initialData.property_description || "",
+        propertyValue: initialData.property_value?.toString() || "",
+        taxDeclarationNo: initialData.tax_declaration_no || "",
+        monthlyRental: initialData.monthly_rental?.toString() || "",
+        lessorName: {
+          surname: initialData.lessor_surname || "",
+          givenName: initialData.lessor_given_name || "",
+          middleName: initialData.lessor_middle_name || "",
+          suffix: initialData.lessor_suffix || ""
+        },
+
+        // Tax Incentives
+        taxIncentives: initialData.tax_incentives || false,
+
+        // Business Activity Type
+        businessActivityType: "",
+        otherActivity: initialData.remarks || "",
+        mainOffice: initialData.business?.main_office || false,
+        branchOffice: initialData.business?.branch_office || false,
+        adminOfficeOnly: initialData.business?.admin_office_only || false,
+        warehouse: initialData.business?.warehouse || false,
+        othersActivity: initialData.business?.others_activity || false,
+
+        // Type and Payment (for client application form)
+        applicationType: initialData.permit_type || "",
+        paymentType: initialData.payment_type || "",
+
+        // Line of Business
+        lineOfBusiness: initialData.business?.business_lines ? 
+          initialData.business.business_lines.map((line: any) => ({
+            lineOfBusiness: line.line_of_business || "",
+            psicCode: line.psic_code || ""
+          })) : [
+            {
+              lineOfBusiness: "",
+              psicCode: ""
+            }
+          ],
+
+        // Business Fees
+        fees: [
+          { description: "Business Permit Fee", amount: 0, quantity: 1, total: 0 },
+          { description: "Mayor's Permit Fee", amount: 0, quantity: 1, total: 0 },
+          { description: "Sanitary Permit Fee", amount: 0, quantity: 1, total: 0 },
+          { description: "Fire Safety Inspection Fee", amount: 0, quantity: 1, total: 0 },
+          { description: "Zoning Clearance Fee", amount: 0, quantity: 1, total: 0 }
+        ],
+
+        // Location Search
+        locationSearch: initialData.location_search || "",
+        mapCenter: [parseFloat(initialData.location_latitude) || 17.0583, parseFloat(initialData.location_longitude) || 121.6019] as [number, number],
+        mapZoom: 14,
+        isSearchingLocation: false,
+        locationSuggestions: [] as Array<{ display_name: string, lat: string, lon: string }>,
+        showSuggestions: false,
+
+        // Document Uploads (empty for now - would need to fetch from API)
+        documents: {
+          valid_id: null as File | null,
+          dti_registration: null as File | null,
+          contract_lease: null as File | null,
+          fire_safety_certificate: null as File | null,
+          barangay_clearance: null as File | null,
+          establishment_photo: null as File | null,
+          occupancy_permit: null as File | null,
+          ecc: null as File | null,
+          registration_license: null as File | null,
+          dti_clearance: null as File | null,
+          ntc_clearance: null as File | null,
+          fda_certificate: null as File | null,
+          bsp_certificate: null as File | null,
+          doh_certificate: null as File | null,
+          proof_of_income: null as File | null,
+          proof_of_receipts: null as File | null,
+          affidavit_closure: null as File | null,
+          tax_incentives: null as File | null
+        }
+      };
+    }
+
+    // Default empty form data
+    return {
     // Application Type - System Generated
     dateOfReceipt: new Date().toLocaleDateString('en-US'),
     trackingNumber: "", // Will be generated by system
@@ -276,7 +450,30 @@ export function BusinessPermitForm({
     mapZoom: 14,
     isSearchingLocation: false,
     locationSuggestions: [] as Array<{ display_name: string, lat: string, lon: string }>,
-    showSuggestions: false
+    showSuggestions: false,
+
+    // Document Uploads
+    documents: {
+      valid_id: null as File | null,
+      dti_registration: null as File | null,
+      contract_lease: null as File | null,
+      fire_safety_certificate: null as File | null,
+      barangay_clearance: null as File | null,
+      establishment_photo: null as File | null,
+      occupancy_permit: null as File | null,
+      ecc: null as File | null,
+      registration_license: null as File | null,
+      dti_clearance: null as File | null,
+      ntc_clearance: null as File | null,
+      fda_certificate: null as File | null,
+      bsp_certificate: null as File | null,
+      doh_certificate: null as File | null,
+      proof_of_income: null as File | null,
+      proof_of_receipts: null as File | null,
+      affidavit_closure: null as File | null,
+      tax_incentives: null as File | null
+    }
+  };
   });
 
   const handleInputChange = (field: string, value: any) => {
@@ -295,6 +492,16 @@ export function BusinessPermitForm({
         [field]: value
       }));
     }
+  };
+
+  const handleFileChange = (documentType: string, file: File | null) => {
+    setFormData(prev => ({
+      ...prev,
+      documents: {
+        ...prev.documents,
+        [documentType]: file
+      }
+    }));
   };
 
   const handleCountrySearch = (searchTerm: string) => {
@@ -506,6 +713,11 @@ export function BusinessPermitForm({
 
   // Debounced effect for location suggestions
   useEffect(() => {
+    // Don't search if in read-only mode or if locationSearch is empty
+    if (isReadOnly || !formData.locationSearch || formData.locationSearch.length < 2) {
+      return;
+    }
+
     const timeoutId = setTimeout(async () => {
       if (formData.locationSearch) {
         await searchLocationSuggestions(formData.locationSearch);
@@ -513,7 +725,7 @@ export function BusinessPermitForm({
     }, 500); // 500ms delay for API calls
 
     return () => clearTimeout(timeoutId);
-  }, [formData.locationSearch]);
+  }, [formData.locationSearch, isReadOnly]);
 
   // Utility function to safely get form values
   const getFormValue = (value: any): string => {
@@ -551,7 +763,7 @@ export function BusinessPermitForm({
   const removeLineOfBusiness = (index: number) => {
     setFormData(prev => ({
       ...prev,
-      lineOfBusiness: prev.lineOfBusiness.filter((_, i) => i !== index)
+      lineOfBusiness: prev.lineOfBusiness.filter((_: any, i: number) => i !== index)
     }));
   };
 
@@ -1602,7 +1814,15 @@ export function BusinessPermitForm({
                     <Label htmlFor="taxIncentivesNo">No</Label>
                   </div>
                   <div className="flex-1">
-                    <Input type="file" className="max-w-xs" />
+                    <Input 
+                      type="file" 
+                      className="max-w-xs" 
+                      onChange={(e) => handleFileChange('tax_incentives', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.tax_incentives && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.tax_incentives.name}</span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -1695,7 +1915,7 @@ export function BusinessPermitForm({
                       </div>
 
                       {/* Table Body */}
-                      {formData.lineOfBusiness.map((business, index) => (
+                      {formData.lineOfBusiness.map((business: any, index: number) => (
                         <div key={index} className="flex border-b border-neutral-300 last:border-b-0">
                           <div className="flex-[2] min-w-[400px] border-r border-neutral-300 px-2 py-2 overflow-hidden">
                             <Select
@@ -1889,77 +2109,217 @@ export function BusinessPermitForm({
                     <Label className="w-[423px] text-sm font-medium">
                       Valid ID: <span className="text-red-500">*</span>
                     </Label>
-                    <Input type="file" className="w-[320px]" required />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      required 
+                      onChange={(e) => handleFileChange('valid_id', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.valid_id && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.valid_id.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">
                       DTI / SEC / CDA Registration: <span className="text-red-500">*</span>
                     </Label>
-                    <Input type="file" className="w-[320px]" required />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      required 
+                      onChange={(e) => handleFileChange('dti_registration', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.dti_registration && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.dti_registration.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">
                       Contract of Lease / Tax Clearance: <span className="text-red-500">*</span>
                     </Label>
-                    <Input type="file" className="w-[320px]" required />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      required 
+                      onChange={(e) => handleFileChange('contract_lease', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.contract_lease && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.contract_lease.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">
                       Fire Safety Inspection Certificate for Occupancy: <span className="text-red-500">*</span>
                     </Label>
-                    <Input type="file" className="w-[320px]" required />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      required 
+                      onChange={(e) => handleFileChange('fire_safety_certificate', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.fire_safety_certificate && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.fire_safety_certificate.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Barangay Business Clearance:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('barangay_clearance', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.barangay_clearance && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.barangay_clearance.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Photo of Establishment:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('establishment_photo', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.establishment_photo && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.establishment_photo.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Occupancy Permit:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('occupancy_permit', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.occupancy_permit && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.occupancy_permit.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Environment Compliance Certificate (ECC):</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('ecc', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.ecc && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.ecc.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Certificate of Registration / License to Operate:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('registration_license', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.registration_license && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.registration_license.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">DTI Clearance:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('dti_clearance', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.dti_clearance && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.dti_clearance.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">NTC Clearance:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('ntc_clearance', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.ntc_clearance && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.ntc_clearance.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">FDA Certificate:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('fda_certificate', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.fda_certificate && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.fda_certificate.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">BSP Certificate:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('bsp_certificate', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.bsp_certificate && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.bsp_certificate.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">DOH Certificate:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('doh_certificate', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.doh_certificate && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.doh_certificate.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Proof of Income:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('proof_of_income', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.proof_of_income && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.proof_of_income.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Proof of Annual Gross Receipts:</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('proof_of_receipts', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.proof_of_receipts && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.proof_of_receipts.name}</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-4">
                     <Label className="w-[423px] text-sm font-medium">Affidavit of Business Closure</Label>
-                    <Input type="file" className="w-[320px]" />
+                    <Input 
+                      type="file" 
+                      className="w-[320px]" 
+                      onChange={(e) => handleFileChange('affidavit_closure', e.target.files?.[0] || null)}
+                      accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                    />
+                    {formData.documents.affidavit_closure && (
+                      <span className="text-sm text-green-600">✓ {formData.documents.affidavit_closure.name}</span>
+                    )}
                   </div>
                 </div>
               </div>

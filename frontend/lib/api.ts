@@ -70,19 +70,29 @@ export const businessPermitsApi = {
 export const applicationsApi = {
   // Get all applications
   getAll: (params?: { page?: number; search?: string; status?: string }) => 
-    api.get('/applications', { params }),
+    api.get('/applications', { params: { ...params, t: Date.now() } }),
   
   // Get single application
   getById: (id: string) => 
     api.get(`/applications/${id}`),
   
   // Create new application
-  create: (data: Record<string, unknown>) => 
-    api.post('/applications', data),
+  create: (data: FormData | Record<string, unknown>) => 
+    api.post('/applications', data, {
+      headers: data instanceof FormData ? {
+        'Content-Type': 'multipart/form-data',
+      } : {
+        'Content-Type': 'application/json',
+      }
+    }),
   
   // Update application
   update: (id: string, data: Record<string, unknown>) => 
     api.put(`/applications/${id}`, data),
+  
+  // Delete application
+  delete: (id: string) => 
+    api.delete(`/applications/${id}`),
   
   // Submit application for review
   submit: (id: string) => 
@@ -142,6 +152,22 @@ export const reportsApi = {
   // Get processing time report
   getProcessingTimeReport: (params?: { startDate?: string; endDate?: string }) => 
     api.get('/reports/processing-time', { params }),
+};
+
+export const filesApi = {
+  // Get all documents for a business permit
+  getPermitDocuments: (permitId: string) => 
+    api.get(`/files/business-permit/${permitId}/documents`),
+  
+  // Download/view a specific document
+  getDocument: (filename: string) => 
+    api.get(`/files/business-documents/${filename}`, {
+      responseType: 'blob' // Important for file downloads
+    }),
+  
+  // Get document URL for direct access
+  getDocumentUrl: (filename: string) => 
+    `${api.defaults.baseURL}/files/business-documents/${filename}`,
 };
 
 export default api;

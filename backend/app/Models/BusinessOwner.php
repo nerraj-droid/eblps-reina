@@ -25,7 +25,14 @@ class BusinessOwner extends Model
         'tin_number',
         'sss_number',
         'philhealth_number',
-        'pagibig_number'
+        'pagibig_number',
+        // Additional fields from migration
+        'suffix',
+        'taxpayer_address',
+        'taxpayer_barangay',
+        'taxpayer_city',
+        'taxpayer_province',
+        'taxpayer_postal_code'
     ];
 
     protected $casts = [

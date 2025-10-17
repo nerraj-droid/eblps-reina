@@ -82,6 +82,12 @@ Route::prefix('psic')->group(function () {
     Route::get('/{psic}', [PsicController::class, 'show']);
 });
 
+// File API - Serve uploaded documents (with basic auth for security)
+Route::prefix('files')->middleware('auth:sanctum')->group(function () {
+    Route::get('/business-documents/{filename}', [BusinessPermitController::class, 'serveDocument']);
+    Route::get('/business-permit/{permitId}/documents', [BusinessPermitController::class, 'getPermitDocuments']);
+});
+
 // Reports API (placeholder)
 Route::prefix('reports')->group(function () {
     Route::get('/dashboard', function () {
