@@ -35,16 +35,7 @@ import { Search, Plus, Eye, Trash2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { BusinessPermitForm } from "@/components/forms/business-permit-form";
 import { applicationsApi } from "@/lib/api";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { usePageLoading } from "@/lib/hooks/use-page-loading";
 
 
@@ -315,20 +306,6 @@ export default function ApplicationsPage() {
   return (
     <MainLayout>
       <div className="space-y-6">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link href="/">Dashboard</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Applications</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold tracking-tight">Business Permit List</h1>
           <Button 

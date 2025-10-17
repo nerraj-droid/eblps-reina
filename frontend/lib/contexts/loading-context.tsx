@@ -20,6 +20,11 @@ export function LoadingProvider({ children }: { children: ReactNode }) {
 
     const startLoading = () => {
         setIsLoading(true);
+        
+        // Safety timeout: automatically stop loading after 5 seconds
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 5000);
     };
 
     const stopLoading = () => {

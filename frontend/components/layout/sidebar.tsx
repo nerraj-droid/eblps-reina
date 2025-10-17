@@ -17,6 +17,7 @@ import Image from "next/image";
 import { useSidebar } from "@/lib/contexts/sidebar-context";
 import { useLoading } from "@/lib/contexts/loading-context";
 import { useAuth } from "@/lib/contexts/auth-context";
+import { useEffect } from "react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
@@ -28,8 +29,13 @@ export function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const { isCollapsed, toggleSidebar } = useSidebar();
-  const { startLoading } = useLoading();
+  const { startLoading, stopLoading } = useLoading();
   const { logout } = useAuth();
+
+  // Stop loading when pathname changes (page has loaded)
+  useEffect(() => {
+    stopLoading();
+  }, [pathname, stopLoading]);
 
   const handleNavigation = (href: string) => {
     if (pathname !== href) {
